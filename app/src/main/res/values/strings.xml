@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pokédex2.0</string>
+    <string name="empty_recyclerview">placeholder text</string>
+</resources>
