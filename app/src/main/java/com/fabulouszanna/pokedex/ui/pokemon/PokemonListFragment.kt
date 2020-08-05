@@ -10,8 +10,11 @@ import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
 import com.fabulouszanna.pokedex.databinding.PokemonListBinding
 import com.fabulouszanna.pokedex.repo.PokemonViewModel
+import com.fabulouszanna.pokedex.ui.filters.FilterDialog
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
+import kotlinx.android.synthetic.main.pokemon_list.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.util.*
 
 class PokemonListFragment : Fragment() {
     private val viewModel: PokemonViewModel by viewModel()
@@ -48,5 +51,21 @@ class PokemonListFragment : Fragment() {
             }
         }
         binding.emptyRecyclerView.visibility = View.GONE
+
+        filter_fab.setOnClickListener {
+            navToFilters()
+        }
+    }
+
+    private fun navToFilters() {
+        FilterDialog{
+            onFilterClicked(it)
+        }
+            .show(requireActivity().supportFragmentManager, "")
+    }
+
+    private fun onFilterClicked(gen: String) {
+        val generation = gen.take(3).toLowerCase(Locale.ROOT) + gen.takeLast(1)
+        viewModel.filterByGen(generation)
     }
 }

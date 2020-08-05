@@ -12,14 +12,16 @@ data class PokemonEntity(
     val id: String,
     val img_url: String,
     val type1: String,
-    val type2: String? = null
+    val type2: String? = null,
+    val gen: String
 ) {
     constructor(model: PokemonModel) : this(
         name = model.name,
         id = model.id,
         img_url = model.imgUrl,
         type1 = model.type1,
-        type2 = model.type2
+        type2 = model.type2,
+        gen = model.gen
     )
 
     fun toModel(): PokemonModel {
@@ -28,7 +30,8 @@ data class PokemonEntity(
             id = id,
             imgUrl = img_url,
             type1 = type1,
-            type2 = type2
+            type2 = type2,
+            gen = gen
         )
     }
 
@@ -36,6 +39,9 @@ data class PokemonEntity(
     interface PokemonDAO {
         @Query("SELECT * FROM pokemon_table ORDER BY pokemon_id")
         fun all(): Flow<List<PokemonEntity>>
+
+        @Query("SELECT * FROM pokemon_table WHERE gen = :gen")
+        fun filtered(gen: String): Flow<List<PokemonEntity>>
 
         @Insert(onConflict = OnConflictStrategy.IGNORE)
         suspend fun addAll(entities: List<PokemonEntity>)

@@ -20,6 +20,7 @@
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,25 +31,29 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@drawable/type_background"
+            android:gravity="center"
             android:paddingStart="12dp"
             android:paddingTop="4dp"
             android:paddingEnd="12dp"
             android:paddingBottom="4dp"
+            app:layout_constraintEnd_toStartOf="@id/pokemonImg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pokemonName" />
 
         <TextView
             android:id="@+id/pokemonType2"
             style="@style/CustomTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@drawable/type_background"
+            android:gravity="center"
             android:paddingStart="12dp"
             android:paddingTop="4dp"
             android:paddingEnd="12dp"
             android:paddingBottom="4dp"
             android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/pokemonImg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pokemonType1" />
 
@@ -68,6 +73,7 @@
             android:layout_height="100dp"
             android:layout_below="@id/pokemonName"
             android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pokemonName" />
 

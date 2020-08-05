@@ -33,8 +33,8 @@ abstract class PokemonDatabase : RoomDatabase() {
     }
 
     private class PokemonDatabaseCallback(private val context: Context) : RoomDatabase.Callback() {
-        override fun onCreate(db: SupportSQLiteDatabase) {
-            super.onCreate(db)
+        override fun onOpen(db: SupportSQLiteDatabase) {
+            super.onOpen(db)
 
             GlobalScope.launch(Dispatchers.IO) { populateDatabase(INSTANCE) }
         }
