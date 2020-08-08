@@ -1,8 +1,11 @@
 package com.fabulouszanna.pokedex.ui.filters
 
+import android.graphics.Color
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.utilities.inflate
@@ -14,7 +17,9 @@ data class PokemonGenFilter(
     val url1: String,
     val url2: String,
     val url3: String,
-    val generation: String
+    val generation: String,
+    var isSelected: Boolean = false,
+    val tag: Int
 )
 
 class GenerationFilterAdapter(
@@ -24,8 +29,9 @@ class GenerationFilterAdapter(
     RecyclerView.Adapter<GenerationFilterAdapter.GenFilterViewHolder>() {
 
     private val generationList = initializeFilter()
+    private var selectedPosition: Int? = null
 
-    private fun initializeFilter(): List<PokemonGenFilter> {
+    private fun initializeFilter(): MutableList<PokemonGenFilter> {
         val list = mutableListOf<PokemonGenFilter>()
         val numberOfGenerations = 8
         for (i in 1..numberOfGenerations) {
@@ -48,7 +54,8 @@ class GenerationFilterAdapter(
                         .padStart(3, '0')}.png",
                     "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${(firstGenerationPokemon + 6).toString()
                         .padStart(3, '0')}.png",
-                    "Generation $i"
+                    "Generation $i",
+                    tag = i - 1
                 )
             )
         }
@@ -63,14 +70,26 @@ class GenerationFilterAdapter(
 
     override fun onBindViewHolder(holder: GenFilterViewHolder, position: Int) {
         val generationFilter = generationList[position]
-        Log.d("POKEMON", generationList[position].url1)
+        val selectedColor = ContextCompat.getColor(dialog.requireContext(), R.color.colorAccent)
         holder.bind(generationFilter)
+
+        val card = holder.itemView as CardView
+        if (selectedPosition == position) {
+            if (generationFilter.isSelected) {
+                card.setCardBackgroundColor(selectedColor)
+            } else {
+                card.setCardBackgroundColor(Color.WHITE)
+            }
+        } else {
+            card.setCardBackgroundColor(Color.WHITE)
+        }
     }
 
     override fun getItemCount(): Int = generationList.size
 
     inner class GenFilterViewHolder(itemView: View, private val onFilterClicked: (String) -> Unit) :
         RecyclerView.ViewHolder(itemView) {
+
         fun bind(model: PokemonGenFilter) {
             setPokemonSprite(itemView.context, model.url1, itemView.url1)
             setPokemonSprite(itemView.context, model.url2, itemView.url2)
@@ -78,8 +97,15 @@ class GenerationFilterAdapter(
             itemView.generation.text = model.generation
 
             itemView.rootView.setOnClickListener {
-                onFilterClicked(model.generation)
-                dialog.dismiss()
+                generationList.forEach {
+                    if (it.tag == model.tag) model.isSelected =
+                        !model.isSelected else it.isSelected = false
+                }
+                selectedPosition = model.tag
+
+                val filter = if (generationList.all { !it.isSelected }) "all" else model.generation
+                onFilterClicked(filter)
+                notifyDataSetChanged()
             }
         }
     }

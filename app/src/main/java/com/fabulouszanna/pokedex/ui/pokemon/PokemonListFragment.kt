@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.databinding.PokemonListBinding
 import com.fabulouszanna.pokedex.repo.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.filters.FilterDialog
@@ -31,6 +32,12 @@ class PokemonListFragment : Fragment() {
 
         val adapter = PokemonAdapter(layoutInflater) {
             Toast.makeText(requireContext(), "Clicked ${it.name}", Toast.LENGTH_LONG).show()
+        }.apply {
+            registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
+                override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
+                    binding.pokemonRv.scrollToPosition(0)
+                }
+            })
         }
 
         binding.pokemonRv.apply {
@@ -58,14 +65,18 @@ class PokemonListFragment : Fragment() {
     }
 
     private fun navToFilters() {
-        FilterDialog{
+        FilterDialog {
             onFilterClicked(it)
         }
             .show(requireActivity().supportFragmentManager, "")
     }
 
     private fun onFilterClicked(gen: String) {
-        val generation = gen.take(3).toLowerCase(Locale.ROOT) + gen.takeLast(1)
+        val generation =
+            if (gen != "all") gen.take(3).toLowerCase(Locale.ROOT) + gen.takeLast(1) else gen
         viewModel.filterByGen(generation)
+        binding.pokemonRv.smoothScrollToPosition(
+            0
+        )
     }
 }

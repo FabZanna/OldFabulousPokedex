@@ -16,7 +16,6 @@ class PokemonViewModel(private val repo: PokemonRepository) : ViewModel() {
     private val _pokemons = MediatorLiveData<PokemonViewState>()
     val pokemons: LiveData<PokemonViewState> = _pokemons
     private val lastSource: LiveData<PokemonViewState>? = null
-    // val pokemons = repo.pokemons().map { PokemonViewState(it) }.asLiveData()
 
     init {
         filterByGen("all")

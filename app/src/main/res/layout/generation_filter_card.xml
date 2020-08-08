@@ -7,6 +7,8 @@
     app:cardElevation="4dp">
 
     <LinearLayout
+        android:layout_margin="1.5dp"
+        android:background="@drawable/corner_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/card_margin"
