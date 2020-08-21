@@ -1,7 +1,7 @@
 package com.fabulouszanna.pokedex.ui.filters
 
+import android.content.Context
 import android.graphics.Color
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.utilities.inflate
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.generation_filter_card.view.*
 
 data class PokemonGenFilter(
@@ -23,8 +22,8 @@ data class PokemonGenFilter(
 )
 
 class GenerationFilterAdapter(
-    private val dialog: BottomSheetDialogFragment,
-    private val onFilterClicked: (String) -> Unit
+    private val context: Context,
+    private val onGenFilterClicked: (String) -> Unit
 ) :
     RecyclerView.Adapter<GenerationFilterAdapter.GenFilterViewHolder>() {
 
@@ -65,12 +64,12 @@ class GenerationFilterAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GenFilterViewHolder {
         val inflatedView =
             parent.inflate(R.layout.generation_filter_card)
-        return GenFilterViewHolder(inflatedView, onFilterClicked)
+        return GenFilterViewHolder(inflatedView, onGenFilterClicked)
     }
 
     override fun onBindViewHolder(holder: GenFilterViewHolder, position: Int) {
         val generationFilter = generationList[position]
-        val selectedColor = ContextCompat.getColor(dialog.requireContext(), R.color.colorAccent)
+        val selectedColor = ContextCompat.getColor(context, R.color.colorAccent)
         holder.bind(generationFilter)
 
         val card = holder.itemView as CardView
@@ -87,7 +86,10 @@ class GenerationFilterAdapter(
 
     override fun getItemCount(): Int = generationList.size
 
-    inner class GenFilterViewHolder(itemView: View, private val onFilterClicked: (String) -> Unit) :
+    inner class GenFilterViewHolder(
+        itemView: View,
+        private val onGenFilterClicked: (String) -> Unit
+    ) :
         RecyclerView.ViewHolder(itemView) {
 
         fun bind(model: PokemonGenFilter) {
@@ -104,7 +106,7 @@ class GenerationFilterAdapter(
                 selectedPosition = model.tag
 
                 val filter = if (generationList.all { !it.isSelected }) "all" else model.generation
-                onFilterClicked(filter)
+                onGenFilterClicked(filter)
                 notifyDataSetChanged()
             }
         }

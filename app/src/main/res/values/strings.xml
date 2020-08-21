@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Pokédex2.0</string>
     <string name="empty_recyclerview">placeholder text</string>
+    <string name="searchbar_hint">Search Pokémon Name</string>
+
+    <string-array name="types">
+        <item>Bug</item>
+        <item>Dark</item>
+        <item>Dragon</item>
+        <item>Electric</item>
+        <item>Fairy</item>
+        <item>Fighting</item>
+        <item>Fire</item>
+        <item>Flying</item>
+        <item>Ghost</item>
+        <item>Grass</item>
+        <item>Ground</item>
+        <item>Ice</item>
+        <item>Normal</item>
+        <item>Poison</item>
+        <item>Psychic</item>
+        <item>Rock</item>
+        <item>Steel</item>
+        <item>Water</item>
+    </string-array>
 </resources>

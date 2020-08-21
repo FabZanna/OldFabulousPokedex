@@ -9,7 +9,9 @@ import kotlinx.coroutines.flow.map
 
 data class PokemonViewState(
     val pokemons: List<PokemonModel> = listOf(),
-    val gen: String = "all"
+    val name: String = "",
+    val gen: String = "all",
+    val type: String = "all"
 )
 
 class PokemonViewModel(private val repo: PokemonRepository) : ViewModel() {
@@ -18,12 +20,14 @@ class PokemonViewModel(private val repo: PokemonRepository) : ViewModel() {
     private val lastSource: LiveData<PokemonViewState>? = null
 
     init {
-        filterByGen("all")
+
+        filtered(name = "", gen = "all", type = "all")
     }
 
-    fun filterByGen(gen: String) {
+    fun filtered(name: String, gen: String, type: String) {
         lastSource?.let { _pokemons.removeSource(it) }
-        val items = repo.pokemons(gen).map { PokemonViewState(it, gen) }.asLiveData()
+        val items = repo.pokemons(name, gen, type).map { PokemonViewState(it, name, gen, type) }
+            .asLiveData()
         _pokemons.addSource(items) { viewState ->
             _pokemons.value = viewState
         }

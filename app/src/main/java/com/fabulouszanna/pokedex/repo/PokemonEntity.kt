@@ -40,8 +40,17 @@ data class PokemonEntity(
         @Query("SELECT * FROM pokemon_table ORDER BY pokemon_id")
         fun all(): Flow<List<PokemonEntity>>
 
+        @Query("SELECT * FROM pokemon_table WHERE pokemon_name LIKE '%' || :pokemonName || '%'")
+        fun filterByName(pokemonName: String): Flow<List<PokemonEntity>>
+
         @Query("SELECT * FROM pokemon_table WHERE gen = :gen")
-        fun filtered(gen: String): Flow<List<PokemonEntity>>
+        fun filterByGen(gen: String): Flow<List<PokemonEntity>>
+
+        @Query("SELECT * FROM pokemon_table WHERE (type1 = :type OR type2 = :type)")
+        fun filterByType(type: String): Flow<List<PokemonEntity>>
+
+        @Query("SELECT * FROM pokemon_table WHERE gen = :gen AND (type1 = :type OR type2 = :type)")
+        fun filtered(gen: String, type: String): Flow<List<PokemonEntity>>
 
         @Insert(onConflict = OnConflictStrategy.IGNORE)
         suspend fun addAll(entities: List<PokemonEntity>)

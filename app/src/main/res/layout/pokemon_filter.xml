@@ -26,6 +26,8 @@
             android:layout_width="match_parent"
             android:layout_marginStart="@dimen/card_margin"
             android:layout_marginEnd="@dimen/card_margin"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
             android:layout_height="wrap_content" />
 
         <androidx.viewpager2.widget.ViewPager2

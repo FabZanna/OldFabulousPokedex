@@ -7,15 +7,24 @@ import kotlinx.coroutines.flow.map
 class PokemonRepository(
     private val pokemonDAO: PokemonEntity.PokemonDAO
 ) {
-    fun pokemons(gen: String = "all"): Flow<List<PokemonModel>> =
-        filterByGen(gen).map { listOfEntities ->
+    fun pokemons(name: String = "", gen: String = "all", type: String = "all"): Flow<List<PokemonModel>> =
+        filter(name, gen, type).map { listOfEntities ->
             listOfEntities.map { pokemonEntity ->
                 pokemonEntity.toModel()
             }
         }
 
-    private fun filterByGen(gen: String) = when (gen) {
-        "all" -> pokemonDAO.all()
-        else -> pokemonDAO.filtered(gen)
+    private fun filter(name: String, gen: String, type: String): Flow<List<PokemonEntity>> {
+        return if (name != "")
+            pokemonDAO.filterByName(name)
+        else if (gen == "all" && type == "all")
+            pokemonDAO.all()
+        else if (gen == "all") {
+            pokemonDAO.filterByType(type)
+        } else if (type == "all") {
+            pokemonDAO.filterByGen(gen)
+        } else {
+            pokemonDAO.filtered(gen, type)
+        }
     }
 }

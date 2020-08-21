@@ -5,27 +5,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.fabulouszanna.pokedex.databinding.GenerationFilterBinding
+import com.fabulouszanna.pokedex.databinding.FilterRecyclerviewBinding
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class GenerationFilter(
-    private val dialog: BottomSheetDialogFragment,
+class FilterFragment(
+    private val adapterType: String,
     private val onFilterClicked: (String) -> Unit
 ) : Fragment() {
-    private lateinit var binding: GenerationFilterBinding
+    private lateinit var binding: FilterRecyclerviewBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = GenerationFilterBinding.inflate(inflater, container, false).also { binding = it }.root
+    ) = FilterRecyclerviewBinding.inflate(inflater, container, false).also { binding = it }.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = GenerationFilterAdapter(dialog, onFilterClicked)
-        binding.genRecyclerView.apply {
+        val adapter = when (adapterType) {
+            "generation" -> GenerationFilterAdapter(requireContext(), onFilterClicked)
+            else -> TypeFilterAdapter(requireContext(), onFilterClicked)
+        }
+
+        binding.filterRecyclerView.apply {
             setHasFixedSize(true)
             setAdapter(adapter)
             addItemDecoration(RecyclerViewCustomItemDecoration(requireContext()))

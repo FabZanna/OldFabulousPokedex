@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type"
+    style="@style/CustomTextView"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginStart="@dimen/card_margin"
+    android:layout_marginTop="@dimen/card_margin"
+    android:layout_marginEnd="@dimen/card_margin"
+    android:background="@drawable/corner_background"
+    android:gravity="center"
+    android:padding="@dimen/card_margin"
+    android:textSize="18sp" />
