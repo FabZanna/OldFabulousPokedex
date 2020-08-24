@@ -9,7 +9,7 @@ class FilterViewPagerAdapter(
     private val onTypeFilterClicked: (String) -> Unit
 ) :
     FragmentStateAdapter(fragment) {
-    override fun getItemCount(): Int = 3
+    override fun getItemCount(): Int = 2
 
     override fun createFragment(position: Int): Fragment {
         when (position) {

@@ -2,6 +2,7 @@ package com.fabulouszanna.pokedex.ui.filters
 
 import android.content.Context
 import android.graphics.Color
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
@@ -11,6 +12,7 @@ import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.utilities.inflate
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
 import kotlinx.android.synthetic.main.generation_filter_card.view.*
+import java.util.*
 
 data class PokemonGenFilter(
     val url1: String,
@@ -47,12 +49,18 @@ class GenerationFilterAdapter(
             }
             list.add(
                 PokemonGenFilter(
-                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${firstGenerationPokemon.toString()
-                        .padStart(3, '0')}.png",
-                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${(firstGenerationPokemon + 3).toString()
-                        .padStart(3, '0')}.png",
-                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${(firstGenerationPokemon + 6).toString()
-                        .padStart(3, '0')}.png",
+                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${
+                        firstGenerationPokemon.toString()
+                            .padStart(3, '0')
+                    }.png",
+                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${
+                        (firstGenerationPokemon + 3).toString()
+                            .padStart(3, '0')
+                    }.png",
+                    "https://assets.pokemon.com/assets/cms2/img/pokedex/full/${
+                        (firstGenerationPokemon + 6).toString()
+                            .padStart(3, '0')
+                    }.png",
                     "Generation $i",
                     tag = i - 1
                 )
@@ -72,15 +80,18 @@ class GenerationFilterAdapter(
         val selectedColor = ContextCompat.getColor(context, R.color.colorAccent)
         holder.bind(generationFilter)
 
-        val card = holder.itemView as CardView
+        val card = holder.itemView.filterCard as CardView
         if (selectedPosition == position) {
             if (generationFilter.isSelected) {
                 card.setCardBackgroundColor(selectedColor)
+                holder.itemView.selectedFilter.visibility = View.VISIBLE
             } else {
                 card.setCardBackgroundColor(Color.WHITE)
+                holder.itemView.selectedFilter.visibility = View.INVISIBLE
             }
         } else {
             card.setCardBackgroundColor(Color.WHITE)
+            holder.itemView.selectedFilter.visibility = View.INVISIBLE
         }
     }
 
@@ -100,12 +111,18 @@ class GenerationFilterAdapter(
 
             itemView.rootView.setOnClickListener {
                 generationList.forEach {
-                    if (it.tag == model.tag) model.isSelected =
-                        !model.isSelected else it.isSelected = false
+                    if (it.tag == model.tag) it.isSelected =
+                        !it.isSelected
+                    else it.isSelected = false
                 }
-                selectedPosition = model.tag
 
-                val filter = if (generationList.all { !it.isSelected }) "all" else model.generation
+                selectedPosition = model.tag
+                Log.d("POKEMON", generationList.joinToString { it.isSelected.toString() })
+                val filter =
+                    if (generationList.all { !it.isSelected }) "all" else model.generation.take(3)
+                        .toLowerCase(
+                            Locale.ROOT
+                        ) + model.generation.takeLast(1)
                 onGenFilterClicked(filter)
                 notifyDataSetChanged()
             }

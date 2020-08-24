@@ -4,9 +4,10 @@ import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
 import android.view.*
+import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.Toast
-import androidx.core.content.getSystemService
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
@@ -18,13 +19,11 @@ import com.fabulouszanna.pokedex.ui.filters.FilterDialog
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
 import kotlinx.android.synthetic.main.pokemon_list.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.util.*
 
 class PokemonListFragment : Fragment() {
     private val viewModel: PokemonViewModel by viewModel()
     private lateinit var binding: PokemonListBinding
-    private var currentGenFilter = "all"
-    private var currentTypeFilter = "all"
+    private var fabClicked = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,12 +38,13 @@ class PokemonListFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.pokemon_search_menu, menu)
-        val searchManager = requireActivity().getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        val searchManager =
+            requireActivity().getSystemService(Context.SEARCH_SERVICE) as SearchManager
         val searchView = menu.findItem(R.id.searchPokemon).actionView as SearchView
         searchView.apply {
             setSearchableInfo(searchManager.getSearchableInfo(requireActivity().componentName))
             isIconifiedByDefault = false
-            setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextChange(name: String?): Boolean {
                     searchByName(name)
                     return true
@@ -86,19 +86,32 @@ class PokemonListFragment : Fragment() {
                 state.pokemons.isEmpty() -> {
                     binding.emptyRecyclerView.visibility = View.VISIBLE
                 }
+                else -> binding.emptyRecyclerView.visibility = View.GONE
             }
         }
-        binding.emptyRecyclerView.visibility = View.GONE
+
 
         filter_fab.setOnClickListener {
-            navToFilters()
+            fabClicked = !fabClicked
+            onFabClicked()
+        }
+    }
+
+    private fun onFabClicked() {
+        filter_fab.apply {
+            if (fabClicked) {
+                navToFilters()
+                setImageResource(R.drawable.ic_cancel)
+            } else {
+                viewModel.filtered("", "all", "all")
+                setImageResource(R.drawable.ic_filter)
+            }
         }
     }
 
     private fun navToFilters() {
         FilterDialog(
-            onGenFilterClicked = ::onGenFilterClicked,
-            onTypeFilterClicked = ::onTypeFilterClicked
+            onFilterClicked = ::onFilterClicked
         )
             .show(requireActivity().supportFragmentManager, "")
     }
@@ -109,15 +122,7 @@ class PokemonListFragment : Fragment() {
         }
     }
 
-    private fun onGenFilterClicked(gen: String) {
-        val generation =
-            if (gen != "all") gen.take(3).toLowerCase(Locale.ROOT) + gen.takeLast(1) else gen
-        currentGenFilter = generation
-        viewModel.filtered("", generation, currentTypeFilter)
-    }
-
-    private fun onTypeFilterClicked(type: String) {
-        currentTypeFilter = type
-        viewModel.filtered("", currentGenFilter, type)
+    private fun onFilterClicked(gen: String, type: String) {
+        viewModel.filtered("", gen, type)
     }
 }

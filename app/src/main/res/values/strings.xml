@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Pokédex2.0</string>
-    <string name="empty_recyclerview">placeholder text</string>
+    <string name="empty_recyclerview">No Pokémon match your search!</string>
     <string name="searchbar_hint">Search Pokémon Name</string>
+    <string name="submit">Submit</string>
 
     <string-array name="types">
         <item>Bug</item>
