@@ -1,4 +1,4 @@
-package com.fabulouszanna.pokedex.ui.pokemon
+package com.fabulouszanna.pokedex.ui.pokemonlist
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -6,7 +6,6 @@ import com.fabulouszanna.pokedex.databinding.PokemonCardBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
-import java.util.*
 
 class PokemonRowHolder(
     private val binding: PokemonCardBinding,
@@ -14,11 +13,7 @@ class PokemonRowHolder(
 ) :
     RecyclerView.ViewHolder(binding.root) {
     fun bind(model: PokemonModel) {
-        val pokemonColorFromType = extractColorResourceFromType(
-            binding.root.context, model.type1.toLowerCase(
-                Locale.ROOT
-            )
-        )
+        val pokemonColorFromType = extractColorResourceFromType(binding.root.context, model.type1)
 
         binding.apply {
             pokemonName.text = model.name

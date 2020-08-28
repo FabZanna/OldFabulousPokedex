@@ -13,7 +13,9 @@ data class PokemonEntity(
     val img_url: String,
     val type1: String,
     val type2: String? = null,
-    val gen: String
+    val gen: String,
+    val is_variation: Boolean,
+    val species: String
 ) {
     constructor(model: PokemonModel) : this(
         name = model.name,
@@ -21,7 +23,9 @@ data class PokemonEntity(
         img_url = model.imgUrl,
         type1 = model.type1,
         type2 = model.type2,
-        gen = model.gen
+        gen = model.gen,
+        is_variation = model.isVariation,
+        species = model.species
     )
 
     fun toModel(): PokemonModel {
@@ -31,13 +35,15 @@ data class PokemonEntity(
             imgUrl = img_url,
             type1 = type1,
             type2 = type2,
-            gen = gen
+            gen = gen,
+            isVariation = is_variation,
+            species = species
         )
     }
 
     @Dao
     interface PokemonDAO {
-        @Query("SELECT * FROM pokemon_table ORDER BY pokemon_id")
+        @Query("SELECT * FROM pokemon_table WHERE NOT is_variation")
         fun all(): Flow<List<PokemonEntity>>
 
         @Query("SELECT * FROM pokemon_table WHERE pokemon_name LIKE '%' || :pokemonName || '%'")
@@ -51,6 +57,9 @@ data class PokemonEntity(
 
         @Query("SELECT * FROM pokemon_table WHERE gen = :gen AND (type1 = :type OR type2 = :type)")
         fun filtered(gen: String, type: String): Flow<List<PokemonEntity>>
+
+        @Query("SELECT * FROM pokemon_table WHERE pokemon_id = :pokemonId AND NOT is_variation")
+        fun findPokemon(pokemonId: String): Flow<PokemonEntity>
 
         @Insert(onConflict = OnConflictStrategy.IGNORE)
         suspend fun addAll(entities: List<PokemonEntity>)

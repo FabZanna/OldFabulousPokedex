@@ -4,12 +4,14 @@ import android.app.Application
 import com.fabulouszanna.pokedex.repo.PokemonDatabase
 import com.fabulouszanna.pokedex.repo.PokemonRepository
 import com.fabulouszanna.pokedex.repo.PokemonViewModel
+import com.fabulouszanna.pokedex.repo.SinglePokemonViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
+import org.koin.core.logger.Level
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
@@ -25,13 +27,14 @@ class PokemonApp : Application() {
         single(named("appScope")) { CoroutineScope(SupervisorJob()) }
 
         viewModel { PokemonViewModel(get()) }
+        viewModel { (pokemonId: String) -> SinglePokemonViewModel(get(), pokemonId) }
     }
 
     override fun onCreate() {
         super.onCreate()
 
         startKoin {
-            androidLogger()
+            androidLogger(Level.ERROR)
             androidContext(this@PokemonApp)
             modules(koinModule)
         }

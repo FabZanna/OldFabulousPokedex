@@ -11,7 +11,6 @@ import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.inflate
 import kotlinx.android.synthetic.main.type_filter_card.view.*
-import java.util.*
 
 class TypeFilterAdapter(
     private val context: Context,
@@ -55,9 +54,7 @@ class TypeFilterAdapter(
     ) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(type: String, position: Int) {
-            val pokemonColorFromType = extractColorResourceFromType(
-                context, type.toLowerCase(Locale.ROOT)
-            )
+            val pokemonColorFromType = extractColorResourceFromType(context, type)
             itemView.type.text = type
             itemView.type.background.setColorFilter(pokemonColorFromType, PorterDuff.Mode.SRC_IN)
             itemView.type.setOnClickListener {

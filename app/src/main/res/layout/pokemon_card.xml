@@ -27,33 +27,29 @@
         <TextView
             android:id="@+id/pokemonType1"
             style="@style/CustomTextView"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@drawable/type_background"
-            android:gravity="center"
             android:paddingStart="12dp"
             android:paddingTop="4dp"
             android:paddingEnd="12dp"
             android:paddingBottom="4dp"
-            app:layout_constraintEnd_toStartOf="@id/pokemonImg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pokemonName" />
 
         <TextView
             android:id="@+id/pokemonType2"
             style="@style/CustomTextView"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@drawable/type_background"
-            android:gravity="center"
             android:paddingStart="12dp"
             android:paddingTop="4dp"
             android:paddingEnd="12dp"
             android:paddingBottom="4dp"
             android:visibility="gone"
-            app:layout_constraintEnd_toStartOf="@id/pokemonImg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pokemonType1" />
 

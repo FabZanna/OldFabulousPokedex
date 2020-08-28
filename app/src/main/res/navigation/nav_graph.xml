@@ -6,6 +6,18 @@
 
     <fragment
         android:id="@+id/pokemonListFragment"
-        android:name="com.fabulouszanna.pokedex.ui.pokemon.PokemonListFragment"
-        android:label="PokemonListFragment" />
+        android:name="com.fabulouszanna.pokedex.ui.pokemonlist.PokemonListFragment"
+        android:label="PokemonListFragment">
+        <action
+            android:id="@+id/displayPokemonDetails"
+            app:destination="@id/pokemonDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonDetails"
+        android:name="com.fabulouszanna.pokedex.ui.pokemondetails.PokemonDetails"
+        android:label="PokemonDetails">
+        <argument
+            android:name="pokemonId"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -117,7 +117,6 @@ class GenerationFilterAdapter(
                 }
 
                 selectedPosition = model.tag
-                Log.d("POKEMON", generationList.joinToString { it.isSelected.toString() })
                 val filter =
                     if (generationList.all { !it.isSelected }) "all" else model.generation.take(3)
                         .toLowerCase(

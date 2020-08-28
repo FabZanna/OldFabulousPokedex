@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FFC107</color>
     <color name="whiteTransparent">#4DFFFFFF</color>
+    <color name="blackFume">#757A80</color>
 
     <!-- TYPES COLORS -->
     <color name="bug">#83901a</color>

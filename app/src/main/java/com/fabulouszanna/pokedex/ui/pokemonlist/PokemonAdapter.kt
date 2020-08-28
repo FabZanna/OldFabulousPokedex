@@ -1,4 +1,4 @@
-package com.fabulouszanna.pokedex.ui.pokemon
+package com.fabulouszanna.pokedex.ui.pokemonlist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -6,5 +6,7 @@ data class PokemonModel (
     val imgUrl: String,
     val type1: String,
     val type2: String? = null,
-    val gen: String
+    val gen: String,
+    val isVariation: Boolean,
+    val species: String
 )

@@ -2,6 +2,7 @@ package com.fabulouszanna.pokedex.repo
 
 import com.fabulouszanna.pokedex.model.PokemonModel
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.map
 
 class PokemonRepository(
@@ -27,4 +28,6 @@ class PokemonRepository(
             pokemonDAO.filtered(gen, type)
         }
     }
+
+    fun findPokemon(pokemonId: String): Flow<PokemonModel> = pokemonDAO.findPokemon(pokemonId).map { it.toModel() }
 }
