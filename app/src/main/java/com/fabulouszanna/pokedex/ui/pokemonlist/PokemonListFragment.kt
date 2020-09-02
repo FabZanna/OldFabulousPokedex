@@ -3,8 +3,10 @@ package com.fabulouszanna.pokedex.ui.pokemonlist
 import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.widget.SearchView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
@@ -16,6 +18,7 @@ import com.fabulouszanna.pokedex.model.PokemonModel
 import com.fabulouszanna.pokedex.repo.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.filters.FilterDialog
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
+import com.fabulouszanna.pokedex.utilities.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_pokemon_list.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -79,6 +82,7 @@ class PokemonListFragment : Fragment() {
 
         viewModel.pokemons.observe(viewLifecycleOwner) { state ->
             adapter.submitList(state.pokemons)
+            binding.loadingProgressBar.visibility = View.GONE
 
             when {
                 state.pokemons.isEmpty() -> {
@@ -109,6 +113,7 @@ class PokemonListFragment : Fragment() {
 
     private fun displayPokemon(model: PokemonModel) {
         findNavController().navigate(PokemonListFragmentDirections.displayPokemonDetails(model.id))
+        hideKeyboard(requireContext(), binding.root)
     }
 
     private fun navToFilters() {

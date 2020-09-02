@@ -19,5 +19,13 @@
         <argument
             android:name="pokemonId"
             app:argType="string" />
+        <action
+            android:id="@+id/calculateStats"
+            app:destination="@id/statsCalculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsCalculator"
+        android:name="com.fabulouszanna.pokedex.ui.pokemondetails.basestats.StatsCalculator"
+        android:label="StatsCalculator">
     </fragment>
 </navigation>

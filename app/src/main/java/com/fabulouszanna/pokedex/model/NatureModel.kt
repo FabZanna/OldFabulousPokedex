@@ -1,0 +1,61 @@
+package com.fabulouszanna.pokedex.model
+
+object NatureModel {
+    fun getIncreasedStat(nature: String) = when (nature) {
+        "Adamant" -> "Attack"
+        "Bashful" -> "Sp.Atk"
+        "Bold" -> "Defense"
+        "Brave" -> "Attack"
+        "Calm" -> "Sp.Def"
+        "Careful" -> "Sp.Def"
+        "Docile" -> "Defense"
+        "Gentle" -> "Sp.Def"
+        "Hardy" -> "Attack"
+        "Hasty" -> "Speed"
+        "Impish" -> "Defense"
+        "Jolly" -> "Speed"
+        "Lax" -> "Defense"
+        "Lonely" -> "Attack"
+        "Mild" -> "Sp.Atk"
+        "Modest" -> "Sp.Atk"
+        "Naive" -> "Speed"
+        "Naughty" -> "Attack"
+        "Quiet" -> "Sp.Atk"
+        "Quirky" -> "Sp.Def"
+        "Rash" -> "Sp.Atk"
+        "Relaxed" -> "Defense"
+        "Sassy" -> "Sp.Def"
+        "Serious" -> "Speed"
+        "Timid" -> "Speed"
+        else -> throw IllegalArgumentException("Nature $nature does not exist")
+    }
+
+    fun getDecreasedStat(nature: String) = when (nature) {
+        "Adamant" -> "Sp.Atk"
+        "Bashful" -> "Sp.Atk"
+        "Bold" -> "Attack"
+        "Brave" -> "Speed"
+        "Calm" -> "Attack"
+        "Careful" -> "Sp.Atk"
+        "Docile" -> "Defense"
+        "Gentle" -> "Defense"
+        "Hardy" -> "Attack"
+        "Hasty" -> "Defense"
+        "Impish" -> "Sp.Atk"
+        "Jolly" -> "Sp.Atk"
+        "Lax" -> "Sp.Def"
+        "Lonely" -> "Defense"
+        "Mild" -> "Defense"
+        "Modest" -> "Attack"
+        "Naive" -> "Sp.Def"
+        "Naughty" -> "Sp.Def"
+        "Quiet" -> "Speed"
+        "Quirky" -> "Sp.Def"
+        "Rash" -> "Sp.Def"
+        "Relaxed" -> "Speed"
+        "Sassy" -> "Speed"
+        "Serious" -> "Speed"
+        "Timid" -> "Attack"
+        else -> throw IllegalArgumentException("Nature $nature does not exist")
+    }
+}

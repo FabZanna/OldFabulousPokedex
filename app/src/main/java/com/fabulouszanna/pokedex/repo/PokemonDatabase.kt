@@ -5,7 +5,9 @@ import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.fabulouszanna.pokedex.utilities.Converters
 import com.fabulouszanna.pokedex.utilities.JSONParser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -13,7 +15,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-@Database(entities = [PokemonEntity::class], version = 2)
+@Database(entities = [PokemonEntity::class], version = 1)
+@TypeConverters(Converters::class)
 abstract class PokemonDatabase : RoomDatabase() {
     abstract fun pokemonDao(): PokemonEntity.PokemonDAO
 
@@ -41,7 +44,6 @@ abstract class PokemonDatabase : RoomDatabase() {
 
         suspend fun populateDatabase(database: PokemonDatabase?) {
             val json = JSONParser(context).extractJsonData("pkm_info.json")
-            Log.d("POKEMON", json.toString())
             database?.let {
                 withContext(Dispatchers.IO) {
                     val pokemonDao = it.pokemonDao()

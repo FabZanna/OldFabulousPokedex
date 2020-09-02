@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/weakness_background"
+    android:orientation="horizontal"
+
+    android:backgroundTint="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/weaknessResistanceType"
+        style="@style/CustomTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:text="Fire"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weaknessResistanceIntensity"
+        style="@style/CustomTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="X 2"
+        android:textSize="18sp" />
+
+</LinearLayout>

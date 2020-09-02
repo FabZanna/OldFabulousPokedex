@@ -3,6 +3,16 @@
     <string name="empty_recyclerview">No Pokémon match your search!</string>
     <string name="searchbar_hint">Search Pokémon Name</string>
     <string name="submit">Submit</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="breeding">Breeding</string>
+    <string name="gender">Gender</string>
+    <string name="genderless">Genderless</string>
+    <string name="abilities">Abilities</string>
+    <string name="weak_to">Weak to</string>
+    <string name="resistant_to">Resistant to</string>
+    <string name="immune_to">Immune to</string>
+    <string name="hidden">Hidden</string>
 
     <string-array name="types">
         <item>Bug</item>
@@ -23,5 +33,42 @@
         <item>Rock</item>
         <item>Steel</item>
         <item>Water</item>
+    </string-array>
+
+    <string-array name="stats">
+        <item>HP</item>
+        <item>Attack</item>
+        <item>Defense</item>
+        <item>Sp.Atk</item>
+        <item>Sp.Def</item>
+        <item>Speed</item>
+    </string-array>
+
+    <string-array name="natures">
+        <item>Adamant</item>,
+        <item>Bashful</item>,
+        <item>Bold</item>,
+        <item>Brave</item>,
+        <item>Calm</item>,
+        <item>Careful</item>,
+        <item>Docile</item>,
+        <item>Gentle</item>,
+        <item>Hardy</item>,
+        <item>Hasty</item>,
+        <item>Impish</item>,
+        <item>Jolly</item>,
+        <item>Lax</item>,
+        <item>Lonely</item>,
+        <item>Mild</item>,
+        <item>Modest</item>,
+        <item>Naive</item>,
+        <item>Naughty</item>,
+        <item>Quiet</item>,
+        <item>Quirky</item>,
+        <item>Rash</item>,
+        <item>Relaxed</item>,
+        <item>Sassy</item>,
+        <item>Serious</item>,
+        <item>Timid</item>
     </string-array>
 </resources>
