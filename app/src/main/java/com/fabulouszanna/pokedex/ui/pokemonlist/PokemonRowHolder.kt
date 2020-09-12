@@ -20,7 +20,7 @@ class PokemonRowHolder(
             pokemonType1.text = model.type1
             pokemonType2.text = model.type2
             pokemonType2.visibility = if (model.type2 != null) View.VISIBLE else View.GONE
-            pokemonCard.setOnClickListener { _ -> onCardClicked(model) }
+            pokemonCard.setOnClickListener { onCardClicked(model) }
 
             setPokemonSprite(binding.root.context, model.imgUrl, binding.pokemonImg)
 

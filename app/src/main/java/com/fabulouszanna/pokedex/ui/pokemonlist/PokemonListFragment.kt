@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonListBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.repo.PokemonViewModel
+import com.fabulouszanna.pokedex.repo.pokemon.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.filters.FilterDialog
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
 import com.fabulouszanna.pokedex.utilities.hideKeyboard
@@ -32,6 +32,11 @@ class PokemonListFragment : Fragment() {
         setHasOptionsMenu(true)
     }
 
+    override fun onResume() {
+        super.onResume()
+        (requireActivity() as AppCompatActivity).supportActionBar?.show()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -46,7 +51,7 @@ class PokemonListFragment : Fragment() {
         val searchView = menu.findItem(R.id.searchPokemon).actionView as SearchView
         searchView.apply {
             setSearchableInfo(searchManager.getSearchableInfo(requireActivity().componentName))
-            isIconifiedByDefault = false
+            isIconified = false
             setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextChange(name: String?): Boolean {
                     searchByName(name)

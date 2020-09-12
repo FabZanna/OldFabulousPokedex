@@ -22,8 +22,8 @@ class PokemonAdapter(
 
 private object DiffCallback : DiffUtil.ItemCallback<PokemonModel>() {
     override fun areItemsTheSame(oldItem: PokemonModel, newItem: PokemonModel): Boolean =
-        oldItem.id == newItem.id && oldItem.name == newItem.name
+        oldItem.id == newItem.id
 
     override fun areContentsTheSame(oldItem: PokemonModel, newItem: PokemonModel): Boolean =
-        oldItem.id == newItem.id && oldItem.name == newItem.name
+        oldItem.id == newItem.id
 }

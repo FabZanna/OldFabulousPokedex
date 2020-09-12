@@ -13,6 +13,10 @@
     <string name="resistant_to">Resistant to</string>
     <string name="immune_to">Immune to</string>
     <string name="hidden">Hidden</string>
+    <string name="game_description">Game Description</string>
+    <string name="ability_effect">Ability Effect</string>
+    <string name="nature">Nature</string>
+    <string name="level">Level</string>
 
     <string-array name="types">
         <item>Bug</item>

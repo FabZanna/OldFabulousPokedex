@@ -1,6 +1,9 @@
 package com.fabulouszanna.pokedex.ui.pokemondetails
 
+import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonDetailsBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.repo.SinglePokemonViewModel
+import com.fabulouszanna.pokedex.repo.pokemon.SinglePokemonViewModel
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
 import com.google.android.material.tabs.TabLayoutMediator
@@ -23,21 +26,12 @@ import org.koin.core.parameter.parametersOf
 class PokemonDetails : Fragment() {
     private lateinit var binding: FragmentPokemonDetailsBinding
     private val args: PokemonDetailsArgs by navArgs()
-    private val pokemonViewModel: SinglePokemonViewModel by viewModel { parametersOf(args.pokemonId) }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
-    }
+    private val pokemonViewModel: SinglePokemonViewModel by viewModel { parametersOf(args.id) }
+    private var pokemonColor: Int = 0
 
     override fun onResume() {
         super.onResume()
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        (requireActivity() as AppCompatActivity).supportActionBar?.show()
     }
 
     override fun onCreateView(
@@ -49,31 +43,47 @@ class PokemonDetails : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         pokemonViewModel.pokemon.observe(viewLifecycleOwner) { state ->
             state.pokemon.let { pokemon ->
+                pokemonColor = extractColorResourceFromType(requireContext(), pokemon.type1)
                 populateUpperView(pokemon)
                 setupViewPager(pokemon)
             }
         }
 
-        spinPokeball()
+        spinPokeBall()
+    }
+
+    private fun onPopStackBack() {
+        Handler(Looper.getMainLooper()).postDelayed({
+            if (binding.viewPager.currentItem != 1) {
+                binding.viewPager.currentItem = 1
+            }
+        }, 260)
     }
 
     private fun setupViewPager(pokemon: PokemonModel) {
-        val viewPagerAdapter = PokemonDetailsViewPagerAdapter(this, pokemon)
-        viewPager.apply {
-            adapter = viewPagerAdapter
-        }
-
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = when (position) {
-                0 -> "About"
-                1 -> "Base Stats"
-                else -> position.toString()
+        val viewPagerAdapter =
+            PokemonDetailsViewPagerAdapter(this, pokemon, onPopBackStack = ::onPopStackBack)
+        binding.apply {
+            viewPager.apply {
+                adapter = viewPagerAdapter
             }
-        }.attach()
+
+            TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+                tab.text = when (position) {
+                    0 -> "About"
+                    1 -> "Base Stats"
+                    2 -> "Evolution"
+                    3 -> "Moves"
+                    else -> position.toString()
+                }
+            }.attach()
+
+            tabLayout.setSelectedTabIndicatorColor(pokemonColor)
+            tabLayout.setTabTextColors(Color.DKGRAY, pokemonColor)
+        }
     }
 
     private fun populateUpperView(pokemon: PokemonModel) {
-        val pokemonColor = extractColorResourceFromType(requireContext(), pokemon.type1)
         binding.apply {
             pokemonName.text = pokemon.name
             pokemonType1.text = pokemon.type1
@@ -81,7 +91,7 @@ class PokemonDetails : Fragment() {
                 pokemonType2.text = it
                 pokemonType2.visibility = View.VISIBLE
             }
-            pokemonId.text = pokemon.id
+            pokemonId.text = pokemon.pokemonId
             pokemonSpecies.text = pokemon.species
             setPokemonSprite(requireContext(), pokemon.imgUrl, pokemonImg)
 
@@ -89,7 +99,7 @@ class PokemonDetails : Fragment() {
         }
     }
 
-    private fun spinPokeball() {
+    private fun spinPokeBall() {
         val rotate = RotateAnimation(
             0f,
             360f,

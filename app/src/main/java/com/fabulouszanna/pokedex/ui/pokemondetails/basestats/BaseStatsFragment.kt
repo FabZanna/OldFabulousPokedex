@@ -20,14 +20,19 @@ import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.databinding.FragmentBaseStatsBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
 import com.fabulouszanna.pokedex.pokemontypes.PokemonWeaknesses
+import com.fabulouszanna.pokedex.ui.ability.AbilityFragment
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.toPx
 import kotlinx.android.synthetic.main.fragment_base_stats.*
 
-class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
+class BaseStatsFragment(
+    private val pokemon: PokemonModel,
+    private val onPopBackStack: () -> Unit
+) : Fragment() {
     private lateinit var binding: FragmentBaseStatsBinding
     private val pokemonBaseStats = mutableMapOf<String, Int>()
+    private var pokemonColor: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +41,7 @@ class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
     ) = FragmentBaseStatsBinding.inflate(inflater, container, false).also { binding = it }.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        pokemonColor = extractColorResourceFromType(requireContext(), pokemon.type1)
         populateStats()
         populateAbilities()
         populateWeaknesses()
@@ -52,17 +58,19 @@ class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
                 val statName = container.getChildAt(0) as TextView
                 val statValueTextView = container.getChildAt(1) as TextView
                 val statValueProgressBar = container.getChildAt(2) as ProgressBar
+                statValueProgressBar.progressTintList = ColorStateList.valueOf(pokemonColor)
                 val statValue = if (currentStats == null) {
                     when (index) {
-                        0 -> pokemon.hp
-                        1 -> pokemon.attack
-                        2 -> pokemon.defense
-                        3 -> pokemon.specialAtk
-                        4 -> pokemon.specialDef
-                        5 -> pokemon.speed
+                        0 -> pokemon.stats?.hp
+                        1 -> pokemon.stats?.attack
+                        2 -> pokemon.stats?.defense
+                        3 -> pokemon.stats?.specialAtk
+                        4 -> pokemon.stats?.specialDef
+                        5 -> pokemon.stats?.speed
                         else -> throw IllegalArgumentException("Stat with index $index does not exist")
                     }
                 } else {
+                    // Stats have been passed from the calculator
                     currentStats.maxByOrNull { it.value }?.value?.let {
                         statValueProgressBar.max = it
                     }
@@ -70,12 +78,12 @@ class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
                 }
 
                 if (currentStats == null) {
-                    pokemonBaseStats[stat] = statValue.toInt()
+                    pokemonBaseStats[stat] = statValue!!.toInt()
                 }
 
                 statName.text = stat
                 statValueTextView.text = statValue
-                statValueProgressBar.progress = statValue.toInt()
+                statValueProgressBar.progress = statValue!!.toInt()
 
                 // total += statValue.toInt()
             }
@@ -85,37 +93,47 @@ class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
         }
     }
 
-    private fun View.applyStroke(color: Int) {
+    private fun View.applyStroke() {
         val gradientDrawable = GradientDrawable().apply {
             setColor(Color.WHITE)
             cornerRadius = 8.toPx().toFloat()
-            setStroke(2.toPx(), color)
+            setStroke(2.toPx(), pokemonColor)
         }
         this.background = gradientDrawable
     }
 
     private fun populateAbilities() {
-        val color = extractColorResourceFromType(requireContext(), pokemon.type1)
+        // val color = extractColorResourceFromType(requireContext(), pokemon.type1)
         val abilities = pokemon.abilities
         binding.apply {
             abilities[0].let { ability ->
                 ability1.text = ability
-                ability1.applyStroke(color)
+                ability1.applyStroke()
+                ability1.setOnClickListener { abilityDetails(ability) }
             }
             abilities.getOrNull(1)?.let { ability ->
                 ability2.visibility = View.VISIBLE
                 ability2.text = ability
-                ability2.applyStroke(color)
+                ability2.applyStroke()
+                ability2.setOnClickListener { abilityDetails(ability) }
             }
             pokemon.hiddenAbility?.let { ability ->
                 val background = hiddenAbility.getChildAt(0)
                 val hiddenAbilityTextView = hiddenAbility.getChildAt(1) as TextView
-                background.backgroundTintList = ColorStateList.valueOf(color)
+                background.backgroundTintList = ColorStateList.valueOf(pokemonColor)
                 hiddenAbilityTextView.text = ability
                 hiddenAbility.visibility = View.VISIBLE
-                hiddenAbility.applyStroke(color)
+                hiddenAbility.applyStroke()
+                hiddenAbility.setOnClickListener { abilityDetails(ability) }
             }
         }
+    }
+
+    private fun abilityDetails(abilityName: String) {
+        AbilityFragment(abilityName, pokemonColor).show(
+            requireActivity().supportFragmentManager,
+            ""
+        )
     }
 
     private fun populateWeaknesses() {
@@ -164,10 +182,14 @@ class BaseStatsFragment(private val pokemon: PokemonModel) : Fragment() {
 
     private fun wireNavigation() {
         binding.apply {
+            calculateStats.backgroundTintList = ColorStateList.valueOf(pokemonColor)
             calculateStats.setOnClickListener {
-                val bundle = bundleOf("pokemonStats" to pokemonBaseStats)
+                val bundle = bundleOf(
+                    "pokemonStats" to pokemonBaseStats,
+                    "pokemonColor" to pokemonColor,
+                    "popBack" to onPopBackStack
+                )
                 findNavController().navigate(R.id.calculateStats, bundle)
-                // findNavController().navigate(PokemonDetailsDirections.calculateStats())
             }
         }
     }

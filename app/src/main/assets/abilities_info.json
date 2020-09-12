@@ -1,0 +1,4546 @@
+[
+  {
+    "name": "Adaptability",
+    "effect": "Adaptability increases the effectiveness of STAB moves from the usual 1.5\u00d7 to 2\u00d7.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up moves of the same type as the Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#133",
+      "#474",
+      "#550"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#341",
+      "#342",
+      "#349",
+      "#690",
+      "#691",
+      "#734",
+      "#735"
+    ]
+  },
+  {
+    "name": "Aerilate",
+    "effect": "Aerilate causes all Normal-type attacking moves used by the Pok\u00e9mon to become Flying-type, and increase in power by 20%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Normal-type moves become Flying-type moves. The power of those moves is boosted a little.",
+    "pokemon_with_ability": []
+  },
+  {
+    "name": "Aftermath",
+    "effect": "If an attacker faints a Pok\u00e9mon with Aftermath using a contact move, the attacker will lose 1\u20444 of their maximum HP.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Damages the attacker if it contacts the Pok\u00e9mon with a finishing hit.",
+    "pokemon_with_ability": [
+      "#425",
+      "#426",
+      "#434",
+      "#435"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#100",
+      "#101",
+      "#568",
+      "#569"
+    ]
+  },
+  {
+    "name": "Air Lock",
+    "effect": "Air Lock suppresses all effects brought on by weather, including move power increases, end-of-turn damage, accuracy changes, relevant abilities and so on.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Eliminates the effects of weather.",
+    "pokemon_with_ability": [
+      "#384"
+    ]
+  },
+  {
+    "name": "Analytic",
+    "effect": "Boosts move power when the Pok\u00e9mon moves last.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts move power when the Pok\u00e9mon moves last.",
+    "pokemon_with_hidden_ability": [
+      "#081",
+      "#082",
+      "#120",
+      "#121",
+      "#137",
+      "#233",
+      "#462",
+      "#474",
+      "#504",
+      "#505",
+      "#605",
+      "#606"
+    ]
+  },
+  {
+    "name": "Anger Point",
+    "effect": "Anger Point raises the ability-bearer's Attack to its maximum level - +6 stages or 4\u00d7 usual power - when a move targeting it receives a critical hit.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is angered when it takes a critical hit, and that maxes its Attack stat.",
+    "pokemon_with_ability": [
+      "#056",
+      "#057",
+      "#128"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#323",
+      "#551",
+      "#552",
+      "#553",
+      "#739",
+      "#740"
+    ]
+  },
+  {
+    "name": "Anticipation",
+    "effect": "A Pok\u00e9mon with Anticipation will shudder upon entering battle, if an opponent has a move that is super-effective against it, or a One-Hit-KO move (Fissure, Horn Drill, Guillotine or Sheer Cold). It only activates when the ability-bearer switches in, not when an opponent switches in.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can sense an opposing Pok\u00e9mon\u2019s dangerous moves.",
+    "pokemon_with_ability": [
+      "#339",
+      "#340",
+      "#413",
+      "#453",
+      "#454",
+      "#856",
+      "#857",
+      "#858"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#077",
+      "#078",
+      "#133",
+      "#597",
+      "#598"
+    ]
+  },
+  {
+    "name": "Arena Trap",
+    "effect": "Arena Trap prevents opponents from fleeing or switching out. Raised Pok\u00e9mon are not affected.",
+    "outside_of_battle": "If a Pok\u00e9mon with Arena Trap is the leading party Pok\u00e9mon, wild Pok\u00e9mon are twice as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents opposing Pok\u00e9mon from fleeing.",
+    "pokemon_with_ability": [
+      "#050",
+      "#051",
+      "#328"
+    ]
+  },
+  {
+    "name": "Aroma Veil",
+    "effect": "Protects allies from attacks that limit their move choices.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects itself and its allies from attacks that limit their move choices.",
+    "pokemon_with_hidden_ability": [
+      "#682",
+      "#683",
+      "#868",
+      "#869"
+    ]
+  },
+  {
+    "name": "Aura Break",
+    "effect": "Aura Break cancels the effects of the abilities Fairy Aura and Dark Aura and instead reduces the power of Dark-type and Fairy-type moves by 25%, for all Pok\u00e9mon on the field.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The effects of \u201cAura\u201d Abilities are reversed to lower the power of affected moves.",
+    "pokemon_with_ability": [
+      "#718"
+    ]
+  },
+  {
+    "name": "Bad Dreams",
+    "effect": "Bad Dreams causes all sleeping opponents to lose 1\u20448 of their maximum HP at the end of each turn.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the HP of sleeping opposing Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#491"
+    ]
+  },
+  {
+    "name": "Ball Fetch",
+    "effect": "If the Pok\u00e9mon is not holding an item, it will fetch the Pok\u00e9 Ball from the first failed throw of the battle.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "If the Pok\u00e9mon is not holding an item, it will fetch the Pok\u00e9 Ball from the first failed throw of the battle.",
+    "pokemon_with_ability": [
+      "#835"
+    ]
+  },
+  {
+    "name": "Battery",
+    "effect": "Battery allows the Pok\u00e9mon to raise the power of teammates' special moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up ally Pok\u00e9mon\u2019s special moves.",
+    "pokemon_with_ability": [
+      "#737"
+    ]
+  },
+  {
+    "name": "Battle Armor",
+    "effect": "Battle Armor prevents the Pok\u00e9mon from receiving a critical hit.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Hard armor protects the Pok\u00e9mon from critical hits.",
+    "pokemon_with_ability": [
+      "#140",
+      "#141",
+      "#347",
+      "#348",
+      "#451",
+      "#452",
+      "#772",
+      "#863",
+      "#870"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#104",
+      "#105"
+    ]
+  },
+  {
+    "name": "Battle Bond",
+    "effect": "Battle Bond causes Greninja to transform into Ash-Greninja when it KOs an opponent.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Defeating an opposing Pok\u00e9mon strengthens the Pok\u00e9mon\u2019s bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful.",
+    "pokemon_with_ability": [
+      "#658"
+    ]
+  },
+  {
+    "name": "Beast Boost",
+    "effect": "The Pok\u00e9mon boosts its most proficient stat each time it knocks out a Pok\u00e9mon.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon boosts its most proficient stat each time it knocks out a Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#793",
+      "#794",
+      "#795",
+      "#796",
+      "#797",
+      "#798",
+      "#799",
+      "#803",
+      "#804",
+      "#805",
+      "#806"
+    ]
+  },
+  {
+    "name": "Berserk",
+    "effect": "Berserk raises the Pok\u00e9mon's Special Attack by one stage when its HP falls below 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Sp. Atk stat when it takes a hit that causes its HP to become half or less.",
+    "pokemon_with_ability": [
+      "#780"
+    ]
+  },
+  {
+    "name": "Big Pecks",
+    "effect": "Big Pecks prevents the ability-bearer's Defense stat from being lowered, for example via Tail Whip.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects the Pok\u00e9mon from Defense-lowering effects.",
+    "pokemon_with_ability": [
+      "#519",
+      "#520",
+      "#521",
+      "#580",
+      "#581",
+      "#629",
+      "#630",
+      "#661"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#016",
+      "#017",
+      "#018",
+      "#441",
+      "#821",
+      "#822"
+    ]
+  },
+  {
+    "name": "Blaze",
+    "effect": "Blaze increases the power of Fire-type moves by 50% (1.5\u00d7) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up Fire-type moves when the Pok\u00e9mon\u2019s HP is low.",
+    "pokemon_with_ability": [
+      "#004",
+      "#005",
+      "#006",
+      "#155",
+      "#156",
+      "#157",
+      "#255",
+      "#256",
+      "#257",
+      "#390",
+      "#391",
+      "#392",
+      "#498",
+      "#499",
+      "#500",
+      "#653",
+      "#654",
+      "#655",
+      "#725",
+      "#726",
+      "#727",
+      "#813",
+      "#814",
+      "#815"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#513",
+      "#514"
+    ]
+  },
+  {
+    "name": "Bulletproof",
+    "effect": "Bulletproof makes the Pok\u00e9mon immune to ball and bomb moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects the Pok\u00e9mon from some ball and bomb moves.",
+    "pokemon_with_ability": [
+      "#782",
+      "#783",
+      "#784"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#650",
+      "#651",
+      "#652",
+      "#831",
+      "#832",
+      "#840"
+    ]
+  },
+  {
+    "name": "Cheek Pouch",
+    "effect": "Cheek Pouch restores the bearer's HP when a Berry is consumed, on top of the berry's usual effects.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores HP as well when the Pok\u00e9mon eats a Berry.",
+    "pokemon_with_ability": [
+      "#659",
+      "#660",
+      "#702",
+      "#819",
+      "#820"
+    ]
+  },
+  {
+    "name": "Chlorophyll",
+    "effect": "Chlorophyll doubles the ability-bearer's Speed during bright sunshine.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Speed stat in harsh sunlight.",
+    "pokemon_with_ability": [
+      "#043",
+      "#044",
+      "#045",
+      "#069",
+      "#070",
+      "#071",
+      "#102",
+      "#103",
+      "#114",
+      "#182",
+      "#187",
+      "#188",
+      "#189",
+      "#191",
+      "#192",
+      "#273",
+      "#274",
+      "#275",
+      "#357",
+      "#420",
+      "#465",
+      "#540",
+      "#541",
+      "#542",
+      "#548",
+      "#549",
+      "#556",
+      "#585",
+      "#586"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#001",
+      "#002",
+      "#003",
+      "#470",
+      "#546",
+      "#547"
+    ]
+  },
+  {
+    "name": "Clear Body",
+    "effect": "Prevents other Pok\u00e9mon from lowering its stats.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents other Pok\u00e9mon\u2019s moves or Abilities from lowering the Pok\u00e9mon\u2019s stats.",
+    "pokemon_with_ability": [
+      "#072",
+      "#073",
+      "#374",
+      "#375",
+      "#376",
+      "#377",
+      "#378",
+      "#379",
+      "#703",
+      "#719",
+      "#885",
+      "#886",
+      "#887"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#599",
+      "#600",
+      "#601"
+    ]
+  },
+  {
+    "name": "Cloud Nine",
+    "effect": "Cloud Nine suppresses all effects brought on by weather, including move power increases, end-of-turn damage, accuracy changes, relevant abilities and so on.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Eliminates the effects of weather.",
+    "pokemon_with_ability": [
+      "#054",
+      "#055"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#108",
+      "#333",
+      "#334",
+      "#463",
+      "#780"
+    ]
+  },
+  {
+    "name": "Color Change",
+    "effect": "Color Change changes the ability-bearer's type, when hit by a damage dealing move, to the type of that move. For example being hit by X Scissor will change the Pok\u00e9mon to Bug-type. Dual-type Pok\u00e9mon change to single-types.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s type becomes the type of the move used on it.",
+    "pokemon_with_ability": [
+      "#352"
+    ]
+  },
+  {
+    "name": "Comatose",
+    "effect": "Comatose causes the Pok\u00e9mon to behave as if it were asleep, though it doesn't officially have the Sleep status condition. It can still use its regular moves, but cannot be inflicted with any major status condition (sleep, poison, paralysis, burn, or freeze).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "It\u2019s always drowsing and will never wake up. It can attack without waking up.",
+    "pokemon_with_ability": [
+      "#775"
+    ]
+  },
+  {
+    "name": "Competitive",
+    "effect": "Competitive raises the ability-bearer's Special Attack when a stat-lowering move is targeted at it.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Sp. Atk stat sharply when a stat is lowered.",
+    "pokemon_with_ability": [
+      "#039",
+      "#040",
+      "#174",
+      "#350",
+      "#574",
+      "#575",
+      "#576"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#678",
+      "#836"
+    ]
+  },
+  {
+    "name": "Compound Eyes",
+    "effect": "Compound Eyes raises the ability-bearer's accuracy by 30%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s compound eyes boost its accuracy.",
+    "pokemon_with_ability": [
+      "#012",
+      "#048",
+      "#193",
+      "#290",
+      "#595",
+      "#596",
+      "#664",
+      "#666",
+      "#824",
+      "#825"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#269"
+    ]
+  },
+  {
+    "name": "Contrary",
+    "effect": "Makes stat changes have an opposite effect.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Makes stat changes have an opposite effect.",
+    "pokemon_with_ability": [
+      "#686",
+      "#687"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#213",
+      "#327",
+      "#495",
+      "#496",
+      "#497",
+      "#753",
+      "#754"
+    ]
+  },
+  {
+    "name": "Corrosion",
+    "effect": "Corrosion allows the bearer to poison any Pok\u00e9mon, including Steel and Poison types.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can poison the target even if it\u2019s a Steel or Poison type.",
+    "pokemon_with_ability": [
+      "#757",
+      "#758"
+    ]
+  },
+  {
+    "name": "Cotton Down",
+    "effect": "When a Pok\u00e9mon with Cotton Down is hit by an attack, it lowers the attacker's Speed.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When the Pok\u00e9mon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pok\u00e9mon except itself.",
+    "pokemon_with_ability": [
+      "#829",
+      "#830"
+    ]
+  },
+  {
+    "name": "Cursed Body",
+    "effect": "May disable a move used on the Pok\u00e9mon.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "May disable a move used on the Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#094",
+      "#105",
+      "#592",
+      "#593"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#222",
+      "#353",
+      "#354",
+      "#478",
+      "#854",
+      "#855",
+      "#885",
+      "#886",
+      "#887"
+    ]
+  },
+  {
+    "name": "Cute Charm",
+    "effect": "If a Pok\u00e9mon with Cute Charm is hit by a move that makes contact, there is a 30% chance the attacker will become infatuated. It will not infatuate Pok\u00e9mon of the same gender, genderless Pok\u00e9mon, nor those with the ability Oblivious.",
+    "outside_of_battle": "If a Pok\u00e9mon with Cute Charm is the leading party Pok\u00e9mon, the chance of encountering a Pok\u00e9mon of the opposite gender is 2\u20443.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon may cause infatuation.",
+    "pokemon_with_ability": [
+      "#035",
+      "#036",
+      "#039",
+      "#040",
+      "#173",
+      "#174",
+      "#300",
+      "#301",
+      "#428",
+      "#572",
+      "#573",
+      "#700"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#350",
+      "#759"
+    ]
+  },
+  {
+    "name": "Damp",
+    "effect": "Damp prevents all Pok\u00e9mon on the field from using the moves Selfdestruct and Explosion. It also prevents damage (to the Damp Pok\u00e9mon only) from the ability Aftermath.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents the use of explosive moves, such as Self-Destruct, by dampening its surroundings.",
+    "pokemon_with_ability": [
+      "#054",
+      "#055",
+      "#060",
+      "#061",
+      "#062",
+      "#186",
+      "#194",
+      "#195"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#046",
+      "#047",
+      "#116",
+      "#117",
+      "#230",
+      "#258",
+      "#259",
+      "#260",
+      "#592",
+      "#593"
+    ]
+  },
+  {
+    "name": "Dancer",
+    "effect": "When another Pok\u00e9mon on the field uses any Dance move, Dancer causes the ability-bearer to use that same move immediately afterward. They will still use their own move originally selected, at the usual time (e.g. after the opponent if they are slower).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When another Pok\u00e9mon uses a dance move, it can use a dance move following it regardless of its Speed.",
+    "pokemon_with_ability": [
+      "#741"
+    ]
+  },
+  {
+    "name": "Dark Aura",
+    "effect": "Dark Aura raises the power of Dark-type moves by 33% for all Pok\u00e9mon on the field (not just the ability-bearer).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up each Pok\u00e9mon\u2019s Dark-type moves.",
+    "pokemon_with_ability": [
+      "#717"
+    ]
+  },
+  {
+    "name": "Dauntless Shield",
+    "effect": "Boosts Defense in battle.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Defense stat when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#889"
+    ]
+  },
+  {
+    "name": "Dazzling",
+    "effect": "Dazzling makes the Pok\u00e9mon immune to high-priority moves (i.e. those with a priority above 0).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Surprises the opposing Pok\u00e9mon, making it unable to attack using priority moves.",
+    "pokemon_with_ability": [
+      "#779"
+    ]
+  },
+  {
+    "name": "Defeatist",
+    "effect": "When the HP of a Pok\u00e9mon with Defeatist falls below 50%, its Attack and Special Attack stats are halved.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Halves the Pok\u00e9mon\u2019s Attack and Sp. Atk stats when its HP becomes half or less.",
+    "pokemon_with_ability": [
+      "#566",
+      "#567"
+    ]
+  },
+  {
+    "name": "Defiant",
+    "effect": "When its stats are lowered its Attack increases.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Attack stat sharply when its stats are lowered.",
+    "pokemon_with_ability": [
+      "#624",
+      "#625"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#056",
+      "#057",
+      "#083",
+      "#393",
+      "#394",
+      "#395",
+      "#432",
+      "#628",
+      "#641",
+      "#642",
+      "#766",
+      "#862",
+      "#870"
+    ]
+  },
+  {
+    "name": "Delta Stream",
+    "effect": "Delta Stream creates strong winds when the ability is activated (by Rayquaza Mega-Evolving).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon changes the weather to eliminate all of the Flying type\u2019s weaknesses.",
+    "pokemon_with_ability": []
+  },
+  {
+    "name": "Desolate Land",
+    "effect": "Desolate Land creates extremely harsh sunlight when the ability is activated (by Groudon reverting to its Primal form).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon changes the weather to nullify Water-type attacks.",
+    "pokemon_with_ability": [
+      "#383"
+    ]
+  },
+  {
+    "name": "Disguise",
+    "effect": "Disguise allows the bearer to avoid damage for one attack, in a similar way to Substitute.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Once per battle, the shroud that covers the Pok\u00e9mon can protect it from an attack.",
+    "pokemon_with_ability": [
+      "#778"
+    ]
+  },
+  {
+    "name": "Download",
+    "effect": "Download raises either the bearer's Attack or Special Attack by one stage when switching into battle, base on the opponent's defenses.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Compares an opposing Pok\u00e9mon\u2019s Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat\u2014whichever will be more effective.",
+    "pokemon_with_ability": [
+      "#137",
+      "#233",
+      "#474",
+      "#649"
+    ]
+  },
+  {
+    "name": "Drizzle",
+    "effect": "Drizzle creates a rain shower when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon makes it rain when it enters a battle.",
+    "pokemon_with_ability": [
+      "#279",
+      "#382"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#186"
+    ]
+  },
+  {
+    "name": "Drought",
+    "effect": "Drought creates harsh sunlight when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Turns the sunlight harsh when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#324",
+      "#383"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#037",
+      "#038"
+    ]
+  },
+  {
+    "name": "Dry Skin",
+    "effect": "Dry Skin causes several effects:",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores HP in rain or when hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves.",
+    "pokemon_with_ability": [
+      "#046",
+      "#047",
+      "#453",
+      "#454",
+      "#694",
+      "#695"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#124"
+    ]
+  },
+  {
+    "name": "Early Bird",
+    "effect": "The Pok\u00e9mon awakens quickly from sleep.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon awakens from sleep twice as fast as other Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#084",
+      "#085",
+      "#115",
+      "#165",
+      "#166",
+      "#177",
+      "#178",
+      "#203",
+      "#228",
+      "#229",
+      "#273",
+      "#274",
+      "#275"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#191",
+      "#192"
+    ]
+  },
+  {
+    "name": "Effect Spore",
+    "effect": "Contact may poison or cause paralysis or sleep.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon may inflict poison, sleep, or paralysis on its attacker.",
+    "pokemon_with_ability": [
+      "#046",
+      "#047",
+      "#285",
+      "#286",
+      "#590",
+      "#591",
+      "#755",
+      "#756"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#045",
+      "#829",
+      "#830"
+    ]
+  },
+  {
+    "name": "Electric Surge",
+    "effect": "Electric Surge creates a low-lying electric field, like the move Electric Terrain, when the Pok\u00e9mon enters battle. It prevents grounded Pok\u00e9mon from falling asleep, and increases the power of Electric type attacks.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Turns the ground into Electric Terrain when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#785"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#871"
+    ]
+  },
+  {
+    "name": "Emergency Exit",
+    "effect": "Switches out when HP falls below 50%.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon, sensing danger, switches out when its HP becomes half or less.",
+    "pokemon_with_ability": [
+      "#768"
+    ]
+  },
+  {
+    "name": "Fairy Aura",
+    "effect": "Fairy Aura raises the power of Fairy-type moves by 33%, for all Pok\u00e9mon on the field (not just the ability-bearer).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up each Pok\u00e9mon\u2019s Fairy-type moves.",
+    "pokemon_with_ability": [
+      "#716"
+    ]
+  },
+  {
+    "name": "Filter",
+    "effect": "Filter reduces the damage taken from super-effective attacks by 25%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the power of supereffective attacks taken.",
+    "pokemon_with_ability": [
+      "#122",
+      "#439"
+    ]
+  },
+  {
+    "name": "Flame Body",
+    "effect": "If a Pok\u00e9mon with Flame Body is hit by a move that makes contact, there is a 30% chance the attacker will become burned.",
+    "outside_of_battle": "If a Pok\u00e9mon with Flame Body (or Magma Armor) and a Pok\u00e9mon Egg are both in the party Pok\u00e9mon, the number of steps required to hatch the egg are halved.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon may burn the attacker.",
+    "pokemon_with_ability": [
+      "#126",
+      "#218",
+      "#219",
+      "#240",
+      "#467",
+      "#607",
+      "#608",
+      "#609",
+      "#636",
+      "#637",
+      "#662",
+      "#663",
+      "#838",
+      "#839"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#077",
+      "#078",
+      "#146",
+      "#485",
+      "#850",
+      "#851"
+    ]
+  },
+  {
+    "name": "Flare Boost",
+    "effect": "Powers up special attacks when burned.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up special attacks when the Pok\u00e9mon is burned.",
+    "pokemon_with_hidden_ability": [
+      "#425",
+      "#426"
+    ]
+  },
+  {
+    "name": "Flash Fire",
+    "effect": "When a Pok\u00e9mon with Flash Fire is hit by a Fire-type move, it does not deal damage but instead raises the power of the bearer's Fire-type moves by 50%. Subsequent hits do not raise the power even more, but the effect remains while the ability-bearer is in battle.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up the Pok\u00e9mon\u2019s Fire-type moves if it\u2019s hit by one.",
+    "pokemon_with_ability": [
+      "#037",
+      "#038",
+      "#058",
+      "#059",
+      "#077",
+      "#078",
+      "#136",
+      "#228",
+      "#229",
+      "#485",
+      "#607",
+      "#608",
+      "#609",
+      "#631",
+      "#850",
+      "#851"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#155",
+      "#156",
+      "#157",
+      "#837",
+      "#838",
+      "#839"
+    ]
+  },
+  {
+    "name": "Flower Gift",
+    "effect": "Flower Gift raises the Attack and Special Defense of all party Pok\u00e9mon by 50% during harsh sunlight.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Attack and Sp. Def stats of itself and allies in harsh sunlight.",
+    "pokemon_with_ability": [
+      "#421"
+    ]
+  },
+  {
+    "name": "Flower Veil",
+    "effect": "Flower Veil prevents ally Grass-type Pok\u00e9mon's stats from being lowered, in double and triple battles.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Ally Grass-type Pok\u00e9mon are protected from status conditions and the lowering of their stats.",
+    "pokemon_with_ability": [
+      "#669",
+      "#670",
+      "#671",
+      "#764"
+    ]
+  },
+  {
+    "name": "Fluffy",
+    "effect": "Fluffy reduces damage from contact moves by 50%, but Fire-type moves do double damage. Fire-type moves that make contact do regular damage.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves.",
+    "pokemon_with_ability": [
+      "#759",
+      "#760",
+      "#831",
+      "#832"
+    ]
+  },
+  {
+    "name": "Forecast",
+    "effect": "Castform transforms with the weather.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon transforms with the weather to change its type to Water, Fire, or Ice.",
+    "pokemon_with_ability": [
+      "#351"
+    ]
+  },
+  {
+    "name": "Forewarn",
+    "effect": "Determines what moves a foe has.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When it enters a battle, the Pok\u00e9mon can tell one of the moves an opposing Pok\u00e9mon has.",
+    "pokemon_with_ability": [
+      "#096",
+      "#097",
+      "#124",
+      "#238",
+      "#517",
+      "#518"
+    ]
+  },
+  {
+    "name": "Friend Guard",
+    "effect": "Reduces damage done to allies.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces damage done to allies.",
+    "pokemon_with_hidden_ability": [
+      "#035",
+      "#039",
+      "#173",
+      "#174",
+      "#440",
+      "#664",
+      "#665",
+      "#666"
+    ]
+  },
+  {
+    "name": "Frisk",
+    "effect": "The Pok\u00e9mon can check a foe's held item.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When it enters a battle, the Pok\u00e9mon can check an opposing Pok\u00e9mon\u2019s held item.",
+    "pokemon_with_ability": [
+      "#103",
+      "#234",
+      "#353",
+      "#354",
+      "#574",
+      "#575",
+      "#576",
+      "#708",
+      "#709",
+      "#710",
+      "#711",
+      "#714",
+      "#715",
+      "#826",
+      "#859",
+      "#860",
+      "#861"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#040",
+      "#161",
+      "#162",
+      "#193",
+      "#355",
+      "#356",
+      "#469",
+      "#477"
+    ]
+  },
+  {
+    "name": "Full Metal Body",
+    "effect": "Prevents other Pok\u00e9mon from lowering its stats.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents other Pok\u00e9mon\u2019s moves or Abilities from lowering the Pok\u00e9mon\u2019s stats.",
+    "pokemon_with_ability": [
+      "#791"
+    ]
+  },
+  {
+    "name": "Fur Coat",
+    "effect": "Fur Coat reduces damage taken from physical attacks by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Halves the damage from physical moves.",
+    "pokemon_with_ability": [
+      "#053",
+      "#676"
+    ]
+  },
+  {
+    "name": "Gale Wings",
+    "effect": "Gives priority to Flying-type moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Gives priority to Flying-type moves when the Pok\u00e9mon\u2019s HP is full.",
+    "pokemon_with_hidden_ability": [
+      "#661",
+      "#662",
+      "#663"
+    ]
+  },
+  {
+    "name": "Galvanize",
+    "effect": "Normal-type moves become Electric-type moves and their power boosted.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Normal-type moves become Electric-type moves. The power of those moves is boosted a little.",
+    "pokemon_with_hidden_ability": [
+      "#074",
+      "#075",
+      "#076"
+    ]
+  },
+  {
+    "name": "Gluttony",
+    "effect": "A Pok\u00e9mon with Gluttony will use a pinch berry when its HP drops to 50%, rather than the usual 25%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Makes the Pok\u00e9mon eat a held Berry when its HP drops to half or less, which is sooner than usual.",
+    "pokemon_with_ability": [
+      "#019",
+      "#020",
+      "#079",
+      "#088",
+      "#089",
+      "#213",
+      "#263",
+      "#264",
+      "#511",
+      "#512",
+      "#513",
+      "#514",
+      "#515",
+      "#516",
+      "#631",
+      "#840",
+      "#841",
+      "#842"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#069",
+      "#070",
+      "#071",
+      "#143",
+      "#316",
+      "#317",
+      "#325",
+      "#326",
+      "#446",
+      "#819",
+      "#820"
+    ]
+  },
+  {
+    "name": "Gooey",
+    "effect": "Contact with the Pok\u00e9mon lowers the attacker's Speed stat.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon lowers the attacker\u2019s Speed stat.",
+    "pokemon_with_hidden_ability": [
+      "#704",
+      "#705",
+      "#706"
+    ]
+  },
+  {
+    "name": "Gorilla Tactics",
+    "effect": "Boosts the Pok\u00e9mon's Attack stat but only allows the use of the first selected move.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Attack stat but only allows the use of the first selected move.",
+    "pokemon_with_ability": [
+      "#555"
+    ]
+  },
+  {
+    "name": "Grass Pelt",
+    "effect": "Boosts the Defense stat in Grassy Terrain.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Defense stat on Grassy Terrain.",
+    "pokemon_with_hidden_ability": [
+      "#672",
+      "#673"
+    ]
+  },
+  {
+    "name": "Grassy Surge",
+    "effect": "Grassy Surge creates a low-lying grassy field, like the move Grassy Terrain, when the Pok\u00e9mon enters battle. It restores the HP of grounded Pok\u00e9mon each turn and increases the power of Grass type attacks.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Turns the ground into Grassy Terrain when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#787"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#810",
+      "#811",
+      "#812"
+    ]
+  },
+  {
+    "name": "Gulp Missile",
+    "effect": "Gulp Missile is the signature ability of Cramorant. If Cramorant uses the move Surf or Dive, it returns with a fish in its mouth. If Cramorant then takes damage, it retaliates by spitting out the fish, dealing extra damage.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When the Pok\u00e9mon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack.",
+    "pokemon_with_ability": [
+      "#845"
+    ]
+  },
+  {
+    "name": "Guts",
+    "effect": "Guts raises the ability-bearer's Attack by 50% when inflicted by a major status ailment (poison, burn, paralysis, freeze or sleep). If burnt, the Pok\u00e9mon does not suffer the usual drop in Attack.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "It\u2019s so gutsy that having a status condition boosts the Pok\u00e9mon\u2019s Attack stat.",
+    "pokemon_with_ability": [
+      "#019",
+      "#020",
+      "#066",
+      "#067",
+      "#068",
+      "#214",
+      "#217",
+      "#236",
+      "#246",
+      "#276",
+      "#277",
+      "#296",
+      "#297",
+      "#532",
+      "#533",
+      "#534",
+      "#538",
+      "#862"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#136",
+      "#403",
+      "#404",
+      "#405"
+    ]
+  },
+  {
+    "name": "Harvest",
+    "effect": "May create another Berry after one is used.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "May create another Berry after one is used.",
+    "pokemon_with_hidden_ability": [
+      "#102",
+      "#103",
+      "#357",
+      "#708",
+      "#709"
+    ]
+  },
+  {
+    "name": "Healer",
+    "effect": "May heal an ally's status conditions.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Sometimes heals an ally\u2019s status condition.",
+    "pokemon_with_ability": [
+      "#531",
+      "#594",
+      "#682",
+      "#683",
+      "#856",
+      "#857",
+      "#858"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#113",
+      "#182",
+      "#242"
+    ]
+  },
+  {
+    "name": "Heatproof",
+    "effect": "Heatproof reduces the damage taken from Fire-type moves by 50%. It also halves the damage from a burn, from 1\u20448 to 1\u204416 of the Pok\u00e9mon's maximum HP.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The heatproof body of the Pok\u00e9mon halves the damage from Fire-type moves that hit it.",
+    "pokemon_with_ability": [
+      "#436",
+      "#437",
+      "#837"
+    ]
+  },
+  {
+    "name": "Heavy Metal",
+    "effect": "Heavy Metal doubles the Pok\u00e9mon's weight in battle. Increasing weight affects these moves:",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Doubles the Pok\u00e9mon\u2019s weight.",
+    "pokemon_with_ability": [
+      "#884"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#304",
+      "#305",
+      "#306",
+      "#436",
+      "#437",
+      "#878",
+      "#879"
+    ]
+  },
+  {
+    "name": "Honey Gather",
+    "effect": "Honey Gather has no effect in battle.",
+    "outside_of_battle": "When a battle ends, any party Pok\u00e9mon with Honey Gather may pick up honey as a held item (if they are not already holding an item).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon may gather Honey after a battle.",
+    "pokemon_with_ability": [
+      "#415",
+      "#742",
+      "#743"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#216"
+    ]
+  },
+  {
+    "name": "Huge Power",
+    "effect": "Raises the Pok\u00e9mon's Attack stat.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Doubles the Pok\u00e9mon\u2019s Attack stat.",
+    "pokemon_with_ability": [
+      "#183",
+      "#184",
+      "#298"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#659",
+      "#660"
+    ]
+  },
+  {
+    "name": "Hunger Switch",
+    "effect": "Hunger Switch causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode. Morpeko's form also changes the type of its signature move, Aura Wheel.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn.",
+    "pokemon_with_ability": [
+      "#877"
+    ]
+  },
+  {
+    "name": "Hustle",
+    "effect": "Hustle increases the ability-bearer's Attack by 50%, however, it also reduces the Accuracy of all Physical moves by 20%.",
+    "outside_of_battle": "If a Pok\u00e9mon with Hustle is the leading party Pok\u00e9mon, wild Pok\u00e9mon are 50% more likely to be higher level.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Attack stat, but lowers accuracy.",
+    "pokemon_with_ability": [
+      "#019",
+      "#020",
+      "#175",
+      "#176",
+      "#222",
+      "#223",
+      "#225",
+      "#468",
+      "#554",
+      "#632",
+      "#633",
+      "#634",
+      "#880"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#019",
+      "#020",
+      "#029",
+      "#030",
+      "#032",
+      "#033",
+      "#415",
+      "#627",
+      "#841"
+    ]
+  },
+  {
+    "name": "Hydration",
+    "effect": "A Pok\u00e9mon with Hydration will cure itself of any status conditions during rain, at the end of each turn. This includes self-inflicted conditions such as from using Rest.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Heals status conditions if it\u2019s raining.",
+    "pokemon_with_ability": [
+      "#086",
+      "#087",
+      "#278",
+      "#489",
+      "#490",
+      "#535",
+      "#536",
+      "#594",
+      "#616",
+      "#617",
+      "#704",
+      "#705",
+      "#706"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#131",
+      "#134",
+      "#238",
+      "#339",
+      "#340",
+      "#368",
+      "#370",
+      "#580",
+      "#581"
+    ]
+  },
+  {
+    "name": "Hyper Cutter",
+    "effect": "Hyper Cutter prevents the bearer's Attack stat from being lowered by other Pok\u00e9mon, through moves such as Growl or abilities such as Intimidate.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s proud of its powerful pincers. They prevent other Pok\u00e9mon from lowering its Attack stat.",
+    "pokemon_with_ability": [
+      "#098",
+      "#099",
+      "#127",
+      "#207",
+      "#303",
+      "#328",
+      "#341",
+      "#342",
+      "#472",
+      "#739",
+      "#740"
+    ]
+  },
+  {
+    "name": "Ice Body",
+    "effect": "A Pok\u00e9mon with Ice Body will recover 1\u204416 of its maximum HP during hail, after each turn. It also grants immunity to the hailstorm damage, if not already immune.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon gradually regains HP in a hailstorm.",
+    "pokemon_with_ability": [
+      "#361",
+      "#362",
+      "#363",
+      "#364",
+      "#365",
+      "#582",
+      "#583",
+      "#584",
+      "#712",
+      "#713",
+      "#883"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#086",
+      "#087",
+      "#122",
+      "#378",
+      "#471",
+      "#866"
+    ]
+  },
+  {
+    "name": "Ice Face",
+    "effect": "Ice Face is the signature ability of Eiscue. It allows the Pok\u00e9mon to take a physical attack without taking damage. After the attack, Eiscue changes to its No Ice Face form, however, it can be restored in hail.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s ice head can take a physical attack as a substitute, but the attack also changes the Pok\u00e9mon\u2019s appearance. The ice will be restored when it hails.",
+    "pokemon_with_ability": [
+      "#875"
+    ]
+  },
+  {
+    "name": "Ice Scales",
+    "effect": "Halves damage from Special moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is protected by ice scales, which halve the damage taken from special moves.",
+    "pokemon_with_hidden_ability": [
+      "#872",
+      "#873"
+    ]
+  },
+  {
+    "name": "Illuminate",
+    "effect": "Illuminate has no effect in battle.",
+    "outside_of_battle": "If a Pok\u00e9mon with Illuminate is the leading party Pok\u00e9mon, wild Pok\u00e9mon are twice as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Raises the likelihood of meeting wild Pok\u00e9mon by illuminating the surroundings.",
+    "pokemon_with_ability": [
+      "#120",
+      "#121",
+      "#170",
+      "#171",
+      "#313",
+      "#505",
+      "#755",
+      "#756"
+    ]
+  },
+  {
+    "name": "Illusion",
+    "effect": "When a Pok\u00e9mon with the Illusion ability switches into battle, it takes the form of the Pok\u00e9mon in last place (6th) of the player's party. Illusion will not activate if the Pok\u00e9mon in last place is the same species or is fainted.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Comes out disguised as the Pok\u00e9mon in the party\u2019s last spot.",
+    "pokemon_with_ability": [
+      "#570",
+      "#571"
+    ]
+  },
+  {
+    "name": "Immunity",
+    "effect": "Prevents the Pok\u00e9mon from getting poisoned.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The immune system of the Pok\u00e9mon prevents it from getting poisoned.",
+    "pokemon_with_ability": [
+      "#143",
+      "#335"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#207"
+    ]
+  },
+  {
+    "name": "Imposter",
+    "effect": "It transforms itself into the Pok\u00e9mon it is facing.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon transforms itself into the Pok\u00e9mon it\u2019s facing.",
+    "pokemon_with_hidden_ability": [
+      "#132"
+    ]
+  },
+  {
+    "name": "Infiltrator",
+    "effect": "Infiltrator ignores the effects of Reflect, Light Screen and Safeguard. In other words, if the opponent has used Safeguard, Toxic would still badly poison them.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Passes through the opposing Pok\u00e9mon\u2019s barrier, substitute, and the like and strikes.",
+    "pokemon_with_ability": [
+      "#546",
+      "#547",
+      "#677",
+      "#678",
+      "#714",
+      "#715",
+      "#885",
+      "#886",
+      "#887"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#041",
+      "#042",
+      "#169",
+      "#187",
+      "#188",
+      "#189",
+      "#291",
+      "#336",
+      "#442",
+      "#607",
+      "#608",
+      "#609",
+      "#686",
+      "#687"
+    ]
+  },
+  {
+    "name": "Innards Out",
+    "effect": "When a Pok\u00e9mon with Innards Out faints, it deals damage to the opponent equal to amount of damage it took on the final blow.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Damages the attacker landing the finishing hit by the amount equal to its last HP.",
+    "pokemon_with_ability": [
+      "#771"
+    ]
+  },
+  {
+    "name": "Inner Focus",
+    "effect": "Inner Focus prevents the Pok\u00e9mon from flinching, for example when attacked by a move like Headbutt.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s intensely focused, and that protects the Pok\u00e9mon from flinching.",
+    "pokemon_with_ability": [
+      "#041",
+      "#042",
+      "#063",
+      "#064",
+      "#065",
+      "#083",
+      "#149",
+      "#169",
+      "#203",
+      "#215",
+      "#361",
+      "#362",
+      "#447",
+      "#448",
+      "#538",
+      "#539",
+      "#619",
+      "#620",
+      "#624",
+      "#625",
+      "#765",
+      "#876",
+      "#???"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#096",
+      "#097",
+      "#107",
+      "#115",
+      "#197",
+      "#243",
+      "#244",
+      "#245",
+      "#554",
+      "#749",
+      "#750"
+    ]
+  },
+  {
+    "name": "Insomnia",
+    "effect": "Insomnia prevents the ability-bearer from falling asleep, both from moves by other Pok\u00e9mon like Sing, and self-inflicted sleep like Rest.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is suffering from insomnia and cannot fall asleep.",
+    "pokemon_with_ability": [
+      "#096",
+      "#097",
+      "#163",
+      "#164",
+      "#167",
+      "#168",
+      "#198",
+      "#353",
+      "#354",
+      "#430"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#225",
+      "#710",
+      "#711"
+    ]
+  },
+  {
+    "name": "Intimidate",
+    "effect": "Intimidate lower's the Attack of all opponents by one stage when the ability-bearer switches in (including the start of a battle).",
+    "outside_of_battle": "If a Pok\u00e9mon with Intimidate is the leading party Pok\u00e9mon, wild Pok\u00e9mon are 50% less likely to be lower level.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon intimidates opposing Pok\u00e9mon upon entering battle, lowering their Attack stat.",
+    "pokemon_with_ability": [
+      "#023",
+      "#024",
+      "#058",
+      "#059",
+      "#128",
+      "#130",
+      "#209",
+      "#210",
+      "#234",
+      "#237",
+      "#262",
+      "#284",
+      "#303",
+      "#373",
+      "#397",
+      "#398",
+      "#403",
+      "#404",
+      "#405",
+      "#507",
+      "#508",
+      "#551",
+      "#552",
+      "#553",
+      "#645"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#211",
+      "#559",
+      "#560",
+      "#725",
+      "#726",
+      "#727"
+    ]
+  },
+  {
+    "name": "Intrepid Sword",
+    "effect": "Boosts Attack in battle.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Attack stat when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#888"
+    ]
+  },
+  {
+    "name": "Iron Barbs",
+    "effect": "When a Pok\u00e9mon with Iron Barbs is hit by a move that makes contact, the attacker receives damage equal to 1\u20448 of their maximum HP.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Inflicts damage on the attacker upon contact with iron barbs.",
+    "pokemon_with_ability": [
+      "#597",
+      "#598",
+      "#777"
+    ]
+  },
+  {
+    "name": "Iron Fist",
+    "effect": "Iron Fist increases the power of all punching moves by 20%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up punching moves.",
+    "pokemon_with_ability": [
+      "#107",
+      "#622",
+      "#623",
+      "#674",
+      "#675",
+      "#739",
+      "#740",
+      "#809"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#166",
+      "#390",
+      "#391",
+      "#392",
+      "#532",
+      "#533",
+      "#534"
+    ]
+  },
+  {
+    "name": "Justified",
+    "effect": "Justified raises the ability-bearer's Attack by one stage when hit by a damaging Dark-type move.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Being hit by a Dark-type move boosts the Attack stat of the Pok\u00e9mon, for justice.",
+    "pokemon_with_ability": [
+      "#638",
+      "#639",
+      "#640",
+      "#647"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#058",
+      "#059",
+      "#359",
+      "#448",
+      "#475"
+    ]
+  },
+  {
+    "name": "Keen Eye",
+    "effect": "Keen Eye prevents the Pok\u00e9mon from losing accuracy, for example from moves like Sand-Attack.",
+    "outside_of_battle": "If a Pok\u00e9mon with Keen Eye is the leading party Pok\u00e9mon, wild Pok\u00e9mon are 50% less likely to be lower level.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Keen eyes prevent other Pok\u00e9mon from lowering this Pok\u00e9mon\u2019s accuracy.",
+    "pokemon_with_ability": [
+      "#016",
+      "#017",
+      "#018",
+      "#021",
+      "#022",
+      "#083",
+      "#107",
+      "#161",
+      "#162",
+      "#163",
+      "#164",
+      "#215",
+      "#227",
+      "#278",
+      "#279",
+      "#302",
+      "#396",
+      "#441",
+      "#504",
+      "#505",
+      "#580",
+      "#581",
+      "#627",
+      "#628",
+      "#677",
+      "#678",
+      "#731",
+      "#732",
+      "#733",
+      "#744",
+      "#745",
+      "#821",
+      "#822"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#431",
+      "#434",
+      "#435",
+      "#451",
+      "#452"
+    ]
+  },
+  {
+    "name": "Klutz",
+    "effect": "The Pok\u00e9mon can't use any held items.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can\u2019t use any held items.",
+    "pokemon_with_ability": [
+      "#427",
+      "#428",
+      "#527",
+      "#528",
+      "#622",
+      "#623",
+      "#759",
+      "#760"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#531",
+      "#848"
+    ]
+  },
+  {
+    "name": "Leaf Guard",
+    "effect": "Leaf Guard prevents the bearer from succumbing to major status ailments (sleep, burns, poisoning, paralysis or freezing) during sunny weather.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents status conditions in harsh sunlight.",
+    "pokemon_with_ability": [
+      "#114",
+      "#187",
+      "#188",
+      "#189",
+      "#465",
+      "#470",
+      "#541",
+      "#753",
+      "#754",
+      "#761",
+      "#762",
+      "#763"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#152",
+      "#153",
+      "#154",
+      "#315",
+      "#406",
+      "#548",
+      "#549"
+    ]
+  },
+  {
+    "name": "Levitate",
+    "effect": "Levitate causes the Pok\u00e9mon to be raised (like Flying-type Pok\u00e9mon).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "By floating in the air, the Pok\u00e9mon receives full immunity to all Ground-type moves.",
+    "pokemon_with_ability": [
+      "#092",
+      "#093",
+      "#109",
+      "#110",
+      "#200",
+      "#201",
+      "#329",
+      "#330",
+      "#337",
+      "#338",
+      "#343",
+      "#344",
+      "#355",
+      "#358",
+      "#380",
+      "#381",
+      "#429",
+      "#433",
+      "#436",
+      "#437",
+      "#455",
+      "#479",
+      "#480",
+      "#481",
+      "#482",
+      "#487",
+      "#488",
+      "#602",
+      "#603",
+      "#604",
+      "#615",
+      "#635",
+      "#738"
+    ]
+  },
+  {
+    "name": "Libero",
+    "effect": "Libero changes the Pok\u00e9mon's type to that of its previously used attack.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s type to the type of the move it\u2019s about to use.",
+    "pokemon_with_hidden_ability": [
+      "#813",
+      "#814",
+      "#815"
+    ]
+  },
+  {
+    "name": "Light Metal",
+    "effect": "Light Metal halves the Pok\u00e9mon's weight in battle. Decreasing weight affects these moves:",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Halves the Pok\u00e9mon\u2019s weight.",
+    "pokemon_with_ability": [
+      "#884"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#212",
+      "#374",
+      "#375",
+      "#376",
+      "#379"
+    ]
+  },
+  {
+    "name": "Lightning Rod",
+    "effect": "Lightning Rod forces all single-target Electric-type moves - used by any other Pok\u00e9mon on the field - to target this Pok\u00e9mon, and with 100% accuracy. This includes the status move Thunder Wave. The ability is most useful in double/triple battles.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon draws in all Electric-type moves. Instead of being hit by Electric-type moves, it boosts its Sp. Atk.",
+    "pokemon_with_ability": [
+      "#104",
+      "#105",
+      "#111",
+      "#112",
+      "#309",
+      "#310",
+      "#464",
+      "#522",
+      "#523",
+      "#777",
+      "#871"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#025",
+      "#026",
+      "#118",
+      "#119",
+      "#172",
+      "#311"
+    ]
+  },
+  {
+    "name": "Limber",
+    "effect": "The Pok\u00e9mon is protected from paralysis.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Its limber body protects the Pok\u00e9mon from paralysis.",
+    "pokemon_with_ability": [
+      "#053",
+      "#106",
+      "#132",
+      "#431",
+      "#509",
+      "#510",
+      "#618",
+      "#701",
+      "#747",
+      "#748",
+      "#852",
+      "#853"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#427",
+      "#428"
+    ]
+  },
+  {
+    "name": "Liquid Ooze",
+    "effect": "Damages attackers using any draining move.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The oozed liquid has a strong stench, which damages attackers using any draining move.",
+    "pokemon_with_ability": [
+      "#072",
+      "#073",
+      "#316",
+      "#317"
+    ]
+  },
+  {
+    "name": "Liquid Voice",
+    "effect": "Liquid Voice causes all sound-based moves used by the Pok\u00e9mon to become Water type. Water type Pok\u00e9mon also gain STAB from those moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "All sound-based moves become Water-type moves.",
+    "pokemon_with_hidden_ability": [
+      "#728",
+      "#729",
+      "#730"
+    ]
+  },
+  {
+    "name": "Long Reach",
+    "effect": "The Pok\u00e9mon uses its moves without making contact with the target.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon uses its moves without making contact with the target.",
+    "pokemon_with_hidden_ability": [
+      "#722",
+      "#723",
+      "#724"
+    ]
+  },
+  {
+    "name": "Magic Bounce",
+    "effect": "Reflects status- changing moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reflects status moves instead of getting hit by them.",
+    "pokemon_with_ability": [],
+    "pokemon_with_hidden_ability": [
+      "#177",
+      "#178",
+      "#196",
+      "#856",
+      "#857",
+      "#858"
+    ]
+  },
+  {
+    "name": "Magic Guard",
+    "effect": "Magic Guard protects the Pok\u00e9mon from indirect damage, including:",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon only takes damage from attacks.",
+    "pokemon_with_ability": [
+      "#035",
+      "#036",
+      "#173",
+      "#561",
+      "#577",
+      "#578",
+      "#579"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#063",
+      "#064",
+      "#065"
+    ]
+  },
+  {
+    "name": "Magician",
+    "effect": "The Pok\u00e9mon steals the held item of a Pok\u00e9mon it hits with a move.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon steals the held item of a Pok\u00e9mon it hits with a move.",
+    "pokemon_with_ability": [
+      "#720"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#653",
+      "#654",
+      "#655",
+      "#707"
+    ]
+  },
+  {
+    "name": "Magma Armor",
+    "effect": "Magma Armor prevents the Pok\u00e9mon from becoming frozen, for example from moves like Blizzard.",
+    "outside_of_battle": "If a Pok\u00e9mon with Magma Armor (or Flame Body) and a Pok\u00e9mon Egg are amongst the party Pok\u00e9mon, the number of steps required to hatch the egg are halved.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is covered with hot magma, which prevents the Pok\u00e9mon from becoming frozen.",
+    "pokemon_with_ability": [
+      "#218",
+      "#219",
+      "#323"
+    ]
+  },
+  {
+    "name": "Magnet Pull",
+    "effect": "Magnet Pull prevents Steel type Pok\u00e9mon from switching out of battle or fleeing.",
+    "outside_of_battle": "If a Pok\u00e9mon with Magnet Pull is the leading party Pok\u00e9mon, it is 50% more likely that a wild Pok\u00e9mon encountered will be Steel type.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents Steel-type Pok\u00e9mon from escaping using its magnetic force.",
+    "pokemon_with_ability": [
+      "#074",
+      "#075",
+      "#076",
+      "#081",
+      "#082",
+      "#299",
+      "#462",
+      "#476",
+      "#808"
+    ]
+  },
+  {
+    "name": "Marvel Scale",
+    "effect": "Marvel Scale raises the ability-bearer's Defense by 50% when inflicted by a major status ailment (poison, burn, paralysis, freeze or sleep).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s marvelous scales boost the Defense stat if it has a status condition.",
+    "pokemon_with_ability": [
+      "#350"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#147",
+      "#148"
+    ]
+  },
+  {
+    "name": "Mega Launcher",
+    "effect": "Mega Launcher increases the power of all aura and pulse moves by 50%. Heal Pulse boosts the HP restored by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up aura and pulse moves.",
+    "pokemon_with_ability": [
+      "#692",
+      "#693"
+    ]
+  },
+  {
+    "name": "Merciless",
+    "effect": "The Pok\u00e9mon's attacks become critical hits if the target is poisoned.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s attacks become critical hits if the target is poisoned.",
+    "pokemon_with_ability": [
+      "#747",
+      "#748"
+    ]
+  },
+  {
+    "name": "Mimicry",
+    "effect": "Changes type depending on the terrain.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s type depending on the terrain.",
+    "pokemon_with_ability": [
+      "#618"
+    ]
+  },
+  {
+    "name": "Minus",
+    "effect": "Ups Sp. Atk if another Pok\u00e9mon has Plus or Minus.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Sp. Atk stat of the Pok\u00e9mon if an ally with the Plus or Minus Ability is also in battle.",
+    "pokemon_with_ability": [
+      "#312",
+      "#599",
+      "#600",
+      "#601",
+      "#849"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#309",
+      "#310"
+    ]
+  },
+  {
+    "name": "Mirror Armor",
+    "effect": "Reflects any stat-lowering effects.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Bounces back only the stat-lowering effects that the Pok\u00e9mon receives.",
+    "pokemon_with_hidden_ability": [
+      "#823"
+    ]
+  },
+  {
+    "name": "Misty Surge",
+    "effect": "Misty Surge creates a low-lying mist, like the move Misty Terrain, when the bearer enters battle. It protects all grounded Pok\u00e9mon from status conditions and halves the power of Dragon type attacks.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Turns the ground into Misty Terrain when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#788"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#110"
+    ]
+  },
+  {
+    "name": "Mold Breaker",
+    "effect": "Mold Breaker prevents a target's ability from affecting moves that the Mold Breaker Pok\u00e9mon uses. It only affects abilities that change the power, accuracy or other effects of moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Moves can be used on the target regardless of its Abilities.",
+    "pokemon_with_ability": [
+      "#127",
+      "#408",
+      "#409",
+      "#610",
+      "#611",
+      "#612",
+      "#674",
+      "#675"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#529",
+      "#530",
+      "#538",
+      "#539",
+      "#550",
+      "#621",
+      "#701"
+    ]
+  },
+  {
+    "name": "Moody",
+    "effect": "Raises one stat and lowers another.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Raises one stat sharply and lowers another every turn.",
+    "pokemon_with_hidden_ability": [
+      "#223",
+      "#224",
+      "#235",
+      "#361",
+      "#362",
+      "#399",
+      "#400"
+    ]
+  },
+  {
+    "name": "Motor Drive",
+    "effect": "Raises Speed if hit by an Electric-type move.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts its Speed stat if hit by an Electric-type move instead of taking damage.",
+    "pokemon_with_ability": [
+      "#466",
+      "#522",
+      "#523"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#587"
+    ]
+  },
+  {
+    "name": "Moxie",
+    "effect": "Moxie increases the user's Attack one stage upon fainting an opponent.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon shows moxie, and that boosts the Attack stat after knocking out any Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#551",
+      "#552",
+      "#553",
+      "#559",
+      "#560"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#127",
+      "#130",
+      "#214",
+      "#262",
+      "#373",
+      "#430",
+      "#667",
+      "#668"
+    ]
+  },
+  {
+    "name": "Multiscale",
+    "effect": "Reduces damage when HP is full.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the amount of damage the Pok\u00e9mon takes while its HP is full.",
+    "pokemon_with_hidden_ability": [
+      "#149",
+      "#249"
+    ]
+  },
+  {
+    "name": "Multitype",
+    "effect": "Multitype changes the ability-bearer's type if it is holding one of the Type Plate items. Moves of the corresponding type receive STAB.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s type to match the Plate or Z-Crystal it holds.",
+    "pokemon_with_ability": [
+      "#493"
+    ]
+  },
+  {
+    "name": "Mummy",
+    "effect": "Contact with this Pok\u00e9mon spreads this Ability.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon changes the attacker\u2019s Ability to Mummy.",
+    "pokemon_with_ability": [
+      "#562",
+      "#563"
+    ]
+  },
+  {
+    "name": "Natural Cure",
+    "effect": "All status problems heal when it switches out.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "All status conditions heal when the Pok\u00e9mon switches out.",
+    "pokemon_with_ability": [
+      "#113",
+      "#120",
+      "#121",
+      "#222",
+      "#242",
+      "#251",
+      "#315",
+      "#333",
+      "#334",
+      "#406",
+      "#407",
+      "#440",
+      "#492",
+      "#708",
+      "#709"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#764"
+    ]
+  },
+  {
+    "name": "Neuroforce",
+    "effect": "Powers up moves that are super effective.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up moves that are super effective.",
+    "pokemon_with_ability": [
+      "#800"
+    ]
+  },
+  {
+    "name": "Neutralizing Gas",
+    "effect": "Neutralizes abilities of all Pok\u00e9mon in battle.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "If the Pok\u00e9mon with Neutralizing Gas is in the battle, the effects of all Pok\u00e9mon\u2019s Abilities will be nullified or will not be triggered.",
+    "pokemon_with_ability": [
+      "#109",
+      "#110"
+    ]
+  },
+  {
+    "name": "No Guard",
+    "effect": "No Guard ensures that all attacks used by, and targeted at, the ability-bearer hit without fail.",
+    "outside_of_battle": "If a Pok\u00e9mon with No Guard is the leading party Pok\u00e9mon, wild Pok\u00e9mon are twice as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon employs no-guard tactics to ensure incoming and outgoing attacks always land.",
+    "pokemon_with_ability": [
+      "#066",
+      "#067",
+      "#068",
+      "#679",
+      "#680"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#588",
+      "#622",
+      "#623",
+      "#745"
+    ]
+  },
+  {
+    "name": "Normalize",
+    "effect": "Normalize causes all moves used by the Pok\u00e9mon to become Normal-type, and attacking moves increase in power by 20%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "All the Pok\u00e9mon\u2019s moves become Normal type. The power of those moves is boosted a little.",
+    "pokemon_with_ability": [
+      "#300",
+      "#301"
+    ]
+  },
+  {
+    "name": "Oblivious",
+    "effect": "Oblivious makes the Pok\u00e9mon immune to gender-based moves and abilities, specifically Attract, Captivate and Cute Charm.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is oblivious, and that keeps it from being infatuated or falling for taunts.",
+    "pokemon_with_ability": [
+      "#079",
+      "#080",
+      "#108",
+      "#124",
+      "#199",
+      "#220",
+      "#221",
+      "#238",
+      "#314",
+      "#320",
+      "#321",
+      "#322",
+      "#339",
+      "#340",
+      "#349",
+      "#463",
+      "#473",
+      "#761",
+      "#762"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#363",
+      "#364",
+      "#365",
+      "#757",
+      "#758"
+    ]
+  },
+  {
+    "name": "Overcoat",
+    "effect": "Overcoat makes the Pok\u00e9mon immune to residual damage from weather conditions (specifically Hail and Sandstorm).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects the Pok\u00e9mon from things like sand, hail, and powder.",
+    "pokemon_with_ability": [
+      "#577",
+      "#578",
+      "#579",
+      "#629",
+      "#630"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#090",
+      "#091",
+      "#204",
+      "#205",
+      "#372",
+      "#412",
+      "#413",
+      "#540",
+      "#541",
+      "#542",
+      "#589",
+      "#616",
+      "#782",
+      "#783",
+      "#784"
+    ]
+  },
+  {
+    "name": "Overgrow",
+    "effect": "Overgrow increases the power of Grass-type moves by 50% (1.5\u00d7) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up Grass-type moves when the Pok\u00e9mon\u2019s HP is low.",
+    "pokemon_with_ability": [
+      "#001",
+      "#002",
+      "#003",
+      "#152",
+      "#153",
+      "#154",
+      "#252",
+      "#253",
+      "#254",
+      "#387",
+      "#388",
+      "#389",
+      "#495",
+      "#496",
+      "#497",
+      "#650",
+      "#651",
+      "#652",
+      "#722",
+      "#723",
+      "#724",
+      "#810",
+      "#811",
+      "#812"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#511",
+      "#512"
+    ]
+  },
+  {
+    "name": "Own Tempo",
+    "effect": "Prevents the Pok\u00e9mon from becoming confused.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "This Pok\u00e9mon has its own tempo, and that prevents it from becoming confused.",
+    "pokemon_with_ability": [
+      "#079",
+      "#080",
+      "#108",
+      "#199",
+      "#235",
+      "#325",
+      "#326",
+      "#327",
+      "#431",
+      "#432",
+      "#463",
+      "#548",
+      "#549",
+      "#712",
+      "#713",
+      "#744",
+      "#749",
+      "#750",
+      "#876"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#270",
+      "#271",
+      "#272",
+      "#322",
+      "#677"
+    ]
+  },
+  {
+    "name": "Parental Bond",
+    "effect": "Parental Bond allows the ability-bearer to attack twice. The second attack hits with half the power, so in effect Parental Bond is equivalent to a 50% boost to all attacks.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Parent and child each attacks.",
+    "pokemon_with_ability": []
+  },
+  {
+    "name": "Pastel Veil",
+    "effect": "Pastel Veil prevents the Pok\u00e9mon and its teammates from being poisoned. It also cures teammates of poisoning when it enters the battlefield.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects the Pok\u00e9mon and its ally Pok\u00e9mon from being poisoned.",
+    "pokemon_with_ability": [
+      "#077",
+      "#078"
+    ]
+  },
+  {
+    "name": "Perish Body",
+    "effect": "When hit by a move that makes direct contact, the Pok\u00e9mon and the attacker will faint after three turns unless they switch out of battle.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When hit by a move that makes direct contact, the Pok\u00e9mon and the attacker will faint after three turns unless they switch out of battle.",
+    "pokemon_with_hidden_ability": [
+      "#864"
+    ]
+  },
+  {
+    "name": "Pickpocket",
+    "effect": "Steals an item when hit by another Pok\u00e9mon.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Steals an item from an attacker that made direct contact.",
+    "pokemon_with_hidden_ability": [
+      "#215",
+      "#273",
+      "#274",
+      "#275",
+      "#461",
+      "#688",
+      "#689",
+      "#859",
+      "#860",
+      "#861"
+    ]
+  },
+  {
+    "name": "Pickup",
+    "effect": "When another Pok\u00e9mon on the field uses a single-use held item, a Pok\u00e9mon with Pickup will obtain the used item (if they are not already holding anything) and it can be used again.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon may pick up the item an opposing Pok\u00e9mon used during a battle. It may pick up items outside of battle, too.",
+    "pokemon_with_ability": [
+      "#052",
+      "#190",
+      "#216",
+      "#231",
+      "#263",
+      "#264",
+      "#417",
+      "#424",
+      "#446",
+      "#506",
+      "#659",
+      "#660",
+      "#702",
+      "#710",
+      "#711"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#731",
+      "#732"
+    ]
+  },
+  {
+    "name": "Pixilate",
+    "effect": "Pixilate causes all Normal-type attacking moves used by the Pok\u00e9mon to become Fairy-type, and increase in power by 20%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little.",
+    "pokemon_with_ability": [],
+    "pokemon_with_hidden_ability": [
+      "#700"
+    ]
+  },
+  {
+    "name": "Plus",
+    "effect": "Ups Sp. Atk if another Pok\u00e9mon has Plus or Minus.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Sp. Atk stat of the Pok\u00e9mon if an ally with the Plus or Minus Ability is also in battle.",
+    "pokemon_with_ability": [
+      "#311",
+      "#599",
+      "#600",
+      "#601",
+      "#849"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#179",
+      "#180",
+      "#181",
+      "#702"
+    ]
+  },
+  {
+    "name": "Poison Heal",
+    "effect": "Restores HP if the Pok\u00e9mon is poisoned.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores HP if the Pok\u00e9mon is poisoned instead of losing HP.",
+    "pokemon_with_ability": [
+      "#285",
+      "#286"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#472"
+    ]
+  },
+  {
+    "name": "Poison Point",
+    "effect": "Contact with the Pok\u00e9mon may poison the attacker.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon may poison the attacker.",
+    "pokemon_with_ability": [
+      "#029",
+      "#030",
+      "#031",
+      "#032",
+      "#033",
+      "#034",
+      "#117",
+      "#211",
+      "#315",
+      "#406",
+      "#407",
+      "#543",
+      "#544",
+      "#545",
+      "#690",
+      "#691"
+    ]
+  },
+  {
+    "name": "Poison Touch",
+    "effect": "May poison targets when a Pok\u00e9mon makes contact.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "May poison a target when the Pok\u00e9mon makes contact.",
+    "pokemon_with_ability": [
+      "#088",
+      "#089",
+      "#537",
+      "#690",
+      "#691"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#088",
+      "#089",
+      "#453",
+      "#454"
+    ]
+  },
+  {
+    "name": "Power Construct",
+    "effect": "Power Construct is unique to Zygarde. When Zygarde 10% Forme or Zygarde 50% Forme falls below half HP, it changes into Zygarde Complete Forme.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Other Cells gather to aid when its HP becomes half or less. Then the Pok\u00e9mon changes its form to Complete Forme.",
+    "pokemon_with_ability": [
+      "#718"
+    ]
+  },
+  {
+    "name": "Power Of Alchemy",
+    "effect": "The Pok\u00e9mon copies the Ability of a defeated ally.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon copies the Ability of a defeated ally.",
+    "pokemon_with_hidden_ability": [
+      "#088",
+      "#089"
+    ]
+  },
+  {
+    "name": "Power Spot",
+    "effect": "Just being next to the Pok\u00e9mon powers up moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Just being next to the Pok\u00e9mon powers up moves.",
+    "pokemon_with_ability": [
+      "#874"
+    ]
+  },
+  {
+    "name": "Prankster",
+    "effect": "Prankster increases the priority of status moves by +1.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Gives priority to a status move.",
+    "pokemon_with_ability": [
+      "#546",
+      "#547",
+      "#641",
+      "#642",
+      "#707",
+      "#859",
+      "#860",
+      "#861"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#198",
+      "#302",
+      "#313",
+      "#314",
+      "#447",
+      "#509",
+      "#510",
+      "#678"
+    ]
+  },
+  {
+    "name": "Pressure",
+    "effect": "Pressure makes any attack targeted at the ability-bearer - regardless of whether it hits - use 2 PP instead of 1.",
+    "outside_of_battle": "If a Pok\u00e9mon with Pressure is the leading party Pok\u00e9mon, wild Pok\u00e9mon are 50% more likely to be higher level.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "By putting pressure on the opposing Pok\u00e9mon, it raises their PP usage.",
+    "pokemon_with_ability": [
+      "#142",
+      "#144",
+      "#145",
+      "#146",
+      "#150",
+      "#243",
+      "#244",
+      "#245",
+      "#249",
+      "#250",
+      "#356",
+      "#359",
+      "#386",
+      "#416",
+      "#442",
+      "#461",
+      "#477",
+      "#483",
+      "#484",
+      "#487",
+      "#646",
+      "#823",
+      "#890"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#320",
+      "#321",
+      "#624",
+      "#625"
+    ]
+  },
+  {
+    "name": "Primordial Sea",
+    "effect": "Primordial Sea creates heavy rain when the ability is activated (by Kyogre reverting to its Primal form).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon changes the weather to nullify Fire-type attacks.",
+    "pokemon_with_ability": [
+      "#382"
+    ]
+  },
+  {
+    "name": "Prism Armor",
+    "effect": "Prism Armor reduces the damage taken from super-effective attacks by 25%. It is not affected by the abilities Mold Breaker, Teravolt, or Turboblaze.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the power of supereffective attacks taken.",
+    "pokemon_with_ability": [
+      "#800"
+    ]
+  },
+  {
+    "name": "Propeller Tail",
+    "effect": "Ignores moves and abilities that draw in moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Ignores the effects of opposing Pok\u00e9mon\u2019s Abilities and moves that draw in moves.",
+    "pokemon_with_hidden_ability": [
+      "#846",
+      "#847"
+    ]
+  },
+  {
+    "name": "Protean",
+    "effect": "Protean changes the Pok\u00e9mon's type to that of its previously used attack.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s type to the type of the move it\u2019s about to use.",
+    "pokemon_with_hidden_ability": [
+      "#352",
+      "#656",
+      "#657",
+      "#658"
+    ]
+  },
+  {
+    "name": "Psychic Surge",
+    "effect": "Psychic Surge creates a low-lying psychic field, like the move Psychic Terrain, when the Pok\u00e9mon enters battle. It prevents high-priority moves being used and increases the power of Psychic type attacks.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Turns the ground into Psychic Terrain when the Pok\u00e9mon enters a battle.",
+    "pokemon_with_ability": [
+      "#786"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#876"
+    ]
+  },
+  {
+    "name": "Punk Rock",
+    "effect": "Boosts sound-based moves and halves damage from the same moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the power of sound-based moves. The Pok\u00e9mon also takes half the damage from these kinds of moves.",
+    "pokemon_with_ability": [
+      "#849"
+    ]
+  },
+  {
+    "name": "Pure Power",
+    "effect": "Raises the Pok\u00e9mon's Attack stat.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Using its pure power, the Pok\u00e9mon doubles its Attack stat.",
+    "pokemon_with_ability": [
+      "#307",
+      "#308"
+    ]
+  },
+  {
+    "name": "Queenly Majesty",
+    "effect": "Prevents use of priority moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Its majesty pressures the opposing Pok\u00e9mon, making it unable to attack using priority moves.",
+    "pokemon_with_ability": [
+      "#763"
+    ]
+  },
+  {
+    "name": "Quick Feet",
+    "effect": "Quick Feet raises the ability-bearer's Speed by 50% when inflicted by a major status ailment (poison, burn, paralysis, freeze or sleep). If paralyzed, the Pok\u00e9mon does not suffer the usual drop in Speed.",
+    "outside_of_battle": "If a Pok\u00e9mon with Quick Feet is the leading party Pok\u00e9mon, wild Pok\u00e9mon are only half as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Speed stat if the Pok\u00e9mon has a status condition.",
+    "pokemon_with_ability": [
+      "#210",
+      "#216",
+      "#217",
+      "#261",
+      "#262"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#135",
+      "#263",
+      "#264",
+      "#285"
+    ]
+  },
+  {
+    "name": "Rain Dish",
+    "effect": "A Pok\u00e9mon with Rain Dish will recover 1\u204416 of its maximum HP during rain, after each turn.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon gradually regains HP in rain.",
+    "pokemon_with_ability": [
+      "#270",
+      "#271",
+      "#272"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#007",
+      "#008",
+      "#009",
+      "#072",
+      "#073",
+      "#278",
+      "#279",
+      "#283",
+      "#755",
+      "#756"
+    ]
+  },
+  {
+    "name": "Rattled",
+    "effect": "When a Pok\u00e9mon with Rattled is hit by a Bug, Ghost or Dark type move, its Speed is raised one stage (up to the usual maximum of +6 stages).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Dark-, Ghost-, and Bug-type moves scare the Pok\u00e9mon and boost its Speed stat.",
+    "pokemon_with_ability": [
+      "#848"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#052",
+      "#053",
+      "#129",
+      "#165",
+      "#185",
+      "#206",
+      "#209",
+      "#210",
+      "#261",
+      "#293",
+      "#366",
+      "#438",
+      "#613",
+      "#835"
+    ]
+  },
+  {
+    "name": "Receiver",
+    "effect": "A Pok\u00e9mon with Receiver will inherit the ability of a teammate in a double/triple battle when that teammate faints.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon copies the Ability of a defeated ally.",
+    "pokemon_with_ability": [
+      "#766"
+    ]
+  },
+  {
+    "name": "Reckless",
+    "effect": "Reckless increases the power of recoil moves by 20%. By extension this means the amount of recoil damage taken will increase as more more damage is dealt (except for High Jump Kick and Jump Kick which have fixed recoil).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up moves that have recoil damage.",
+    "pokemon_with_ability": [
+      "#106",
+      "#550",
+      "#626",
+      "#862"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#111",
+      "#112",
+      "#396",
+      "#397",
+      "#398",
+      "#464",
+      "#500",
+      "#619",
+      "#620"
+    ]
+  },
+  {
+    "name": "Refrigerate",
+    "effect": "Refrigerate causes all Normal-type attacking moves used by the Pok\u00e9mon to become Ice-type, and increase in power by 20%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Normal-type moves become Ice-type moves. The power of those moves is boosted a little.",
+    "pokemon_with_ability": [
+      "#698",
+      "#699"
+    ]
+  },
+  {
+    "name": "Regenerator",
+    "effect": "A Pok\u00e9mon with Regenerator restores 1\u20443 of its maximum HP when switching out.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores a little HP when withdrawn from battle.",
+    "pokemon_with_ability": [
+      "#531",
+      "#619",
+      "#620",
+      "#641",
+      "#829",
+      "#830"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#079",
+      "#080",
+      "#114",
+      "#199",
+      "#222",
+      "#250",
+      "#465",
+      "#577",
+      "#578",
+      "#579",
+      "#590",
+      "#591",
+      "#594",
+      "#747",
+      "#748"
+    ]
+  },
+  {
+    "name": "Ripen",
+    "effect": "Doubles the effect of berries.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Ripens Berries and doubles their effect.",
+    "pokemon_with_ability": [
+      "#840",
+      "#841",
+      "#842"
+    ]
+  },
+  {
+    "name": "Rivalry",
+    "effect": "Deals more damage to a Pok\u00e9mon of same gender.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Becomes competitive and deals more damage to Pok\u00e9mon of the same gender, but deals less to Pok\u00e9mon of the opposite gender.",
+    "pokemon_with_ability": [
+      "#029",
+      "#030",
+      "#031",
+      "#032",
+      "#033",
+      "#034",
+      "#403",
+      "#404",
+      "#405",
+      "#610",
+      "#611",
+      "#612",
+      "#667",
+      "#668"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#267",
+      "#519",
+      "#520",
+      "#521"
+    ]
+  },
+  {
+    "name": "Rks System",
+    "effect": "Changes type depending on held item.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s type to match the memory disc it holds.",
+    "pokemon_with_ability": [
+      "#773"
+    ]
+  },
+  {
+    "name": "Rock Head",
+    "effect": "Protects the Pok\u00e9mon from recoil damage.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Protects the Pok\u00e9mon from recoil damage.",
+    "pokemon_with_ability": [
+      "#074",
+      "#075",
+      "#076",
+      "#095",
+      "#104",
+      "#105",
+      "#111",
+      "#112",
+      "#142",
+      "#185",
+      "#208",
+      "#304",
+      "#305",
+      "#306",
+      "#369",
+      "#371",
+      "#372",
+      "#438",
+      "#550"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#105",
+      "#697"
+    ]
+  },
+  {
+    "name": "Rough Skin",
+    "effect": "When a Pok\u00e9mon with Rough Skin is hit by a move that makes contact, the attacker receives damage equal to 1\u20448 of their maximum HP.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "This Pok\u00e9mon inflicts damage with its rough skin to the attacker on contact.",
+    "pokemon_with_ability": [
+      "#318",
+      "#319",
+      "#621"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#443",
+      "#444",
+      "#445"
+    ]
+  },
+  {
+    "name": "Run Away",
+    "effect": "Run Away allows the bearer to flee a battle with a wild Pok\u00e9mon without fail, even if the opposing Pok\u00e9mon has used a move like Mean Look or Bind, or has an ability such as Arena Trap.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Enables a sure getaway from wild Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#019",
+      "#020",
+      "#077",
+      "#078",
+      "#084",
+      "#085",
+      "#133",
+      "#161",
+      "#162",
+      "#190",
+      "#206",
+      "#209",
+      "#261",
+      "#417",
+      "#427",
+      "#504",
+      "#827",
+      "#828",
+      "#831"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#010",
+      "#013",
+      "#043",
+      "#048",
+      "#265",
+      "#290",
+      "#401",
+      "#506"
+    ]
+  },
+  {
+    "name": "Sand Force",
+    "effect": "Sand Force raises the power of Ground, Rock and Steel type moves by 30% during a sandstorm.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm.",
+    "pokemon_with_ability": [
+      "#529",
+      "#530",
+      "#645"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#050",
+      "#051",
+      "#299",
+      "#422",
+      "#423",
+      "#449",
+      "#450",
+      "#476",
+      "#524",
+      "#525",
+      "#526"
+    ]
+  },
+  {
+    "name": "Sand Rush",
+    "effect": "Sand Rush doubles the ability-bearer's Speed during a sandstorm.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Speed stat in a sandstorm.",
+    "pokemon_with_ability": [
+      "#507",
+      "#508",
+      "#529",
+      "#530",
+      "#745"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#027",
+      "#028",
+      "#880",
+      "#882"
+    ]
+  },
+  {
+    "name": "Sand Spit",
+    "effect": "Creates a sandstorm when hit by an attack.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon creates a sandstorm when it\u2019s hit by an attack.",
+    "pokemon_with_ability": [
+      "#843",
+      "#844"
+    ]
+  },
+  {
+    "name": "Sand Stream",
+    "effect": "Sand Stream creates a sandstorm when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon summons a sandstorm when it enters a battle.",
+    "pokemon_with_ability": [
+      "#248",
+      "#449",
+      "#450",
+      "#526"
+    ]
+  },
+  {
+    "name": "Sand Veil",
+    "effect": "Sand Veil raises the ability-bearer's evasion by 20% in a sandstorm. It also gives immunity to sandstorm damage (if they are not already protected by being Ground/Rock/Steel type).",
+    "outside_of_battle": "If a Pok\u00e9mon with Sand Veil is the leading party Pok\u00e9mon while travelling in a sandstorm, wild Pok\u00e9mon are only half as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s evasiveness in a sandstorm.",
+    "pokemon_with_ability": [
+      "#027",
+      "#028",
+      "#050",
+      "#051",
+      "#207",
+      "#331",
+      "#332",
+      "#443",
+      "#444",
+      "#445",
+      "#472",
+      "#694",
+      "#695"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#074",
+      "#075",
+      "#076",
+      "#231",
+      "#232",
+      "#246",
+      "#618",
+      "#769",
+      "#770",
+      "#843",
+      "#844"
+    ]
+  },
+  {
+    "name": "Sap Sipper",
+    "effect": "Boosts Attack when hit by a Grass-type move.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Attack stat if hit by a Grass-type move instead of taking damage.",
+    "pokemon_with_ability": [
+      "#585",
+      "#586",
+      "#626",
+      "#672",
+      "#673",
+      "#704",
+      "#705",
+      "#706",
+      "#780"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#183",
+      "#184",
+      "#203",
+      "#234",
+      "#241",
+      "#298",
+      "#522",
+      "#523"
+    ]
+  },
+  {
+    "name": "Schooling",
+    "effect": "Schooling changes Wishiwashi into its School Form, if its HP is above 25% and Wishiwashi is at least level 20. If its HP falls below 25%, Wishiwashi will revert back to Solo Form.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When it has a lot of HP, the Pok\u00e9mon forms a powerful school. It stops schooling when its HP is low.",
+    "pokemon_with_ability": [
+      "#746"
+    ]
+  },
+  {
+    "name": "Scrappy",
+    "effect": "Enables moves to hit Ghost-type Pok\u00e9mon.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can hit Ghost-type Pok\u00e9mon with Normal- and Fighting-type moves.",
+    "pokemon_with_ability": [
+      "#115",
+      "#241"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#083",
+      "#276",
+      "#277",
+      "#294",
+      "#295",
+      "#507",
+      "#508",
+      "#674",
+      "#675",
+      "#865"
+    ]
+  },
+  {
+    "name": "Screen Cleaner",
+    "effect": "Nullifies effects of Light Screen, Reflect, and Aurora Veil.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When the Pok\u00e9mon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#122",
+      "#866"
+    ]
+  },
+  {
+    "name": "Serene Grace",
+    "effect": "Serene Grace doubles the chance of moves' secondary effects occurring - specifically stat changes, status ailments, or flinching. It also increases the chance of flinching due to the held items King's Rock and Razor Fang from 10% to 20% (however, note that those items do not affect moves that already have a flinch chance).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the likelihood of additional effects occurring when attacking.",
+    "pokemon_with_ability": [
+      "#113",
+      "#175",
+      "#176",
+      "#206",
+      "#242",
+      "#385",
+      "#440",
+      "#468",
+      "#492",
+      "#648"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#585",
+      "#586"
+    ]
+  },
+  {
+    "name": "Shadow Shield",
+    "effect": "Reduces damage when HP is full.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the amount of damage the Pok\u00e9mon takes while its HP is full.",
+    "pokemon_with_ability": [
+      "#792"
+    ]
+  },
+  {
+    "name": "Shadow Tag",
+    "effect": "Prevents the foe from escaping.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "This Pok\u00e9mon steps on the opposing Pok\u00e9mon\u2019s shadow to prevent it from escaping.",
+    "pokemon_with_ability": [
+      "#202",
+      "#360"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#574",
+      "#575",
+      "#576"
+    ]
+  },
+  {
+    "name": "Shed Skin",
+    "effect": "The Pok\u00e9mon may heal its own status problems.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon may heal its own status conditions by shedding its skin.",
+    "pokemon_with_ability": [
+      "#011",
+      "#014",
+      "#023",
+      "#024",
+      "#147",
+      "#148",
+      "#247",
+      "#266",
+      "#268",
+      "#336",
+      "#401",
+      "#412",
+      "#559",
+      "#560",
+      "#588",
+      "#665",
+      "#843",
+      "#844"
+    ]
+  },
+  {
+    "name": "Sheer Force",
+    "effect": "Sheer Force increases the power of moves that have beneficial secondary effects by 30%, but removes those additional effects.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Removes additional effects to increase the power of moves when attacking.",
+    "pokemon_with_ability": [
+      "#532",
+      "#533",
+      "#534",
+      "#555",
+      "#621",
+      "#627",
+      "#628",
+      "#878",
+      "#879"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#031",
+      "#034",
+      "#098",
+      "#099",
+      "#128",
+      "#158",
+      "#159",
+      "#160",
+      "#208",
+      "#296",
+      "#297",
+      "#303",
+      "#328",
+      "#371",
+      "#408",
+      "#409",
+      "#645",
+      "#733"
+    ]
+  },
+  {
+    "name": "Shell Armor",
+    "effect": "Shell Armor prevents the Pok\u00e9mon from receiving a critical hit.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "A hard shell protects the Pok\u00e9mon from critical hits.",
+    "pokemon_with_ability": [
+      "#090",
+      "#091",
+      "#098",
+      "#099",
+      "#131",
+      "#138",
+      "#139",
+      "#341",
+      "#342",
+      "#366",
+      "#557",
+      "#558",
+      "#589",
+      "#616",
+      "#776",
+      "#833",
+      "#834"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#324",
+      "#387",
+      "#388",
+      "#389",
+      "#501",
+      "#502",
+      "#503"
+    ]
+  },
+  {
+    "name": "Shield Dust",
+    "effect": "Blocks the added effects of attacks taken.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "This Pok\u00e9mon\u2019s dust blocks the additional effects of attacks taken.",
+    "pokemon_with_ability": [
+      "#010",
+      "#013",
+      "#049",
+      "#265",
+      "#269",
+      "#664",
+      "#666",
+      "#742",
+      "#743",
+      "#872",
+      "#873"
+    ]
+  },
+  {
+    "name": "Shields Down",
+    "effect": "Shields Down causes the Pok\u00e9mon to changes its appearance and stats depending on its remaining HP.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When its HP becomes half or less, the Pok\u00e9mon\u2019s shell breaks and it becomes aggressive.",
+    "pokemon_with_ability": [
+      "#774"
+    ]
+  },
+  {
+    "name": "Simple",
+    "effect": "The Simple ability doubles the number of stages of all stat changes. Stats can be raised to a maximum of +6 stages each, or lowered to a minimum of -6 stages each.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The stat changes the Pok\u00e9mon receives are doubled.",
+    "pokemon_with_ability": [
+      "#322",
+      "#399",
+      "#400"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#527",
+      "#528"
+    ]
+  },
+  {
+    "name": "Skill Link",
+    "effect": "Skill Link causes multi-strike moves to always hit their maximum number of times. The moves affected are listed below; note that moves such as Double Kick that always strike the same number of times are not affected.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Maximizes the number of times multistrike moves hit.",
+    "pokemon_with_ability": [
+      "#090",
+      "#091",
+      "#731",
+      "#732",
+      "#733"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#190",
+      "#424",
+      "#572",
+      "#573"
+    ]
+  },
+  {
+    "name": "Slow Start",
+    "effect": "Temporarily halves Attack and Speed.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "For five turns, the Pok\u00e9mon\u2019s Attack and Speed stats are halved.",
+    "pokemon_with_ability": [
+      "#486"
+    ]
+  },
+  {
+    "name": "Slush Rush",
+    "effect": "Boosts the Pok\u00e9mon's Speed stat in a hailstorm.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Speed stat in a hailstorm.",
+    "pokemon_with_ability": [
+      "#613",
+      "#614"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#027",
+      "#028",
+      "#881",
+      "#883"
+    ]
+  },
+  {
+    "name": "Sniper",
+    "effect": "Sniper increases the power of critical hits by 1.5\u00d7. This means a critical hit will deal 2.25\u00d7 normal damage instead of 1.5\u00d7.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up moves if they become critical hits when attacking.",
+    "pokemon_with_ability": [
+      "#116",
+      "#117",
+      "#223",
+      "#224",
+      "#230",
+      "#451",
+      "#452",
+      "#688",
+      "#689"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#015",
+      "#021",
+      "#022",
+      "#167",
+      "#168",
+      "#816",
+      "#817",
+      "#818"
+    ]
+  },
+  {
+    "name": "Snow Cloak",
+    "effect": "Snow Cloak raises ability-bearer's evasion by 20% in a hail storm. It also gives immunity to damage by hail (if they are not already protected by being Ice type).",
+    "outside_of_battle": "If a Pok\u00e9mon with Snow Cloak is the leading party Pok\u00e9mon while travelling in a hail storm/blizzard, wild Pok\u00e9mon are only half as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts evasiveness in a hailstorm.",
+    "pokemon_with_ability": [
+      "#027",
+      "#028",
+      "#037",
+      "#038",
+      "#220",
+      "#221",
+      "#471",
+      "#473",
+      "#478",
+      "#582",
+      "#583",
+      "#613",
+      "#614"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#144"
+    ]
+  },
+  {
+    "name": "Snow Warning",
+    "effect": "Snow Warning creates a hailstorm when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon summons a hailstorm when it enters a battle.",
+    "pokemon_with_ability": [
+      "#459",
+      "#460",
+      "#584"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#037",
+      "#038",
+      "#698",
+      "#699"
+    ]
+  },
+  {
+    "name": "Solar Power",
+    "effect": "During harsh sunlight, Solar Power raises the ability-bearer's Special Attack by 50%, but it also loses 1\u20448 of its maximum HP after each turn.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn.",
+    "pokemon_with_ability": [
+      "#191",
+      "#192",
+      "#357"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#004",
+      "#005",
+      "#006",
+      "#694",
+      "#695"
+    ]
+  },
+  {
+    "name": "Solid Rock",
+    "effect": "Solid Rock reduces the damage taken from super-effective attacks by 25%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Reduces the power of supereffective attacks taken.",
+    "pokemon_with_ability": [
+      "#323",
+      "#464",
+      "#564",
+      "#565"
+    ]
+  },
+  {
+    "name": "Soul Heart",
+    "effect": "Soul-Heart raises the bearer's Special Attack one stage when a teammate faints.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts its Sp. Atk stat every time a Pok\u00e9mon faints.",
+    "pokemon_with_ability": [
+      "#801"
+    ]
+  },
+  {
+    "name": "Soundproof",
+    "effect": "Soundproof grants the Pok\u00e9mon immunity to all sound-based moves, preventing all damage and effects.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Soundproofing gives the Pok\u00e9mon full immunity to all sound-based moves.",
+    "pokemon_with_ability": [
+      "#100",
+      "#101",
+      "#122",
+      "#293",
+      "#294",
+      "#295",
+      "#439",
+      "#782",
+      "#783",
+      "#784"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#410",
+      "#411",
+      "#459",
+      "#460",
+      "#626"
+    ]
+  },
+  {
+    "name": "Speed Boost",
+    "effect": "Its Speed stat is gradually boosted.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Its Speed stat is boosted every turn.",
+    "pokemon_with_ability": [
+      "#193",
+      "#291",
+      "#469"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#255",
+      "#256",
+      "#257",
+      "#318",
+      "#319",
+      "#543",
+      "#544",
+      "#545"
+    ]
+  },
+  {
+    "name": "Stakeout",
+    "effect": "Stakeout enables the Pok\u00e9mon to deal twice the normal damage to any Pok\u00e9mon that switches in or enters the field mid-battle.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Doubles the damage dealt to the target\u2019s replacement if the target switches out.",
+    "pokemon_with_ability": [
+      "#734",
+      "#735"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#827",
+      "#828"
+    ]
+  },
+  {
+    "name": "Stall",
+    "effect": "The Pok\u00e9mon moves after all other Pok\u00e9mon do.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon moves after all other Pok\u00e9mon do.",
+    "pokemon_with_ability": [
+      "#302"
+    ]
+  },
+  {
+    "name": "Stalwart",
+    "effect": "Ignores moves and abilities that draw in moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Ignores the effects of opposing Pok\u00e9mon\u2019s Abilities and moves that draw in moves.",
+    "pokemon_with_hidden_ability": [
+      "#884"
+    ]
+  },
+  {
+    "name": "Stamina",
+    "effect": "Stamina raises the bearer's Defense by one stage when it is attacked by any move.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Defense stat when hit by an attack.",
+    "pokemon_with_ability": [
+      "#749",
+      "#750"
+    ]
+  },
+  {
+    "name": "Stance Change",
+    "effect": "Stance Change is exclusive to Aegislash. When using a damage-dealing move, Aegislash switches to its Blade Forme. When using the move King's Shield, Aegislash switches to its Shield Forme.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon changes its form to Blade Forme when it uses an attack move and changes to Shield Forme when it uses King\u2019s Shield.",
+    "pokemon_with_ability": [
+      "#681"
+    ]
+  },
+  {
+    "name": "Static",
+    "effect": "If a Pok\u00e9mon with Static is hit by a move making contact, there is a 30% chance the foe will become paralyzed.",
+    "outside_of_battle": "If a Pok\u00e9mon with Static is the leading party Pok\u00e9mon, it is 50% more likely that a wild Pok\u00e9mon encountered will be Electric type.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is charged with static electricity, so contact with it may cause paralysis.",
+    "pokemon_with_ability": [
+      "#025",
+      "#026",
+      "#100",
+      "#101",
+      "#125",
+      "#172",
+      "#179",
+      "#180",
+      "#181",
+      "#239",
+      "#309",
+      "#310",
+      "#587",
+      "#618",
+      "#848",
+      "#881"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#145"
+    ]
+  },
+  {
+    "name": "Steadfast",
+    "effect": "Raises Speed each time the Pok\u00e9mon flinches.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s determination boosts the Speed stat each time the Pok\u00e9mon flinches.",
+    "pokemon_with_ability": [
+      "#083",
+      "#236",
+      "#447",
+      "#448",
+      "#475",
+      "#832",
+      "#865"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#066",
+      "#067",
+      "#068",
+      "#123",
+      "#237",
+      "#744",
+      "#745"
+    ]
+  },
+  {
+    "name": "Steam Engine",
+    "effect": "Steam Engine raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Speed stat drastically if hit by a Fire- or Water-type move.",
+    "pokemon_with_ability": [
+      "#837",
+      "#838",
+      "#839"
+    ]
+  },
+  {
+    "name": "Steelworker",
+    "effect": "Steelworker increases the power of Steel-type moves by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up Steel-type moves.",
+    "pokemon_with_ability": [
+      "#781"
+    ]
+  },
+  {
+    "name": "Steely Spirit",
+    "effect": "Powers up ally Pok\u00e9mon's Steel-type moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up ally Pok\u00e9mon\u2019s Steel-type moves.",
+    "pokemon_with_hidden_ability": [
+      "#863"
+    ]
+  },
+  {
+    "name": "Stench",
+    "effect": "A Pok\u00e9mon with Stench has a 10% chance of causing the opponent to flinch when hit by a damaging move (provided the ability-bearer strikes first as usual).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "By releasing stench when attacking, this Pok\u00e9mon may cause the target to flinch.",
+    "pokemon_with_ability": [
+      "#088",
+      "#089",
+      "#434",
+      "#435",
+      "#568",
+      "#569"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#044",
+      "#109",
+      "#110"
+    ]
+  },
+  {
+    "name": "Sticky Hold",
+    "effect": "Sticky Hold prevents held items from being taken or switched.",
+    "outside_of_battle": "If a Pok\u00e9mon with Sticky Hold is the leading party Pok\u00e9mon, the chance of hooking a Pok\u00e9mon during fishing increases.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Items held by the Pok\u00e9mon are stuck fast and cannot be removed by other Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#088",
+      "#089",
+      "#316",
+      "#317",
+      "#422",
+      "#423",
+      "#568",
+      "#617"
+    ]
+  },
+  {
+    "name": "Storm Drain",
+    "effect": "Storm Drain forces all single-target Water-type moves - used by any other Pok\u00e9mon on the field - to target this Pok\u00e9mon, and with 100% accuracy. The ability is most useful in double/triple battles.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Draws in all Water-type moves. Instead of being hit by Water-type moves, it boosts its Sp. Atk.",
+    "pokemon_with_ability": [
+      "#422",
+      "#423",
+      "#456",
+      "#457"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#345",
+      "#346",
+      "#556"
+    ]
+  },
+  {
+    "name": "Strong Jaw",
+    "effect": "Strong Jaw increases the power of all biting moves by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon\u2019s strong jaw boosts the power of its biting moves.",
+    "pokemon_with_ability": [
+      "#696",
+      "#697",
+      "#734",
+      "#735",
+      "#779",
+      "#833",
+      "#834",
+      "#836",
+      "#882"
+    ]
+  },
+  {
+    "name": "Sturdy",
+    "effect": "Sturdy allows the Pok\u00e9mon to survive with 1 HP if attacked at full HP with an attack that would otherwise knock it out. It also prevents One-Hit-KO moves (Fissure, Horn Drill, Guillotine or Sheer Cold).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "It cannot be knocked out with one hit. One-hit KO moves cannot knock it out, either.",
+    "pokemon_with_ability": [
+      "#074",
+      "#075",
+      "#076",
+      "#081",
+      "#082",
+      "#095",
+      "#185",
+      "#204",
+      "#205",
+      "#208",
+      "#213",
+      "#227",
+      "#232",
+      "#299",
+      "#304",
+      "#305",
+      "#306",
+      "#410",
+      "#411",
+      "#438",
+      "#462",
+      "#476",
+      "#524",
+      "#525",
+      "#526",
+      "#539",
+      "#557",
+      "#558",
+      "#564",
+      "#565",
+      "#790"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#369",
+      "#377",
+      "#696",
+      "#703",
+      "#712",
+      "#713",
+      "#777"
+    ]
+  },
+  {
+    "name": "Suction Cups",
+    "effect": "Suction Cups prevents opponents forcing the ability-bearer to switch out or flee via the moves Roar, Whirlwind, Circle Throw, or Dragon Tail, or the item Red Card.",
+    "outside_of_battle": "If a Pok\u00e9mon with Suction Cups is the leading party Pok\u00e9mon, the chance of hooking a Pok\u00e9mon during fishing increases.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "This Pok\u00e9mon uses suction cups to stay in one spot to negate all moves and items that force switching out.",
+    "pokemon_with_ability": [
+      "#224",
+      "#345",
+      "#346",
+      "#686",
+      "#687"
+    ]
+  },
+  {
+    "name": "Super Luck",
+    "effect": "Super Luck raises the ability-bearer's critical-hit ratio by one stage (for most moves this increases from a 1\u204416 chance to 1\u20448).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is so lucky that the critical-hit ratios of its moves are boosted.",
+    "pokemon_with_ability": [
+      "#198",
+      "#359",
+      "#430",
+      "#519",
+      "#520",
+      "#521"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#175",
+      "#176",
+      "#468"
+    ]
+  },
+  {
+    "name": "Surge Surfer",
+    "effect": "Surge Surfer doubles the bearer's Speed when Electric Terrain is active.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Doubles the Pok\u00e9mon\u2019s Speed stat on Electric Terrain.",
+    "pokemon_with_ability": [
+      "#026"
+    ]
+  },
+  {
+    "name": "Swarm",
+    "effect": "Swarm increases the power of Bug-type moves by 50% (1.5\u00d7) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "outside_of_battle": "If a Pok\u00e9mon with Swarm is the leading party Pok\u00e9mon, wild Pok\u00e9mon are twice as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up Bug-type moves when the Pok\u00e9mon\u2019s HP is low.",
+    "pokemon_with_ability": [
+      "#015",
+      "#123",
+      "#165",
+      "#166",
+      "#167",
+      "#168",
+      "#212",
+      "#214",
+      "#267",
+      "#313",
+      "#402",
+      "#414",
+      "#540",
+      "#542",
+      "#543",
+      "#544",
+      "#545",
+      "#588",
+      "#589",
+      "#632",
+      "#736",
+      "#824",
+      "#825",
+      "#826"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#595",
+      "#596",
+      "#636",
+      "#637"
+    ]
+  },
+  {
+    "name": "Sweet Veil",
+    "effect": "Sweet Veil prevents this Pok\u00e9mon and its allies from falling asleep, for example from moves like Hypnosis.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Prevents itself and ally Pok\u00e9mon from falling asleep.",
+    "pokemon_with_ability": [
+      "#684",
+      "#685",
+      "#868",
+      "#869"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#742",
+      "#743",
+      "#761",
+      "#762",
+      "#763"
+    ]
+  },
+  {
+    "name": "Swift Swim",
+    "effect": "Swift Swim doubles the ability-bearer's Speed during rain.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Speed stat in rain.",
+    "pokemon_with_ability": [
+      "#116",
+      "#118",
+      "#119",
+      "#129",
+      "#138",
+      "#139",
+      "#140",
+      "#141",
+      "#211",
+      "#226",
+      "#230",
+      "#270",
+      "#271",
+      "#272",
+      "#283",
+      "#349",
+      "#367",
+      "#368",
+      "#369",
+      "#370",
+      "#418",
+      "#419",
+      "#456",
+      "#457",
+      "#458",
+      "#535",
+      "#536",
+      "#537",
+      "#846",
+      "#847"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#054",
+      "#055",
+      "#060",
+      "#061",
+      "#062",
+      "#347",
+      "#348",
+      "#564",
+      "#565",
+      "#614",
+      "#833",
+      "#834"
+    ]
+  },
+  {
+    "name": "Symbiosis",
+    "effect": "The Pok\u00e9mon can pass an item to an ally.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon passes its item to an ally that has used up an item.",
+    "pokemon_with_hidden_ability": [
+      "#669",
+      "#670",
+      "#671",
+      "#765"
+    ]
+  },
+  {
+    "name": "Synchronize",
+    "effect": "If the opponent causes a burn, paralysis, or poisoning of a Pok\u00e9mon with Synchronize, the opponent receives the status condition too. Self-inflicted status conditions (for example through the use of an item) are not passed on.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#063",
+      "#064",
+      "#065",
+      "#151",
+      "#177",
+      "#178",
+      "#196",
+      "#197",
+      "#280",
+      "#281",
+      "#282",
+      "#517",
+      "#518",
+      "#605",
+      "#606",
+      "#876"
+    ]
+  },
+  {
+    "name": "Tangled Feet",
+    "effect": "Raises evasion if the Pok\u00e9mon is confused.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Raises evasiveness if the Pok\u00e9mon is confused.",
+    "pokemon_with_ability": [
+      "#016",
+      "#017",
+      "#018",
+      "#327",
+      "#441",
+      "#866"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#084",
+      "#085"
+    ]
+  },
+  {
+    "name": "Tangling Hair",
+    "effect": "Contact with the Pok\u00e9mon lowers the attacker's Speed stat.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Contact with the Pok\u00e9mon lowers the attacker\u2019s Speed stat.",
+    "pokemon_with_ability": [
+      "#050",
+      "#051"
+    ]
+  },
+  {
+    "name": "Technician",
+    "effect": "Technician increases the power of moves - that are usually base power 60 or below - by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up the Pok\u00e9mon\u2019s weaker moves.",
+    "pokemon_with_ability": [
+      "#052",
+      "#053",
+      "#123",
+      "#212",
+      "#235",
+      "#237",
+      "#424",
+      "#572",
+      "#573",
+      "#802"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#122",
+      "#286",
+      "#402",
+      "#407",
+      "#439",
+      "#849",
+      "#852",
+      "#853"
+    ]
+  },
+  {
+    "name": "Telepathy",
+    "effect": "Pok\u00e9mon with the Telepathy ability will not take damage from teammates in double and triple battles.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Anticipates an ally\u2019s attack and dodges it.",
+    "pokemon_with_ability": [
+      "#605",
+      "#606",
+      "#765"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#202",
+      "#280",
+      "#281",
+      "#282",
+      "#307",
+      "#308",
+      "#360",
+      "#483",
+      "#484",
+      "#487",
+      "#517",
+      "#518",
+      "#714",
+      "#715",
+      "#785",
+      "#786",
+      "#787",
+      "#788",
+      "#824",
+      "#825",
+      "#826"
+    ]
+  },
+  {
+    "name": "Teravolt",
+    "effect": "Teravolt prevents a target's ability from affecting moves that the Teravolt Pok\u00e9mon uses. It only affects abilities that change the power, accuracy or other effects of moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Moves can be used on the target regardless of its Abilities.",
+    "pokemon_with_ability": [
+      "#644",
+      "#646"
+    ]
+  },
+  {
+    "name": "Thick Fat",
+    "effect": "Thick Fat reduces the damage taken from Fire-type and Ice-type moves by 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves.",
+    "pokemon_with_ability": [
+      "#086",
+      "#087",
+      "#143",
+      "#183",
+      "#184",
+      "#241",
+      "#296",
+      "#297",
+      "#298",
+      "#325",
+      "#326",
+      "#363",
+      "#364",
+      "#365",
+      "#432",
+      "#446"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#019",
+      "#020",
+      "#220",
+      "#221",
+      "#473",
+      "#498",
+      "#499",
+      "#842"
+    ]
+  },
+  {
+    "name": "Tinted Lens",
+    "effect": "Powers up \u201cnot very effective\u201d moves.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can use \u201cnot very effective\u201d moves to deal regular damage.",
+    "pokemon_with_ability": [
+      "#048",
+      "#049",
+      "#314",
+      "#469"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#012",
+      "#163",
+      "#164",
+      "#414",
+      "#561"
+    ]
+  },
+  {
+    "name": "Torrent",
+    "effect": "Torrent increases the power of Water-type moves by 50% (1.5\u00d7) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up Water-type moves when the Pok\u00e9mon\u2019s HP is low.",
+    "pokemon_with_ability": [
+      "#007",
+      "#008",
+      "#009",
+      "#158",
+      "#159",
+      "#160",
+      "#258",
+      "#259",
+      "#260",
+      "#393",
+      "#394",
+      "#395",
+      "#501",
+      "#502",
+      "#503",
+      "#656",
+      "#657",
+      "#658",
+      "#728",
+      "#729",
+      "#730",
+      "#816",
+      "#817",
+      "#818"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#515",
+      "#516"
+    ]
+  },
+  {
+    "name": "Tough Claws",
+    "effect": "Tough Claws increases the power of moves that make contact.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up moves that make direct contact.",
+    "pokemon_with_ability": [
+      "#052",
+      "#688",
+      "#689",
+      "#745",
+      "#863"
+    ]
+  },
+  {
+    "name": "Toxic Boost",
+    "effect": "Powers up physical attacks when poisoned.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Powers up physical attacks when the Pok\u00e9mon is poisoned.",
+    "pokemon_with_hidden_ability": [
+      "#335"
+    ]
+  },
+  {
+    "name": "Trace",
+    "effect": "The Pok\u00e9mon copies a foe's Ability.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When it enters a battle, the Pok\u00e9mon copies an opposing Pok\u00e9mon\u2019s Ability.",
+    "pokemon_with_ability": [
+      "#137",
+      "#233",
+      "#280",
+      "#281",
+      "#282"
+    ]
+  },
+  {
+    "name": "Triage",
+    "effect": "Triage increases the priority of HP-restoring moves to +3, when used by the ability-bearer.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Gives priority to a healing move.",
+    "pokemon_with_ability": [
+      "#764"
+    ]
+  },
+  {
+    "name": "Truant",
+    "effect": "Truant causes the ability-bearer to only attack every alternate turn. On the even turns, it will say the Pok\u00e9mon is loafing around.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon can\u2019t use a move if it had used a move on the previous turn.",
+    "pokemon_with_ability": [
+      "#287",
+      "#289"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#632"
+    ]
+  },
+  {
+    "name": "Turboblaze",
+    "effect": "Turboblaze prevents a target's ability from affecting moves that the Turboblaze Pok\u00e9mon uses. It only affects abilities that change the power, accuracy or other effects of moves.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Moves can be used on the target regardless of its Abilities.",
+    "pokemon_with_ability": [
+      "#643",
+      "#646"
+    ]
+  },
+  {
+    "name": "Unaware",
+    "effect": "Ignores any stat changes in the Pok\u00e9mon.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "When attacking, the Pok\u00e9mon ignores the target Pok\u00e9mon\u2019s stat changes.",
+    "pokemon_with_ability": [
+      "#399",
+      "#400",
+      "#527",
+      "#528",
+      "#789"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#036",
+      "#194",
+      "#195",
+      "#771"
+    ]
+  },
+  {
+    "name": "Unburden",
+    "effect": "Raises Speed if a held item is used.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Speed stat if the Pok\u00e9mon\u2019s held item is used or lost.",
+    "pokemon_with_ability": [
+      "#425",
+      "#426",
+      "#509",
+      "#510",
+      "#701",
+      "#827",
+      "#828"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#106",
+      "#252",
+      "#253",
+      "#254",
+      "#617",
+      "#684",
+      "#685"
+    ]
+  },
+  {
+    "name": "Unnerve",
+    "effect": "Makes the foe nervous and unable to eat Berries.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Unnerves opposing Pok\u00e9mon and makes them unable to eat Berries.",
+    "pokemon_with_ability": [
+      "#595",
+      "#596",
+      "#667",
+      "#668",
+      "#821",
+      "#822",
+      "#823",
+      "#???"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#023",
+      "#024",
+      "#052",
+      "#053",
+      "#142",
+      "#150",
+      "#217",
+      "#228",
+      "#229",
+      "#248",
+      "#284",
+      "#416",
+      "#610",
+      "#611",
+      "#612",
+      "#760"
+    ]
+  },
+  {
+    "name": "Victory Star",
+    "effect": "Boosts the accuracy of its allies and itself.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the accuracy of its allies and itself.",
+    "pokemon_with_ability": [
+      "#494"
+    ]
+  },
+  {
+    "name": "Vital Spirit",
+    "effect": "Vital Spirit prevents the ability-bearer from falling asleep. This means that it also prevents the use of the move Rest.",
+    "outside_of_battle": "If a Pok\u00e9mon with Vital Spirit is the leading party Pok\u00e9mon, wild Pok\u00e9mon are 50% more likely to be higher level.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is full of vitality, and that prevents it from falling asleep.",
+    "pokemon_with_ability": [
+      "#056",
+      "#057",
+      "#122",
+      "#225",
+      "#288",
+      "#506",
+      "#744",
+      "#745"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#125",
+      "#126",
+      "#236",
+      "#239",
+      "#240",
+      "#466",
+      "#467"
+    ]
+  },
+  {
+    "name": "Volt Absorb",
+    "effect": "A Pok\u00e9mon with Volt Absorb heals 1\u20444 of its maximum HP when hit by an Electric-type attack, including Thunder Wave.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores HP if hit by an Electric-type move instead of taking damage.",
+    "pokemon_with_ability": [
+      "#135",
+      "#170",
+      "#171",
+      "#642",
+      "#807",
+      "#880",
+      "#881"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#312",
+      "#417"
+    ]
+  },
+  {
+    "name": "Wandering Spirit",
+    "effect": "Swaps abilities with opponents on contact.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon exchanges Abilities with a Pok\u00e9mon that hits it with a move that makes direct contact.",
+    "pokemon_with_ability": [
+      "#562",
+      "#867"
+    ]
+  },
+  {
+    "name": "Water Absorb",
+    "effect": "A Pok\u00e9mon with Water Absorb heals 1\u20444 of its maximum HP when hit by a Water-type attack.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Restores HP if hit by a Water-type move instead of taking damage.",
+    "pokemon_with_ability": [
+      "#060",
+      "#061",
+      "#062",
+      "#131",
+      "#134",
+      "#186",
+      "#194",
+      "#195",
+      "#226",
+      "#458",
+      "#556",
+      "#592",
+      "#593",
+      "#721",
+      "#882",
+      "#883"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#170",
+      "#171",
+      "#331",
+      "#332",
+      "#535",
+      "#536",
+      "#537",
+      "#751",
+      "#752"
+    ]
+  },
+  {
+    "name": "Water Bubble",
+    "effect": "Water Bubble reduces damage taken from Fire-type moves by 50%, and doubles the power of Water-type moves used by the ability-bearer. It also prevents the Pok\u00e9mon from being burned.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Lowers the power of Fire-type moves done to the Pok\u00e9mon and prevents the Pok\u00e9mon from getting a burn.",
+    "pokemon_with_ability": [
+      "#751",
+      "#752"
+    ]
+  },
+  {
+    "name": "Water Compaction",
+    "effect": "Water Compaction raises the bearer's Defense by 2 stages when it is hit by a Water-type move.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Boosts the Pok\u00e9mon\u2019s Defense stat sharply when hit by a Water-type move.",
+    "pokemon_with_ability": [
+      "#769",
+      "#770"
+    ]
+  },
+  {
+    "name": "Water Veil",
+    "effect": "Prevents the Pok\u00e9mon from getting a burn.\n",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is covered with a water veil, which prevents the Pok\u00e9mon from getting a burn.",
+    "pokemon_with_ability": [
+      "#118",
+      "#119",
+      "#320",
+      "#321"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#226",
+      "#367",
+      "#418",
+      "#419",
+      "#456",
+      "#457",
+      "#458"
+    ]
+  },
+  {
+    "name": "Weak Armor",
+    "effect": "When a Pok\u00e9mon with Weak Armor is hit by a physical move, its Defense drops one stage, but its Speed increases by one stage.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Physical attacks to the Pok\u00e9mon lower its Defense stat but sharply raise its Speed stat.",
+    "pokemon_with_ability": [
+      "#222",
+      "#524",
+      "#525",
+      "#569",
+      "#854",
+      "#855",
+      "#864"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#095",
+      "#138",
+      "#139",
+      "#140",
+      "#141",
+      "#218",
+      "#219",
+      "#227",
+      "#557",
+      "#558",
+      "#582",
+      "#583",
+      "#584",
+      "#629",
+      "#630"
+    ]
+  },
+  {
+    "name": "White Smoke",
+    "effect": "Prevents other Pok\u00e9mon from lowering its stats.\n",
+    "outside_of_battle": "If a Pok\u00e9mon with White Smoke is the leading party Pok\u00e9mon, wild Pok\u00e9mon are only half as likely to appear.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon is protected by its white smoke, which prevents other Pok\u00e9mon from lowering its stats.",
+    "pokemon_with_ability": [
+      "#324",
+      "#850",
+      "#851"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#631"
+    ]
+  },
+  {
+    "name": "Wimp Out",
+    "effect": "Wimp Out causes the bearer to switch out (or flee in a wild battle) when its HP falls below 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "The Pok\u00e9mon cowardly switches out when its HP becomes half or less.",
+    "pokemon_with_ability": [
+      "#767"
+    ]
+  },
+  {
+    "name": "Wonder Guard",
+    "effect": "Wonder Guard prevents damage from direct attacks unless they are super-effective. Shedinja is the only Pok\u00e9mon to have this ability so this means that only Fire, Flying, Rock, Ghost and Dark moves will have an effect.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Its mysterious power only lets supereffective moves hit the Pok\u00e9mon.",
+    "pokemon_with_ability": [
+      "#292"
+    ]
+  },
+  {
+    "name": "Wonder Skin",
+    "effect": "Wonder Skin halves the accuracy of all status moves targeted at the ability-bearer.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Makes status moves more likely to miss.",
+    "pokemon_with_ability": [
+      "#561"
+    ],
+    "pokemon_with_hidden_ability": [
+      "#049",
+      "#300",
+      "#301",
+      "#779"
+    ]
+  },
+  {
+    "name": "Zen Mode",
+    "effect": "Zen Mode changes the ability-bearer's form to Zen Mode when their health falls below 50%.",
+    "game_description_from": "Sword\u200b/\u200bShield",
+    "game_description": "Changes the Pok\u00e9mon\u2019s shape when HP is half or less.",
+    "pokemon_with_hidden_ability": [
+      "#555"
+    ]
+  }
+]

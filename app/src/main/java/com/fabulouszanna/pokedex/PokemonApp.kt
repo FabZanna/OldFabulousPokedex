@@ -1,10 +1,14 @@
 package com.fabulouszanna.pokedex
 
 import android.app.Application
-import com.fabulouszanna.pokedex.repo.PokemonDatabase
-import com.fabulouszanna.pokedex.repo.PokemonRepository
-import com.fabulouszanna.pokedex.repo.PokemonViewModel
-import com.fabulouszanna.pokedex.repo.SinglePokemonViewModel
+import com.fabulouszanna.pokedex.repo.MainDatabase
+import com.fabulouszanna.pokedex.repo.pokemon.SinglePokemonViewModel
+import com.fabulouszanna.pokedex.repo.ability.AbilityRepository
+import com.fabulouszanna.pokedex.repo.ability.AbilityViewModel
+import com.fabulouszanna.pokedex.repo.pokemon.PokemonRepository
+import com.fabulouszanna.pokedex.repo.pokemon.PokemonViewModel
+import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveRepository
+import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
@@ -20,14 +24,18 @@ class PokemonApp : Application() {
     private val koinModule = module {
         single {
             PokemonRepository(
-                get<PokemonDatabase>().pokemonDao()
+                get<MainDatabase>().pokemonDao()
             )
         }
-        single { PokemonDatabase.newInstance(androidContext()) }
+        single { AbilityRepository(get<MainDatabase>().abilityDao()) }
+        single { PokemonMoveRepository(get<MainDatabase>().pokemonMoveDao()) }
+        single { MainDatabase.newInstance(androidContext()) }
         single(named("appScope")) { CoroutineScope(SupervisorJob()) }
 
         viewModel { PokemonViewModel(get()) }
-        viewModel { (pokemonId: String) -> SinglePokemonViewModel(get(), pokemonId) }
+        viewModel { (id: Int) -> SinglePokemonViewModel(get(), id) }
+        viewModel { AbilityViewModel(get()) }
+        viewModel { (pokemonName: String) -> PokemonMoveViewModel(get(), pokemonName) }
     }
 
     override fun onCreate() {

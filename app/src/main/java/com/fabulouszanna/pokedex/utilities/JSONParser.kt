@@ -1,24 +1,23 @@
 package com.fabulouszanna.pokedex.utilities
 
 import android.content.Context
-import com.fabulouszanna.pokedex.repo.PokemonEntity
 import com.google.gson.Gson
 import org.json.JSONArray
 
 class JSONParser(private val context: Context) {
-    private fun getJsonDataFromAssets(fileName: String): String =
+    fun getJsonDataFromAssets(fileName: String): String =
         context.assets.open(fileName).bufferedReader().use {
             it.readText()
         }
 
-    fun extractJsonData(fileName: String): List<PokemonEntity> {
+    inline fun <reified T> extractJsonData(fileName: String): List<T> {
         val jsonList = JSONArray(getJsonDataFromAssets(fileName))
         val gson = Gson()
-        val extractedList = mutableListOf<PokemonEntity>()
+        val extractedList = mutableListOf<T>()
         for (i in 0 until jsonList.length()) {
             val jsonObject = jsonList.getJSONObject(i).toString()
-            val pokemonModel = gson.fromJson(jsonObject, PokemonEntity::class.java)
-            extractedList.add(pokemonModel)
+            val model = gson.fromJson(jsonObject, T::class.java)
+            extractedList.add(model)
         }
         return extractedList
     }

@@ -7,6 +7,7 @@
     <color name="blackFume">#757A80</color>
     <color name="colorMalePercent">#4A75BA</color>
     <color name="colorFemalePercent">#BA4A91</color>
+    <color name="darkGray">#737373</color>
 
     <!-- TYPES COLORS -->
     <color name="bug">#83901a</color>

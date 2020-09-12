@@ -17,11 +17,14 @@
         android:name="com.fabulouszanna.pokedex.ui.pokemondetails.PokemonDetails"
         android:label="PokemonDetails">
         <argument
-            android:name="pokemonId"
-            app:argType="string" />
+            android:name="id"
+            app:argType="integer" />
         <action
             android:id="@+id/calculateStats"
             app:destination="@id/statsCalculator" />
+        <action
+            android:id="@+id/replacePokemonDetails"
+            app:destination="@id/pokemonDetails" />
     </fragment>
     <fragment
         android:id="@+id/statsCalculator"

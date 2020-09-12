@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,7 +74,7 @@
                     android:background="@android:color/white"
                     android:paddingStart="2dp"
                     android:paddingEnd="2dp"
-                    android:text="Level"
+                    android:text="@string/level"
                     android:textColor="@color/colorAccent"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -118,7 +119,7 @@
                     android:background="@android:color/white"
                     android:paddingStart="2dp"
                     android:paddingEnd="2dp"
-                    android:text="Nature"
+                    android:text="@string/nature"
                     android:textColor="@color/colorAccent"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -135,7 +136,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/card_margin"
-            android:layout_marginBottom="@dimen/card_margin"
             android:orientation="horizontal">
 
             <Button
@@ -158,6 +158,5 @@
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

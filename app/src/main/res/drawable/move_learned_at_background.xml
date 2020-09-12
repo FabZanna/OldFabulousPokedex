@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="@dimen/card_margin"
+                android:topRightRadius="@dimen/card_margin" />
+            <size
+                android:width="40dp"
+                android:height="20dp" />
+            <solid android:color="@color/darkGray" />
+        </shape>
+    </item>
+
+<!--    <item-->
+<!--        android:left="-60dp"-->
+<!--        android:top="-10dp">-->
+<!--        <rotate android:fromDegrees="-70">-->
+<!--            <shape android:shape="rectangle">-->
+<!--                <solid-->
+<!--                    android:color="@android:color/white" />-->
+<!--            </shape>-->
+<!--        </rotate>-->
+<!--    </item>-->
+
+</layer-list>

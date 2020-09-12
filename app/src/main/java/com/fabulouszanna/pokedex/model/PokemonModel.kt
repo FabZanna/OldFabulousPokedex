@@ -1,8 +1,9 @@
 package com.fabulouszanna.pokedex.model
 
 data class PokemonModel(
+    val id: Int,
     val name: String,
-    val id: String,
+    val pokemonId: String,
     val imgUrl: String,
     val type1: String,
     val type2: String? = null,
@@ -14,12 +15,16 @@ data class PokemonModel(
     val weight: String,
     val malePercentage: String,
     val femalePercentage: String,
-    val hp: String,
-    val attack: String,
-    val defense: String,
-    val specialAtk: String,
-    val specialDef: String,
-    val speed: String,
+    val stats: PokemonStats?,
+//    val hp: String,
+//    val attack: String,
+//    val defense: String,
+//    val specialAtk: String,
+//    val specialDef: String,
+//    val speed: String,
     val abilities: List<String>,
-    val hiddenAbility: String? = null
+    val hiddenAbility: String? = null,
+    val evolutions: List<String>,
+    val evolutionCause: String? = null,
+    val splitEvolution: Boolean
 )
