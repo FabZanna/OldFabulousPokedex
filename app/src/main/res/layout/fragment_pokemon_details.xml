@@ -20,10 +20,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/pokemonVariationName"
+        style="@style/CustomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/pokemonName"
+        app:layout_constraintTop_toBottomOf="@id/pokemonName" />
+
+
+    <TextView
         android:id="@+id/pokemonType1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="@dimen/card_margin"
         android:background="@drawable/type_background"
         android:paddingStart="12dp"
@@ -31,15 +42,14 @@
         android:paddingEnd="12dp"
         android:paddingBottom="4dp"
         android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pokemonName" />
+        app:layout_constraintStart_toStartOf="@id/pokemonName"
+        app:layout_constraintTop_toBottomOf="@id/pokemonVariationName" />
 
     <TextView
         android:id="@+id/pokemonType2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/card_margin"
-        android:layout_marginTop="@dimen/card_margin"
         android:background="@drawable/type_background"
         android:paddingStart="12dp"
         android:paddingTop="4dp"
@@ -48,7 +58,7 @@
         android:textColor="@android:color/white"
         android:visibility="gone"
         app:layout_constraintStart_toEndOf="@id/pokemonType1"
-        app:layout_constraintTop_toBottomOf="@id/pokemonName" />
+        app:layout_constraintTop_toTopOf="@id/pokemonType1" />
 
     <TextView
         android:id="@+id/pokemonId"
@@ -56,7 +66,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/card_margin"
         android:layout_marginEnd="@dimen/card_margin"
-        android:text="#001"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +76,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/card_margin"
-        android:text="Seed Pokemon"
         android:textColor="@android:color/white"
         app:layout_constraintBaseline_toBaselineOf="@id/pokemonType1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,25 +106,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pokemonType1" />
 
-    <ImageView
-        android:id="@+id/previousVariation"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@id/pokemonImg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pokemonImg"
-        app:tint="@color/blackFume" />
+    <!--    <ImageView-->
+    <!--        android:id="@+id/previousVariation"-->
+    <!--        android:layout_width="70dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/pokemonImg"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/pokemonImg"-->
+    <!--        app:tint="@color/blackFume" />-->
 
-    <ImageView
-        android:id="@+id/nextVariation"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@id/pokemonImg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/pokemonImg"
-        app:tint="@color/blackFume" />
+    <!--    <ImageView-->
+    <!--        android:id="@+id/nextVariation"-->
+    <!--        android:layout_width="70dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/pokemonImg"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/pokemonImg"-->
+    <!--        app:tint="@color/blackFume" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -131,11 +139,11 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/card_margin"
             android:layout_marginEnd="@dimen/card_margin"
             app:tabIndicatorColor="@color/colorAccent"
-            app:tabSelectedTextColor="@color/colorAccent"
-            android:layout_height="wrap_content" />
+            app:tabSelectedTextColor="@color/colorAccent" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"

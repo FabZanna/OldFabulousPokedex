@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/card_margin"
+    android:paddingBottom="@dimen/card_margin">
+
+    <include
+        android:id="@+id/eevee"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/leafeonEvo"
+        app:layout_constraintEnd_toStartOf="@id/espeonEvo"
+        app:layout_constraintStart_toEndOf="@id/sylveonEvo"
+        app:layout_constraintTop_toBottomOf="@id/jolteonEvo" />
+
+    <include
+        android:id="@+id/vaporeonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/sylveonEvo"
+        app:layout_constraintEnd_toStartOf="@id/jolteonEvo"
+        app:layout_constraintStart_toEndOf="@id/vaporeon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/vaporeon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/vaporeonEvo"
+        app:layout_constraintEnd_toStartOf="@id/vaporeonEvo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/jolteonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/eevee"
+        app:layout_constraintEnd_toStartOf="@id/flareonEvo"
+        app:layout_constraintStart_toEndOf="@id/vaporeonEvo"
+        app:layout_constraintTop_toBottomOf="@id/jolteon" />
+
+    <include
+        android:id="@+id/jolteon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/jolteonEvo"
+        app:layout_constraintEnd_toEndOf="@id/jolteonEvo"
+        app:layout_constraintStart_toStartOf="@id/jolteonEvo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/flareonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/eevee"
+        app:layout_constraintEnd_toStartOf="@id/flareon"
+        app:layout_constraintStart_toEndOf="@id/jolteonEvo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/flareon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/flareonEvo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/flareonEvo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/espeonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/umbreonEvo"
+        app:layout_constraintEnd_toStartOf="@id/espeon"
+        app:layout_constraintStart_toEndOf="@id/eevee"
+        app:layout_constraintTop_toBottomOf="@id/flareonEvo" />
+
+    <include
+        android:id="@+id/espeon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/umbreon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/espeonEvo"
+        app:layout_constraintTop_toBottomOf="@id/flareon" />
+
+    <include
+        android:id="@+id/umbreonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/umbreon"
+        app:layout_constraintStart_toEndOf="@id/leafeonEvo"
+        app:layout_constraintTop_toBottomOf="@id/eevee" />
+
+    <include
+        android:id="@+id/umbreon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/umbreonEvo"
+        app:layout_constraintTop_toBottomOf="@id/umbreonEvo" />
+
+    <include
+        android:id="@+id/leafeonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/leafeon"
+        app:layout_constraintEnd_toStartOf="@id/umbreonEvo"
+        app:layout_constraintStart_toEndOf="@id/glaceonEvo"
+        app:layout_constraintTop_toBottomOf="@id/eevee" />
+
+    <include
+        android:id="@+id/leafeon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/leafeonEvo"
+        app:layout_constraintStart_toStartOf="@id/leafeonEvo"
+        app:layout_constraintTop_toBottomOf="@id/leafeonEvo" />
+
+    <include
+        android:id="@+id/glaceonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/leafeonEvo"
+        app:layout_constraintStart_toEndOf="@id/glaceon"
+        app:layout_constraintTop_toBottomOf="@id/sylveonEvo" />
+
+    <include
+        android:id="@+id/glaceon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/glaceonEvo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glaceonEvo" />
+
+    <include
+        android:id="@+id/sylveonEvo"
+        layout="@layout/evolution_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/glaceonEvo"
+        app:layout_constraintEnd_toStartOf="@id/eevee"
+        app:layout_constraintStart_toEndOf="@id/sylveon"
+        app:layout_constraintTop_toBottomOf="@id/vaporeonEvo" />
+
+    <include
+        android:id="@+id/sylveon"
+        layout="@layout/evolution_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/glaceon"
+        app:layout_constraintEnd_toStartOf="@id/sylveonEvo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vaporeon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

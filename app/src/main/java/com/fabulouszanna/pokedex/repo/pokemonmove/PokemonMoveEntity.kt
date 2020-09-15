@@ -9,7 +9,8 @@ data class PokemonMoveEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val pokemon_name: String,
-    val level_learned: String,
+    val level_learned: String? = null,
+    val move_TM: String? = null,
     val move_name: String,
     val move_learned_by: String
 ) {
@@ -17,6 +18,7 @@ data class PokemonMoveEntity(
         return PokemonMoveModel(
             pokemonName = pokemon_name,
             moveLevelLearned = level_learned,
+            moveTM = move_TM,
             moveName = move_name,
             learnMethod = move_learned_by
         )

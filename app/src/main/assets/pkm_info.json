@@ -7854,7 +7854,12 @@
       "Eevee",
       "Vaporeon",
       "Jolteon",
-      "Flareon"
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
     "split_evolution": true,
     "evolution_cause": null,
@@ -7937,7 +7942,12 @@
       "Eevee",
       "Vaporeon",
       "Jolteon",
-      "Flareon"
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
     "split_evolution": true,
     "evolution_cause": "use Water Stone",
@@ -7983,7 +7993,12 @@
       "Eevee",
       "Vaporeon",
       "Jolteon",
-      "Flareon"
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
     "split_evolution": true,
     "evolution_cause": "use Thunder Stone",
@@ -8029,7 +8044,12 @@
       "Eevee",
       "Vaporeon",
       "Jolteon",
-      "Flareon"
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
     "split_evolution": true,
     "evolution_cause": "use Fire Stone",
@@ -11049,8 +11069,17 @@
     "description": "It unleashes psychic power from the orb on its forehead. When its power is exhausted, the orb grows dull and dark.",
     "is_variation": false,
     "evolutions": [
-      "Espeon"
+      "Eevee",
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
+    "evolution_cause": "High Friendship, Daytime",
     "split_evolution": true,
     "gen": "gen2"
   },
@@ -11091,8 +11120,17 @@
     "description": "On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow.",
     "is_variation": false,
     "evolutions": [
-      "Umbreon"
+      "Eevee",
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
+    "evolution_cause": "High Friendship, Nighttime",
     "split_evolution": true,
     "gen": "gen2"
   },
@@ -25352,8 +25390,17 @@
     "description": "This Pok\u00e9mon\u2019s tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.",
     "is_variation": false,
     "evolutions": [
-      "Leafeon"
+      "Eevee",
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
+    "evolution_cause": "Level up near a Mossy Rock",
     "split_evolution": true,
     "gen": "gen4"
   },
@@ -25394,8 +25441,17 @@
     "description": "The coldness emanating from Glaceon causes powdery snow to form, making it quite a popular Pok\u00e9mon at ski resorts.",
     "is_variation": false,
     "evolutions": [
-      "Glaceon"
+      "Eevee",
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
     ],
+    "evolution_cause": "Level up near an Icy Rock",
     "split_evolution": true,
     "gen": "gen4"
   },
@@ -36860,8 +36916,17 @@
     "description": "There\u2019s a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pok\u00e9mon.",
     "is_variation": false,
     "evolutions": [
+      "Eevee",
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
       "Sylveon"
     ],
+    "evolution_cause": "Affection in Pokémon Amie, knowing a Fairy Move",
     "split_evolution": true,
     "gen": "gen6"
   },

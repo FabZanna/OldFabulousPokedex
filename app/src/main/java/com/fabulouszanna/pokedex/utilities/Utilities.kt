@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
-import androidx.core.content.getSystemService
 import com.bumptech.glide.Glide
 import com.fabulouszanna.pokedex.R
 import java.util.*

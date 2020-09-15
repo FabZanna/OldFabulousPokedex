@@ -20,7 +20,7 @@ import kotlinx.coroutines.withContext
 
 @Database(
     entities = [PokemonEntity::class, AbilityEntity::class, PokemonMoveEntity::class, MoveEntity::class],
-    version = 2
+    version = 1
 )
 @TypeConverters(Converters::class)
 abstract class MainDatabase : RoomDatabase() {

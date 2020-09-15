@@ -11,6 +11,7 @@ data class PokemonEntity(
     val id: Int,
     @ColumnInfo(name = "pokemon_name")
     val name: String,
+    val variation_name: String? = null,
     @ColumnInfo(name = "pokemon_id")
     val pokemon_id: String,
     val img_url: String,
@@ -26,12 +27,6 @@ data class PokemonEntity(
     val female_perc: String,
     @Embedded
     val stats: PokemonStats?,
-//    val hp: String,
-//    val attack: String,
-//    val defense: String,
-//    val sp_atk: String,
-//    val sp_def: String,
-//    val speed: String,
     val abilities: List<String>,
     val hidden_ability: String? = null,
     val evolutions: List<String>,
@@ -54,6 +49,7 @@ data class PokemonEntity(
         return PokemonModel(
             id = id,
             name = name,
+            variationName = variation_name,
             pokemonId = pokemon_id,
             imgUrl = img_url,
             type1 = type1,
@@ -67,12 +63,6 @@ data class PokemonEntity(
             malePercentage = male_perc,
             femalePercentage = female_perc,
             stats = stats,
-//            hp = hp,
-//            attack = attack,
-//            defense = defense,
-//            specialAtk = sp_atk,
-//            specialDef = sp_def,
-//            speed = speed,
             abilities = abilities,
             hiddenAbility = hidden_ability,
             evolutions = evolutions,

@@ -11,6 +11,7 @@ import android.view.animation.Animation
 import android.view.animation.LinearInterpolator
 import android.view.animation.RotateAnimation
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonDetailsBinding
@@ -86,6 +87,12 @@ class PokemonDetails : Fragment() {
     private fun populateUpperView(pokemon: PokemonModel) {
         binding.apply {
             pokemonName.text = pokemon.name
+            pokemon.variationName?.let {
+                val varName = "($it)"
+                pokemonVariationName.text = varName
+                pokemonVariationName.visibility = View.VISIBLE
+                changeSpeciesConstraints()
+            }
             pokemonType1.text = pokemon.type1
             pokemon.type2?.let {
                 pokemonType2.text = it
@@ -97,6 +104,12 @@ class PokemonDetails : Fragment() {
 
             root.setBackgroundColor(pokemonColor)
         }
+    }
+
+    private fun changeSpeciesConstraints() {
+        val params = pokemonSpecies.layoutParams as ConstraintLayout.LayoutParams
+        params.baselineToBaseline = binding.pokemonVariationName.id
+        binding.root.requestLayout()
     }
 
     private fun spinPokeBall() {

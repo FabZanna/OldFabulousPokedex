@@ -17,6 +17,9 @@
     <string name="ability_effect">Ability Effect</string>
     <string name="nature">Nature</string>
     <string name="level">Level</string>
+    <string name="learned_at">Learned at</string>
+    <string name="learned_by">Learned by</string>
+    <string name="category">Category</string>
 
     <string-array name="types">
         <item>Bug</item>

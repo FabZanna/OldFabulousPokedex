@@ -5,7 +5,8 @@ import androidx.room.Relation
 
 data class PokemonMoveModel (
     val pokemonName: String,
-    val moveLevelLearned: String,
+    val moveLevelLearned: String?,
+    val moveTM: String?,
     val moveName: String,
     val learnMethod: String
 )

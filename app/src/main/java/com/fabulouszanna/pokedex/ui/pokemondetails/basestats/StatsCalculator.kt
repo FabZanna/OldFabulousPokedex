@@ -12,7 +12,6 @@ import android.widget.SeekBar
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.graphics.ColorUtils
-import androidx.core.graphics.alpha
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.fabulouszanna.pokedex.R
@@ -161,6 +160,7 @@ class StatsCalculator : Fragment() {
 
         @Suppress("UNCHECKED_CAST")
         val pokemonStats = arguments?.get("pokemonStats") as Map<String, Int>
+
         @Suppress("UNCHECKED_CAST")
         val onPopBackStack = arguments?.get("popBack") as () -> Unit
         navController.previousBackStackEntry?.savedStateHandle?.set(
