@@ -9,5 +9,6 @@ I've implemented 3 filters for now - Generation, type and name
 ![Gen Filter](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/gen_filter_snippet.png "Gen Filter") ![Type Filter](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/type_filter_snippet.png "Type Filter")
 
 ## Pokemon Page
-I'm currently working on implementing the page relative to a single pokemon. The pokeball spins continuously btw.
-![Pokemon Details](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details.png "Pokemon Details")
+Everything major is practically complete. I'm just working on polishing the app
+![Pokemon Details](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details.png "Pokemon Details") ![Pokemon Base Stats](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_base stats.png "Pokemon Base Stats")
+![Pokemon Evolutions](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_evolutions.png "Pokemon Evolutions") ![Pokemon Moves](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_moves.png "Pokemon Moves")
