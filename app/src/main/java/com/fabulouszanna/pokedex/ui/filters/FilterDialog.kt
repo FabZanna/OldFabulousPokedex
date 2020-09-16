@@ -61,7 +61,7 @@ class FilterDialog(
                 }
             }
 
-            filterButton.setOnClickListener { _ -> onSubmitButtonClicked() }
+            filterButton.setOnClickListener { onSubmitButtonClicked() }
 
         }
 
@@ -85,7 +85,7 @@ class FilterDialog(
         filterAdapter = FilterViewPagerAdapter(this, onGenFilterClicked = { currentGen = it } , onTypeFilterClicked = { currentType = it })
         viewPager.apply {
             adapter = filterAdapter
-            this.recyclerView.enforceSingleScrollDirection()
+//            this.recyclerView.enforceSingleScrollDirection()
         }
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->

@@ -2,13 +2,13 @@ package com.fabulouszanna.pokedex
 
 import android.app.Application
 import com.fabulouszanna.pokedex.repo.MainDatabase
-import com.fabulouszanna.pokedex.repo.pokemon.SinglePokemonViewModel
+import com.fabulouszanna.pokedex.ui.pokemonlist.SinglePokemonViewModel
 import com.fabulouszanna.pokedex.repo.ability.AbilityRepository
-import com.fabulouszanna.pokedex.repo.ability.AbilityViewModel
+import com.fabulouszanna.pokedex.ui.ability.AbilityViewModel
 import com.fabulouszanna.pokedex.repo.pokemon.PokemonRepository
-import com.fabulouszanna.pokedex.repo.pokemon.PokemonViewModel
+import com.fabulouszanna.pokedex.ui.pokemonlist.PokemonViewModel
 import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveRepository
-import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveViewModel
+import com.fabulouszanna.pokedex.ui.pokemondetails.move.PokemonMoveViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext

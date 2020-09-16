@@ -1,9 +1,10 @@
-package com.fabulouszanna.pokedex.repo.ability
+package com.fabulouszanna.pokedex.ui.ability
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.fabulouszanna.pokedex.model.AbilityModel
+import com.fabulouszanna.pokedex.repo.ability.AbilityRepository
 
 data class AbilityViewState(
     val ability: AbilityModel

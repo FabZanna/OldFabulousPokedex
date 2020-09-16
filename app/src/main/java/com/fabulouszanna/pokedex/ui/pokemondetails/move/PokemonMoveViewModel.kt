@@ -1,10 +1,11 @@
-package com.fabulouszanna.pokedex.repo.pokemonmove
+package com.fabulouszanna.pokedex.ui.pokemondetails.move
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.fabulouszanna.pokedex.model.PokemonAndMoveModel
+import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveRepository
 import kotlinx.coroutines.flow.map
 
 data class PokemonMoveViewState(

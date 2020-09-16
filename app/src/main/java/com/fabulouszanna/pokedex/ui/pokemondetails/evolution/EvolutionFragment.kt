@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.fabulouszanna.pokedex.databinding.EvolutionArrowBinding
 import com.fabulouszanna.pokedex.databinding.FragmentEvolutionBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.repo.pokemon.PokemonViewModel
+import com.fabulouszanna.pokedex.ui.pokemonlist.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.pokemondetails.PokemonDetailsDirections
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite

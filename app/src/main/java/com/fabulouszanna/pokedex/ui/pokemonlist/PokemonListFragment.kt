@@ -3,7 +3,6 @@ package com.fabulouszanna.pokedex.ui.pokemonlist
 import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,11 +14,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonListBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.repo.pokemon.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.filters.FilterDialog
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
 import com.fabulouszanna.pokedex.utilities.hideKeyboard
-import kotlinx.android.synthetic.main.fragment_pokemon_list.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokemonListFragment : Fragment() {
@@ -98,21 +95,16 @@ class PokemonListFragment : Fragment() {
         }
 
 
-        filter_fab.setOnClickListener {
-            fabClicked = !fabClicked
-            onFabClicked()
-        }
+        binding.filterFab.setOnClickListener { onFabClicked() }
     }
 
     private fun onFabClicked() {
-        filter_fab.apply {
-            if (fabClicked) {
-                navToFilters()
-                setImageResource(R.drawable.ic_close)
-            } else {
-                viewModel.filtered("", "all", "all")
-                setImageResource(R.drawable.ic_filter)
-            }
+        if (!fabClicked) {
+            navToFilters()
+        } else {
+            viewModel.filtered("", "all", "all")
+            fabClicked = false
+            binding.filterFab.setImageResource(R.drawable.ic_filter)
         }
     }
 
@@ -136,5 +128,7 @@ class PokemonListFragment : Fragment() {
 
     private fun onFilterClicked(gen: String, type: String) {
         viewModel.filtered("", gen, type)
+        fabClicked = true
+        binding.filterFab.setImageResource(R.drawable.ic_close)
     }
 }
