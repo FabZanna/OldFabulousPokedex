@@ -10,5 +10,5 @@ I've implemented 3 filters for now - Generation, type and name
 
 ## Pokemon Page
 Everything major is practically complete. I'm just working on polishing the app
-![Pokemon Details](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details.png "Pokemon Details") ![Pokemon Base Stats](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_base stats.png "Pokemon Base Stats")
+![Pokemon Details](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details.png "Pokemon Details") ![Pokemon Base Stats](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_base_stats.png "Pokemon Base Stats")
 ![Pokemon Evolutions](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_evolutions.png "Pokemon Evolutions") ![Pokemon Moves](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokemon_details_moves.png "Pokemon Moves")
