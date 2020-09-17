@@ -33,7 +33,7 @@ class EvolutionFragment(private val pokemon: PokemonModel) : Fragment() {
 
         viewModel.getPokemonsByName(pokemon.evolutions)
             .observe(viewLifecycleOwner) { evolutionList ->
-                val sortedList = evolutionList.sortedBy { pokemon.evolutions.indexOf(it.name) }
+                val sortedList = evolutionList.sortedBy { pokemon.evolutions.indexOf(it.name) }.distinctBy { it.name }
                 sortedList.filter { it.name == "Eevee" }.let {
                     if (it.isNotEmpty()) {
                         controller.isEevee = true
