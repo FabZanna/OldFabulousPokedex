@@ -2,7 +2,7 @@ package com.fabulouszanna.pokedex
 
 import android.app.Application
 import com.fabulouszanna.pokedex.repo.MainDatabase
-import com.fabulouszanna.pokedex.ui.pokemonlist.SinglePokemonViewModel
+import com.fabulouszanna.pokedex.ui.pokemondetails.SinglePokemonViewModel
 import com.fabulouszanna.pokedex.repo.ability.AbilityRepository
 import com.fabulouszanna.pokedex.ui.ability.AbilityViewModel
 import com.fabulouszanna.pokedex.repo.pokemon.PokemonRepository

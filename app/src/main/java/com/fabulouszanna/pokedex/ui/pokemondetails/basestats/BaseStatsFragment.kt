@@ -139,9 +139,9 @@ class BaseStatsFragment(
     private fun populateWeaknesses() {
         val pokemonWeaknesses = PokemonWeaknesses(pokemon)
         val recyclerViewMap = mapOf(
-            weaknessRecyclerView to pokemonWeaknesses.getWeaknesses(),
-            resistanceRecyclerView to pokemonWeaknesses.getResistances(),
-            immunitiesRecyclerView to pokemonWeaknesses.getImmunities()
+            weaknessRecyclerView to pokemonWeaknesses.weaknesses,
+            resistanceRecyclerView to pokemonWeaknesses.resistances,
+            immunitiesRecyclerView to pokemonWeaknesses.immunities
         )
         binding.apply {
             recyclerViewMap.forEach { (rv, weaknessMap) ->

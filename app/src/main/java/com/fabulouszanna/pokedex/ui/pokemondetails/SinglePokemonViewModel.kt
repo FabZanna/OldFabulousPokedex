@@ -1,4 +1,4 @@
-package com.fabulouszanna.pokedex.ui.pokemonlist
+package com.fabulouszanna.pokedex.ui.pokemondetails
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

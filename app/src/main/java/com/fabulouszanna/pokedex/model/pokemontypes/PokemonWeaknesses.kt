@@ -28,13 +28,13 @@ class PokemonWeaknesses(pokemon: PokemonModel) {
         else -> throw IllegalArgumentException("Type $type does not exist")
     }
 
-    private val weaknesses =
+    private val typeWeaknesses =
         type2?.let { getTypeObject(type1).weaknesses + getTypeObject(type2).weaknesses }
             ?: getTypeObject(type1).weaknesses
-    private val resistances =
+    private val typeResistances =
         type2?.let { getTypeObject(type1).resistances + getTypeObject(type2).resistances }
             ?: getTypeObject(type1).resistances
-    private val immunities =
+    private val typeImmunities =
         type2?.let { getTypeObject(type1).immunities + getTypeObject(type2).immunities }
             ?: getTypeObject(type1).immunities
 
@@ -43,24 +43,22 @@ class PokemonWeaknesses(pokemon: PokemonModel) {
 
     private fun getWeaknessTable(): Map<String, Float> {
         val weaknessTable = mutableMapOf<String, Float>()
-        weaknesses.forEach {
-            weaknessTable[it as String] = weaknessTable[it]?.times(2f) ?: 2f
+        typeWeaknesses.forEach {
+            weaknessTable[it] = weaknessTable[it]?.times(2f) ?: 2f
         }
-        resistances.forEach {
-            weaknessTable[it as String] = weaknessTable[it]?.times(0.5f) ?: 0.5f
+        typeResistances.forEach {
+            weaknessTable[it] = weaknessTable[it]?.times(0.5f) ?: 0.5f
         }
-        immunities.forEach {
-            weaknessTable[it as String] = weaknessTable[it]?.times(0f) ?: 0f
+        typeImmunities.forEach {
+            weaknessTable[it] = weaknessTable[it]?.times(0f) ?: 0f
         }
         return weaknessTable
     }
 
-    fun getWeaknesses(): Map<String, Float> =
-        weaknessResistanceTable.filter { (_, value) -> value > 1f }
+    val weaknesses by lazy { weaknessResistanceTable.filter { (_, value) -> value > 1f } }
 
-    fun getResistances(): Map<String, Float> =
-        weaknessResistanceTable.filter { (_, value) -> value > 0f && value < 1f }
 
-    fun getImmunities(): Map<String, Float> =
-        weaknessResistanceTable.filter { (_, value) -> value == 0f }
+    val resistances by lazy { weaknessResistanceTable.filter { (_, value) -> value > 0f && value < 1f } }
+
+    val immunities by lazy { weaknessResistanceTable.filter { (_, value) -> value == 0f } }
 }

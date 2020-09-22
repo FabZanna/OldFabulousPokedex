@@ -16,7 +16,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonDetailsBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.ui.pokemonlist.SinglePokemonViewModel
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
 import com.google.android.material.tabs.TabLayoutMediator

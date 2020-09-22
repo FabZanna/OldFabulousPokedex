@@ -6,63 +6,97 @@ sealed class PokemonType(
     val immunities: List<String> = emptyList()
 ) {
     object Bug :
-        PokemonType(listOf("Fire", "Flying", "Rock"), listOf("Grass", "Fighting", "Ground"))
+        PokemonType(
+            weaknesses = listOf("Fire", "Flying", "Rock"),
+            resistances = listOf("Grass", "Fighting", "Ground")
+        )
 
     object Dark :
-        PokemonType(listOf("Bug", "Fairy", "Fighting"), listOf("Dark", "Ghost"), listOf("Psychic"))
+        PokemonType(
+            weaknesses = listOf("Bug", "Fairy", "Fighting"),
+            resistances = listOf("Dark", "Ghost"),
+            immunities = listOf("Psychic")
+        )
 
     object Dragon :
-        PokemonType(listOf("Dragon", "Fairy", "Ice"), listOf("Fire", "Water", "Electric", "Grass"))
+        PokemonType(
+            weaknesses = listOf("Dragon", "Fairy", "Ice"),
+            resistances = listOf("Fire", "Water", "Electric", "Grass")
+        )
 
-    object Electric : PokemonType(listOf("Ground"), listOf("Electric", "Flying", "Steel"))
+    object Electric : PokemonType(
+        weaknesses = listOf("Ground"),
+        resistances = listOf("Electric", "Flying", "Steel")
+    )
 
     object Fairy :
-        PokemonType(listOf("Poison", "Steel"), listOf("Fighting", "Bug", "Dark"), listOf("Dragon"))
+        PokemonType(
+            weaknesses = listOf("Poison", "Steel"),
+            resistances = listOf("Fighting", "Bug", "Dark"),
+            immunities = listOf("Dragon")
+        )
 
     object Fighting :
-        PokemonType(listOf("Flying", "Psychic", "Fairy"), listOf("Bug", "Rock", "Dark"))
+        PokemonType(
+            weaknesses = listOf("Flying", "Psychic", "Fairy"),
+            resistances = listOf("Bug", "Rock", "Dark")
+        )
 
     object Fire : PokemonType(
-        listOf("Water", "Ground", "Rock"),
-        listOf("Fire", "Grass", "Ice", "Bug", "Steel", "Fairy")
+        weaknesses = listOf("Water", "Ground", "Rock"),
+        resistances = listOf("Fire", "Grass", "Ice", "Bug", "Steel", "Fairy")
     )
 
     object Flying : PokemonType(
-        listOf("Electric", "Ice", "Rock"),
-        listOf("Grass", "Fighting", "Bug"),
-        listOf("Ground")
+        weaknesses = listOf("Electric", "Ice", "Rock"),
+        resistances = listOf("Grass", "Fighting", "Bug"),
+        immunities = listOf("Ground")
     )
 
     object Ghost :
-        PokemonType(listOf("Ghost", "Dark"), listOf("Poison", "Bug"), listOf("Normal", "Fighting"))
+        PokemonType(
+            weaknesses = listOf("Ghost", "Dark"),
+            resistances = listOf("Poison", "Bug"),
+            immunities = listOf("Normal", "Fighting")
+        )
 
     object Grass : PokemonType(
-        listOf("Fire", "Ice", "Poison", "Flying", "Bug"),
-        listOf("Water", "Electric", "Grass", "Ground")
+        weaknesses = listOf("Fire", "Ice", "Poison", "Flying", "Bug"),
+        resistances = listOf("Water", "Electric", "Grass", "Ground")
     )
 
     object Ground :
-        PokemonType(listOf("Water", "Grass", "Ice"), listOf("Poison", "Rock"), listOf("Electric"))
+        PokemonType(
+            weaknesses = listOf("Water", "Grass", "Ice"),
+            resistances = listOf("Poison", "Rock"),
+            immunities = listOf("Electric")
+        )
 
-    object Ice : PokemonType(listOf("Fire", "Fighting", "Rock", "Steel"), listOf("Ice"))
-
-    object Normal : PokemonType(listOf("Fighting"), immunities = listOf("Ghost"))
-
-    object Poison : PokemonType(
-        listOf("Ground", "Psychic"),
-        listOf("Grass", "Fighting", "Poison", "Bug", "Fairy")
+    object Ice : PokemonType(
+        weaknesses = listOf("Fire", "Fighting", "Rock", "Steel"),
+        resistances = listOf("Ice")
     )
 
-    object Psychic : PokemonType(listOf("Bug", "Ghost", "Dark"), listOf("Psychic", "Fighting"))
+    object Normal : PokemonType(weaknesses = listOf("Fighting"), immunities = listOf("Ghost"))
+
+    object Poison : PokemonType(
+        weaknesses = listOf("Ground", "Psychic"),
+        resistances = listOf("Grass", "Fighting", "Poison", "Bug", "Fairy")
+    )
+
+    object Psychic : PokemonType(
+        weaknesses = listOf("Bug", "Ghost", "Dark"),
+        resistances = listOf("Psychic", "Fighting")
+    )
 
     object Rock : PokemonType(
-        listOf("Water", "Grass", "Fighting", "Ground", "Steel"),
-        listOf("Normal", "Fire", "Poison", "Flying")
+        weaknesses = listOf("Water", "Grass", "Fighting", "Ground", "Steel"),
+        resistances = listOf("Normal", "Fire", "Poison", "Flying")
     )
 
     object Steel : PokemonType(
-        listOf("Fire", "Fighting", "Ground"),
-        listOf(
+        weaknesses = listOf("Fire", "Fighting", "Ground"),
+        resistances = listOf(
             "Normal",
             "Grass",
             "Ice",
@@ -76,6 +110,9 @@ sealed class PokemonType(
         )
     )
 
-    object Water : PokemonType(listOf("Electric", "Grass"), listOf("Fire", "Water", "Ice", "Steel"))
+    object Water : PokemonType(
+        weaknesses = listOf("Electric", "Grass"),
+        resistances = listOf("Fire", "Water", "Ice", "Steel")
+    )
 
 }
