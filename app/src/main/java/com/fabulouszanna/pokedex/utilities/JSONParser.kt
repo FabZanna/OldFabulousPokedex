@@ -5,6 +5,8 @@ import com.google.gson.Gson
 import org.json.JSONArray
 
 class JSONParser(private val context: Context) {
+    val gson = Gson()
+
     fun getJsonDataFromAssets(fileName: String): String =
         context.assets.open(fileName).bufferedReader().use {
             it.readText()
@@ -12,7 +14,6 @@ class JSONParser(private val context: Context) {
 
     inline fun <reified T> extractJsonData(fileName: String): List<T> {
         val jsonList = JSONArray(getJsonDataFromAssets(fileName))
-        val gson = Gson()
         val extractedList = mutableListOf<T>()
         for (i in 0 until jsonList.length()) {
             val jsonObject = jsonList.getJSONObject(i).toString()

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.fabulouszanna.pokedex.databinding.AbilityBottomSheetFragmentBinding
-import com.fabulouszanna.pokedex.repo.ability.AbilityViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

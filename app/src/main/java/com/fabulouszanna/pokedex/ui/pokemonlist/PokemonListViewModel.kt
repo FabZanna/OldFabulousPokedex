@@ -1,10 +1,11 @@
-package com.fabulouszanna.pokedex.repo.pokemon
+package com.fabulouszanna.pokedex.ui.pokemonlist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.fabulouszanna.pokedex.model.PokemonModel
+import com.fabulouszanna.pokedex.repo.pokemon.PokemonRepository
 import kotlinx.coroutines.flow.map
 
 data class PokemonViewState(

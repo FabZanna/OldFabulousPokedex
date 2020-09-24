@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.databinding.FragmentBaseStatsBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.pokemontypes.PokemonWeaknesses
+import com.fabulouszanna.pokedex.model.pokemontypes.PokemonWeaknesses
 import com.fabulouszanna.pokedex.ui.ability.AbilityFragment
 import com.fabulouszanna.pokedex.utilities.RecyclerViewCustomItemDecoration
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
@@ -139,9 +139,9 @@ class BaseStatsFragment(
     private fun populateWeaknesses() {
         val pokemonWeaknesses = PokemonWeaknesses(pokemon)
         val recyclerViewMap = mapOf(
-            weaknessRecyclerView to pokemonWeaknesses.getWeaknesses(),
-            resistanceRecyclerView to pokemonWeaknesses.getResistances(),
-            immunitiesRecyclerView to pokemonWeaknesses.getImmunities()
+            weaknessRecyclerView to pokemonWeaknesses.weaknesses,
+            resistanceRecyclerView to pokemonWeaknesses.resistances,
+            immunitiesRecyclerView to pokemonWeaknesses.immunities
         )
         binding.apply {
             recyclerViewMap.forEach { (rv, weaknessMap) ->

@@ -10,11 +10,9 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import androidx.core.view.children
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fabulouszanna.pokedex.databinding.FragmentMovesBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.repo.pokemonmove.PokemonMoveViewModel
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.toPx
 import org.koin.androidx.viewmodel.ext.android.viewModel
