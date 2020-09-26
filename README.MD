@@ -1,7 +1,7 @@
 # Pokedex 2.0
 My first serious android app based on [this concept](https://dribbble.com/shots/6545819-Pokedex-App) by Saepul Nahwan
 
-![Main Page](https://github.com/FabZanna/FabulousPokedex/blob/master/app/files/pokedex_app.gif =164x338)
+<img src="./app/files/pokedex_app.gif"/>
 
 
 # Support Me!
