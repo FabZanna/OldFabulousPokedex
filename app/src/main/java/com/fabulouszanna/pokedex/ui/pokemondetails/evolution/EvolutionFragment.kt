@@ -12,8 +12,8 @@ import androidx.navigation.fragment.findNavController
 import com.fabulouszanna.pokedex.databinding.EvolutionArrowBinding
 import com.fabulouszanna.pokedex.databinding.FragmentEvolutionBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
-import com.fabulouszanna.pokedex.ui.pokemonlist.PokemonViewModel
 import com.fabulouszanna.pokedex.ui.pokemondetails.PokemonDetailsDirections
+import com.fabulouszanna.pokedex.ui.pokemonlist.PokemonViewModel
 import com.fabulouszanna.pokedex.utilities.extractColorResourceFromType
 import com.fabulouszanna.pokedex.utilities.setPokemonSprite
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -29,18 +29,24 @@ class EvolutionFragment(private val pokemon: PokemonModel) : Fragment() {
     ) = FragmentEvolutionBinding.inflate(inflater, container, false).also { binding = it }.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val controller = EvolutionControllerTest(layoutInflater, binding)
+        val controller = EvolutionController(binding)
 
         viewModel.getPokemonsByName(pokemon.evolutions)
             .observe(viewLifecycleOwner) { evolutionList ->
-                val sortedList = evolutionList.sortedBy { pokemon.evolutions.indexOf(it.name) }.distinctBy { it.name }
+                val sortedList = evolutionList.sortedBy { pokemon.evolutions.indexOf(it.name) }
+                    .distinctBy { it.name }
                 sortedList.filter { it.name == "Eevee" }.let {
                     if (it.isNotEmpty()) {
-                        controller.isEevee = true
+                        controller.inflateLayout(sortedList.size, isSplit = true, isEevee = true)
+                    } else {
+                        controller.inflateLayout(
+                            sortedList.size,
+                            isSplit = sortedList[0].splitEvolution
+                        )
                     }
                 }
                 sortedList.forEach { pokemonModel ->
-                    val (arrowLayout, pokemonLayout) = controller.addPokemon()
+                    val (arrowLayout, pokemonLayout) = controller.getEvolutionComponents()
                     populateArrow(arrowLayout, pokemonModel.evolutionCause)
                     setPokemonSprite(
                         requireContext(),
@@ -55,9 +61,7 @@ class EvolutionFragment(private val pokemon: PokemonModel) : Fragment() {
                         root.setOnClickListener { changePokemon(pokemonModel.id) }
                     }
                 }
-                if (pokemon.splitEvolution) {
-                    controller.adjustSplitEvolutions()
-                }
+                controller.adjustArrowRotation()
             }
     }
 
