@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.fabulouszanna.pokedex.R
 import com.fabulouszanna.pokedex.databinding.FragmentPokemonListBinding
 import com.fabulouszanna.pokedex.model.PokemonModel
@@ -66,13 +65,7 @@ class PokemonListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = PokemonAdapter(layoutInflater, onCardClicked = ::displayPokemon).apply {
-            registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver() {
-                override fun onItemRangeInserted(positionStart: Int, itemCount: Int) {
-                    binding.pokemonRv.scrollToPosition(0)
-                }
-            })
-        }
+        val adapter = PokemonAdapter(layoutInflater, onCardClicked = ::displayPokemon)
 
         binding.pokemonRv.apply {
             setAdapter(adapter)
